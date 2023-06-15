@@ -9,15 +9,24 @@ export default function MainProjet() {
             alignItems='center'
             flexDirection="column"
             w='100%'
+            bgColor='#F6F6F6'
         >
             <GridItem
                 colSpan={3}
                 justifyContent='start'
                 alignItems='start'
                 textAlign='left'
-                position='absolute'
             >
                 <Image as='img' src="/owls/MyOwly.png" width='320px' h='354px' alt="Chouette MyOwly" />
+                <Heading as='h2' textTransform='uppercase' color='black'>Pourquoi&nbsp;
+                    <chakra.span
+                        textShadow='0 0 4px black'
+                        color='white'
+                    >
+                        avons nous décidé de
+                    </chakra.span>
+                    &nbsp;changer les choses ?
+                </Heading>
             </GridItem>
         </Grid>
     )

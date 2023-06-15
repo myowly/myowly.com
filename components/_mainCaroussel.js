@@ -10,7 +10,6 @@ export default function MainCaroussel() {
             flexDirection="column"
         >
             <GridItem
-                position='absolute'
                 zIndex='-1'
             >
                 <Image as='img' src="/backgrounds/field.webp" w='100%' h='auto' margin='auto' alt='Plaine' />
