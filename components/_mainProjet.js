@@ -18,7 +18,7 @@ export default function MainProjet() {
                 textAlign='left'
             >
                 <Image as='img' src="/owls/MyOwly.png" width='320px' h='354px' alt="Chouette MyOwly" />
-                <Heading as='h2' textTransform='uppercase' color='black'>Pourquoi&nbsp;
+                <Heading as='h2' textTransform='uppercase' color='black' mb={14}>Pourquoi&nbsp;
                     <chakra.span
                         textShadow='0 0 4px black'
                         color='white'
@@ -87,7 +87,7 @@ export default function MainProjet() {
                 <Button mb={6} background="transparent" boxShadow='inset 1px 0.5px 2px black, inset -1px 2px 2px white' borderRadius={16} w="100%" justifyContent="center">
                     <Text as="p" color="#3BBFA1" textTransform="uppercase" fontWeight="bold">Quels sont mes avantages ?</Text>
                 </Button>
-                <Button background="transparent" boxShadow='inset 1px 0.5px 2px black, inset -1px 2px 2px white' borderRadius={16} w="100%" justifyContent="center">
+                <Button background="transparent" boxShadow='inset 1px 0.5px 2px black, inset -1px 2px 2px white' borderRadius={16} w="100%" justifyContent="center" mb={14}>
                     <Text as="p" color="#3BBFA1" textTransform="uppercase" fontWeight="bold">Rester informé</Text>
                 </Button>
             </GridItem>
