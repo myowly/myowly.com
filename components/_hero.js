@@ -23,6 +23,7 @@ export default function Hero() {
                     textTransform="uppercase"
                     display="inline-flex"
                     cursor="pointer"
+                    color='white'
                 >
                     <Image
                         as='img'
@@ -41,6 +42,7 @@ export default function Hero() {
                     href='#'
                     textTransform="uppercase"
                     display="inline-flex"
+                    color='white'
                 >
                     <Image
                         as='img'
@@ -93,7 +95,7 @@ export default function Hero() {
                 mr='auto'
             >
                 <Box>
-                    <Heading as="h1" textTransform="uppercase">Soyez votre meilleur assureur</Heading>
+                    <Heading as="h1" textTransform="uppercase" color='white'>Soyez votre meilleur assureur</Heading>
                     <Image as="img" src='/island.png' w="350" h="350" alt='Island 3D Model' />
                 </Box>
                 <Box>
@@ -129,7 +131,7 @@ export default function Hero() {
                 ml="auto"
                 mr="auto"
             >
-                <Heading mb={4} as="h2" textTransform="uppercase">La Blockchain révolutionne l&apos;assurance</Heading>
+                <Heading mb={4} as="h2" textTransform="uppercase" color='orange'>La Blockchain révolutionne l&apos;assurance</Heading>
                 <Text textAlign='justify' mb={12}>Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autres situations imprévue, notre assurance paramétrique est là pour vous aider.</Text>
                 <Button background="transparent" mb={4} border="1px solid #3BBFA1" borderRadius={16} w="100%" justifyContent="space-between">
                     <Image as="img" w="auto" h="27" src='/bec.svg' alt='Owl Bec' />
