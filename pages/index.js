@@ -6,6 +6,8 @@ import MainCommunauté from "@/components/_mainCommunauté"
 import MainSimplifier from "@/components/_mainSimplifier"
 import MainRejoignez from "@/components/_mainRejoignez"
 import MainMessage from "@/components/_mainMessage"
+import MainRoadmap from "@/components/_mainRoadmap"
+import MainTeam from "@/components/_mainTeam"
 
 export default function MyApp() {
   return (
@@ -18,6 +20,8 @@ export default function MyApp() {
       <MainSimplifier></MainSimplifier>
       <MainRejoignez></MainRejoignez>
       <MainMessage></MainMessage>
+      <MainRoadmap></MainRoadmap>
+      <MainTeam></MainTeam>
     </>
   )
 }
