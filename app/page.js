@@ -1,3 +1,5 @@
+import styles from './page.module.css'
+
 import Hero from "@/components/_hero"
 import MainDAO from "@/components/_maindao"
 import MainCaroussel from "@/components/_mainCaroussel"
@@ -9,9 +11,9 @@ import MainMessage from "@/components/_mainMessage"
 import MainRoadmap from "@/components/_mainRoadmap"
 import MainTeam from "@/components/_mainTeam"
 
-export default function MyApp() {
+export default function Home() {
   return (
-    <>
+    <main className={styles.main}>
       <Hero></Hero>
       <MainDAO></MainDAO>
       <MainCaroussel></MainCaroussel>
@@ -22,6 +24,6 @@ export default function MyApp() {
       <MainMessage></MainMessage>
       <MainRoadmap></MainRoadmap>
       <MainTeam></MainTeam>
-    </>
+    </main>
   )
 }

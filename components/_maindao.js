@@ -1,3 +1,5 @@
+'use client'
+
 import { Grid, Text, chakra, Heading, Image, GridItem, Button } from "@chakra-ui/react";
 
 export default function MainDAO(){

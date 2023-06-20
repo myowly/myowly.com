@@ -1,3 +1,5 @@
+'use client'
+
 import { Box, Heading, Image, Link, Grid, GridItem, Text, Button } from '@chakra-ui/react'
 
 export default function Hero() {

@@ -1,3 +1,5 @@
+'use client'
+
 import { Grid, Text, chakra, Heading, Image, GridItem, Button, Box } from "@chakra-ui/react";
 
 export default function MainCommunauté() {
