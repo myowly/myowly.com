@@ -1,18 +1,18 @@
-import { Button, Text } from "@chakra-ui/react"
+import { Box, Button } from "@chakra-ui/react"
 
 import Beak from "@/svg/beak"
 
 export default function ButtonBeak({
-  text,
+  children,
   mb
 }: {
-  text: string,
+  children: string | JSX.Element | JSX.Element[],
   mb?: string
 }) {
   return (
     <Button mb={mb} background="transparent" border="1px solid" borderColor="keppel" borderRadius={16} w="100%" justifyContent="space-between" boxShadow="0 0 10px var(--chakra-colors-keppel)">
       <Beak width="auto" height="27" />
-      <Text as="p" color="keppel" textTransform="uppercase" fontWeight="bold">{text}</Text>
+      <Box color="keppel" textTransform="uppercase" fontWeight="bold">{children}</Box>
       <Beak width="auto" height="27" />
     </Button>
   );

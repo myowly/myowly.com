@@ -129,8 +129,8 @@ export default function Hero() {
             Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.
           </Text>
 
-          <ButtonBeak mb="4" text="En savoir plus" />
-          <ButtonBeak mb="14" text="Se tenir informé" />
+          <ButtonBeak mb="4">En savoir plus</ButtonBeak>
+          <ButtonBeak mb="14">Se tenir informé</ButtonBeak>
         </Box>
       </Box>
     </Box>
