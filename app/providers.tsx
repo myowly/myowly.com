@@ -2,6 +2,10 @@
 
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { Inter, Staatliches } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
+const staatliches = Staatliches({ weight: '400', subsets: ['latin'] })
 
 const colors = {
   'eucalyptus': '#46e0bb',
@@ -21,8 +25,8 @@ const colors = {
 export const theme = extendTheme({
   colors,
   fonts: {
-    heading: `'Staatliches', sans-serif`,
-    body: `'Inter', sans-serif`,
+    heading: `${staatliches.style.fontFamily}, sans-serif`,
+    body: `${inter.style.fontFamily}, sans-serif`,
   },
   styles: {
     global: {
