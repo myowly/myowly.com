@@ -1,10 +1,8 @@
-'use client'
-
 import { Grid, Text, chakra, Heading, Image, GridItem, Button, Box } from "@chakra-ui/react";
 
 export default function MainProjet() {
     return (
-         <Grid
+        <Grid
             display='flex'
             templateColumns='repeat(3, 1fr)'
             justifyContent='center'
@@ -72,7 +70,7 @@ export default function MainProjet() {
                 p={4}
             >
                 <Heading as='h3' textTransform='uppercase' color='black' mb={4}>
-                   Des solutions<br />
+                    Des solutions<br />
                     <chakra.span color='#EE9E4E'>centralisées</chakra.span>&nbsp;pour<br />un problème<br />
                     <chakra.span color='#E67A04'>collectif</chakra.span>
                 </Heading>

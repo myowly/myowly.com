@@ -1,8 +1,6 @@
-'use client'
-
 import { Grid, Text, chakra, Heading, Image, GridItem, Button } from "@chakra-ui/react";
 
-export default function MainDAO(){
+export default function MainDAO() {
     return (
         <Grid
             templateColumns='repeat(3, 1fr)'

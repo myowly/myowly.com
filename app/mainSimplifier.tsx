@@ -1,10 +1,8 @@
-'use client'
-
 import { Grid, Text, chakra, Heading, Image, GridItem, Button, Box } from "@chakra-ui/react";
 
 export default function MainSimplifier() {
     return (
-         <Grid
+        <Grid
             display='flex'
             templateColumns='repeat(3, 1fr)'
             justifyContent='center'
@@ -25,16 +23,16 @@ export default function MainSimplifier() {
                         textShadow='0 0 4px black'
                         color='white'
                     >
-                       En quoi
+                        En quoi
                     </chakra.span>
                     &nbsp;allons nous&nbsp;
                     <chakra.span
                         textShadow='0 0 4px black'
                         color='white'
                     >
-                       vous
+                        vous
                     </chakra.span>
-                   &nbsp;simplifier la vie&nbsp;
+                    &nbsp;simplifier la vie&nbsp;
                     <chakra.span
                         textShadow='0 0 4px black'
                         color='white'
@@ -53,7 +51,7 @@ export default function MainSimplifier() {
                 <Heading as='h3' textTransform='uppercase' color='black' mb={4}>
                     Des&nbsp;
                     <chakra.span color='#EE9E4E'>provisions</chakra.span><br />
-                    et non<br/>des&nbsp;
+                    et non<br />des&nbsp;
                     <chakra.span color='#E67A04'>cotisations</chakra.span>
                 </Heading>
                 <Text color='black'>Changeons votre perception et reprenez confiance. Ici, l&apos;argent versé reste la propriété de l&apos;utilisateur. </Text>
@@ -81,7 +79,7 @@ export default function MainSimplifier() {
                 p={4}
             >
                 <Heading as='h3' textTransform='uppercase' color='black' mb={4}>
-                   Jusqu&apos;à<br />
+                    Jusqu&apos;à<br />
                     <chakra.span color='#EE9E4E'>-90%&nbsp;</chakra.span>
                     <chakra.span color='#E67A04'>de frais</chakra.span>
                 </Heading>

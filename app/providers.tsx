@@ -3,13 +3,7 @@
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 
-// Extend the theme to include custom colors, fonts, etc
 const colors = {
-  brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac',
-  },
   'eucalyptus': '#46e0bb',
   'keppel': '#3bbfa1',
   'sherwood-green': '#093f32',
@@ -23,14 +17,24 @@ const colors = {
   'cultured': '#f6f6f6',
   'transparent': 'transparent'
 }
-  
+// Extend the theme to include custom colors, fonts, etc
 export const theme = extendTheme({
   colors,
   fonts: {
     heading: `'Staatliches', sans-serif`,
     body: `'Inter', sans-serif`,
   },
-})  
+  styles: {
+    global: {
+      p: {
+        color: 'cultured',
+        fontWeight: 500,
+        fontSize: '18px',
+        lineHeight: '21px',
+      },
+    },
+  },
+})
 
 export function Providers({ children }) {
   return (

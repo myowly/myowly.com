@@ -1,4 +1,4 @@
-import styles from './page.module.css'
+'use client'
 
 import Hero from "./hero"
 import MainDAO from "./mainDao"
@@ -13,7 +13,7 @@ import MainTeam from "./mainTeam"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <Hero></Hero>
       <MainDAO></MainDAO>
       <MainCaroussel></MainCaroussel>

@@ -1,5 +1,3 @@
-'use client'
-
 import { Grid, Text, chakra, Heading, Image, GridItem, Button } from "@chakra-ui/react";
 
 export default function MainMessage() {
@@ -25,14 +23,14 @@ export default function MainMessage() {
                     Utilisez&nbsp;<chakra.span fontStyle='italic' fontWeight='thin'>les</chakra.span><br />
                     <chakra.span fontStyle='italic' fontWeight='thin'>dernières<br />technologies&nbsp;</chakra.span>pour<br />
                     vous offrir&nbsp;<chakra.span fontWeight='bold'>une protection&nbsp;</chakra.span><chakra.span fontWeight='bold' fontStyle='italic' color='#E67A04'>adaptée<br />à vos besoins.</chakra.span>
-                </Heading> 
+                </Heading>
             </GridItem>
             <GridItem
                 transform='rotate(-90deg)'
                 mt={0}
                 mb={0}
             >
-                <Image src="/Cristals.png" alt="encore des petits cristaux"/>
+                <Image src="/Cristals.png" alt="encore des petits cristaux" />
             </GridItem>
             <GridItem
                 colSpan={3}
@@ -45,14 +43,14 @@ export default function MainMessage() {
                     <chakra.span fontWeight='bold'>Concentre-vous</chakra.span><br />
                     sur ce qui compte<br />
                     <chakra.span fontWeight='bold' color='#3BBFA1'>vraiment.</chakra.span>
-                </Heading> 
+                </Heading>
             </GridItem>
-             <GridItem
+            <GridItem
                 transform='rotate(90deg)'
                 mt={0}
                 mb={0}
             >
-                <Image src="/Cristals.png" alt="encore des petits cristaux"/>
+                <Image src="/Cristals.png" alt="encore des petits cristaux" />
             </GridItem>
             <GridItem
                 colSpan={3}
@@ -68,7 +66,7 @@ export default function MainMessage() {
                     de&nbsp;<chakra.span fontStyle='italic' fontWeight='bold' color='#E46500'>particuliers</chakra.span><br />
                     <chakra.span fontWeight='bold'>sur mesure</chakra.span><br />
                     et&nbsp;<chakra.span fontWeight='bold'>sécurisée.</chakra.span>
-                </Heading> 
+                </Heading>
             </GridItem>
         </Grid>
     )

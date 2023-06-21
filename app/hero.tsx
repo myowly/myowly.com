@@ -1,5 +1,3 @@
-"use client"
-
 import { Box, Button, Center, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
 
 export default function Hero() {
@@ -9,7 +7,7 @@ export default function Hero() {
         <Flex pt="10" pl="8">
           <Box flex="1" display="flex" flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="space-around">
             <Box maxWidth="500px">
-              <Image mb={4} pt="4" pr="28" src="/Logo.png" alt="Logo MyOwly"  />
+              <Image mb={4} pt="4" pr="28" src="/Logo.png" alt="Logo MyOwly" />
             </Box>
             <Box pr="14">
               <Box display={{ base: "inherit", md: "none" }}>
@@ -78,7 +76,7 @@ export default function Hero() {
                 <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/discord.svg" w="30" h="30" alt="Logo Discord" m="3" /></Link>
                 <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/twitter.svg" w="30" h="30" alt="Logo Twitter" m="3" /></Link>
                 <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/reddit.svg" w="30" h="30" alt="Logo Reddit" m="3" /></Link>
-                <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/github-white.svg" w="30" h="30" alt="Logo Github" m="3" /></Link>
+                <Link href="https://github.com/myowly"><Image as="img" src="/reseaux/github-white.svg" w="30" h="30" alt="Logo Github" m="3" /></Link>
               </Center>
             </Box>
           </Box>
@@ -100,32 +98,32 @@ export default function Hero() {
             </Center>
           </Box>
         </Flex>
-        
+
         <Center pt="8" px="8" display="flex" flexDirection={{ base: "column", md: "row" }}>
           <Heading as="h1" textTransform="uppercase" fontSize="5xl" color="cultured" lineHeight="1">
             Soyez
-            <Text as="span" color="sherwood-green" textShadow="-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"> votre </Text><br/>
-            meilleur<br/>
-            <Text as="span" color="sherwood-green" textShadow="-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"> assureur </Text>
+            <Text as="span" color="vampire-black" textShadow="-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"> votre </Text><br />
+            meilleur<br />
+            <Text as="span" color="vampire-black" textShadow="-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"> assureur </Text>
           </Heading>
           <Box display="flex">
             <Image as="img" src="/island.png" w="350" h="350" alt="Island 3D Model" transform={{ base: "translateY(-50px);", md: "translateY(30px)" }} />
             <Image as="img" src="/Cristals.png" w="320" h="165" alt="Cristals" transform={{ base: "translate(-60px, -80px);", md: "translate(-400px, -20px) rotate(0.80turn)" }} />
           </Box>
         </Center>
-        
+
         <Box display="flex" justifyContent="center" pt={{ base: "0", md: "14" }} pb="14">
           <Image as="img" w="16.45" h="auto" src="/arrow-white.svg" alt="Owl Arrow Down" />
-        </Box>    
+        </Box>
 
         <Box px="8" maxWidth="500px" m="auto">
           <Heading as="h2" mb={4} textTransform="uppercase" lineHeight="1">
             <Text as="span" color="cultured" fontSize="4xl"> La Blockchain </Text>
-            <Text as="span"color="indian-yellow" fontSize="4xl"> révolutionne </Text>
-            <Text as="span"color="fulvous" fontSize="5xl"> l&apos;assurance </Text>
+            <Text as="span" color="indian-yellow" fontSize="4xl"> révolutionne </Text>
+            <Text as="span" color="fulvous" fontSize="5xl"> l&apos;assurance </Text>
           </Heading>
-          
-          <Text mb={12} color="cultured">
+
+          <Text mb={12}>
             Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.
           </Text>
 
