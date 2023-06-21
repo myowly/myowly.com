@@ -126,7 +126,7 @@ export default function Hero() {
           </Heading>
           
           <Text mb={12} color="cultured">
-            Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autres situations imprévue, notre assurance paramétrique est là pour vous aider.
+            Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.
           </Text>
 
           <Button background="transparent" mb={4} border="1px solid" borderColor="keppel" borderRadius={16} w="100%" justifyContent="space-between" boxShadow="0 0 10px var(--chakra-colors-keppel)">
