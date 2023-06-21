@@ -1,5 +1,8 @@
 import { Box, Button, Center, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
 
+import ButtonBeak from "@/ui/button/button-beak"
+import ButtonSocialNetwork from "@/ui/button/button-social-network"
+
 export default function Hero() {
   return (
     <Box w="100%" bgColor="cultured" pb="5">
@@ -10,7 +13,7 @@ export default function Hero() {
               <Image mb={4} pt="4" pr="28" src="/Logo.png" alt="Logo MyOwly" />
             </Box>
             <Box pr="14">
-              <Box display={{ base: "inherit", md: "none" }}>
+              <Box hideFrom="md">
                 <Link
                   href="#"
                   textTransform="uppercase"
@@ -49,7 +52,7 @@ export default function Hero() {
                 Découvrir l&apos;équipe
               </Link>
             </Box>
-            <Box display={{ base: "none", md: "block" }} border="1px solid" borderColor="keppel" borderRadius="14" mr={{ base: "0", md: "4" }}>
+            <Box hideBelow="md" border="1px solid" borderColor="keppel" borderRadius="14" mr={{ base: "0", md: "4" }}>
               <Link
                 href="#"
                 textTransform="uppercase"
@@ -73,28 +76,27 @@ export default function Hero() {
                 display="flex"
                 flexDirection="row"
               >
-                <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/discord.svg" w="30" h="30" alt="Logo Discord" m="3" /></Link>
-                <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/twitter.svg" w="30" h="30" alt="Logo Twitter" m="3" /></Link>
-                <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/reddit.svg" w="30" h="30" alt="Logo Reddit" m="3" /></Link>
-                <Link href="https://github.com/myowly"><Image as="img" src="/reseaux/github-white.svg" w="30" h="30" alt="Logo Github" m="3" /></Link>
+                <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/discord.svg" alt="Discord" />
+                <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/twitter.svg" alt="Twitter" />
+                <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/reddit.svg" alt="Reddit" />
+                <ButtonSocialNetwork href="https://github.com/myowly" src="/reseaux/github-white.svg"alt="Github" />
               </Center>
             </Box>
           </Box>
-          <Box display={{ base: "inherit", md: "none" }}>
+          <Box hideFrom="md">
             <Center
               backgroundColor="keppel"
               m={0}
-              p="2"
               display="flex"
               borderStartRadius={14}
               boxShadow="0 0 10px var(--chakra-colors-keppel)"
               flexDirection="column"
               zIndex="1"
             >
-              <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/discord.svg" w="30" h="30" alt="Logo Discord" mb="3" /></Link>
-              <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/twitter.svg" w="30" h="30" alt="Logo Twitter" mb="3" /></Link>
-              <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/reddit.svg" w="30" h="30" alt="Logo Reddit" mb="3" /></Link>
-              <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/github-white.svg" w="30" h="30" alt="Logo Github" /></Link>
+              <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/discord.svg" alt="Discord" />
+              <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/twitter.svg" alt="Twitter" />
+              <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/reddit.svg" alt="Reddit" />
+              <ButtonSocialNetwork href="https://github.com/myowly" src="/reseaux/github-white.svg"alt="Github" />
             </Center>
           </Box>
         </Flex>
@@ -127,17 +129,8 @@ export default function Hero() {
             Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.
           </Text>
 
-          <Button background="transparent" mb={4} border="1px solid" borderColor="keppel" borderRadius={16} w="100%" justifyContent="space-between" boxShadow="0 0 10px var(--chakra-colors-keppel)">
-            <Image as="img" w="auto" h="27" src="/bec.svg" alt="Owl Bec" />
-            <Text as="p" color="keppel" textTransform="uppercase" fontWeight="bold">En savoir plus</Text>
-            <Image as="img" w="auto" h="27" src="/bec.svg" alt="Owl Bec" />
-          </Button>
-
-          <Button mb="6rem" background="transparent" border="1px solid" borderColor="keppel" borderRadius={16} w="100%" justifyContent="space-between" boxShadow="0 0 10px var(--chakra-colors-keppel)">
-            <Image as="img" w="auto" h="27" src="/bec.svg" alt="Owl Bec" />
-            <Text as="p" color="keppel" textTransform="uppercase" fontWeight="bold">Se tenir informé</Text>
-            <Image as="img" w="auto" h="27" src="/bec.svg" alt="Owl Bec" />
-          </Button>
+          <ButtonBeak mb="4" text="En savoir plus" />
+          <ButtonBeak mb="14" text="Se tenir informé" />
         </Box>
       </Box>
     </Box>
