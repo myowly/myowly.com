@@ -1,15 +1,15 @@
 import styles from './page.module.css'
 
-import Hero from "@/components/hero"
-import MainDAO from "@/components/mainDao"
-import MainCaroussel from "@/components/mainCaroussel"
-import MainProjet from "@/components/mainProjet"
-import MainCommunauté from "@/components/mainCommunauté"
-import MainSimplifier from "@/components/mainSimplifier"
-import MainRejoignez from "@/components/mainRejoignez"
-import MainMessage from "@/components/mainMessage"
-import MainRoadmap from "@/components/mainRoadmap"
-import MainTeam from "@/components/mainTeam"
+import Hero from "./hero"
+import MainDAO from "./mainDao"
+import MainCaroussel from "./mainCaroussel"
+import MainProjet from "./mainProjet"
+import MainCommunauté from "./mainCommunauté"
+import MainSimplifier from "./mainSimplifier"
+import MainRejoignez from "./mainRejoignez"
+import MainMessage from "./mainMessage"
+import MainRoadmap from "./mainRoadmap"
+import MainTeam from "./mainTeam"
 
 export default function Home() {
   return (
