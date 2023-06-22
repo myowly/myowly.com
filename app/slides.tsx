@@ -21,11 +21,11 @@ export const slides = [
 			<Text color="vampire-black">
 				L&apos;assurance paramétrique est une approche <Box as="span" color="indian-yellow">innovante</Box> qui propose des solutions
 				adaptées aux défis modernes. Contrairement à l&apos;assurance traditionnelle, qui mesure les dommages ou pertes subis par les assurés,
-				l&apos;assurance paramétrique se concentre sur <Box as="span" color="fulvous" >des paramètres spécifiques prédéfinis</Box>.
+				l&apos;assurance paramétrique se concentre sur <Box as="span" color="fulvous">des paramètres spécifiques prédéfinis</Box>.
 				Ces paramètres tels que la vitesse du vent, les précipitations et l&apos;indice de rendement peuvent être mesurés objectivement
-				et sont <Box as="span" color="indian-yellow" >indépendants de la situation individuelle de l&apos;assuré</Box>.
-				Grâce à cette approche <Box as="span" color="fulvous" >basée sur des données quantifiables</Box>, l&apos;assurance paramétrique permet
-				un règlement des sinistres plus rapide et une plus grande transparence. De plus, <Box as="span" color="indian-yellow" >il est possible
+				et sont <Box as="span" color="indian-yellow">indépendants de la situation individuelle de l&apos;assuré</Box>.
+				Grâce à cette approche <Box as="span" color="fulvous">basée sur des données quantifiables</Box>, l&apos;assurance paramétrique permet
+				un règlement des sinistres plus rapide et une plus grande transparence. De plus, <Box as="span" color="indian-yellow">il est possible
 					de couvrir des risques difficilement assurables</Box>, tels que les catastrophes naturelles et les fluctuations des prix des matières
 				premières.
 			</Text>,
@@ -42,11 +42,11 @@ export const slides = [
 		modalHeading: <>Organisation autonome décentralisée</>,
 		modalBody:
 			<Text color="vampire-black">
-				Les DAO représentent une nouvelle forme d&apos;organisation qui émerge avec la technologie blockchain. Elles fonctionnent <Box as="span" color="indian-yellow">sans l&apos;intervention d&apos;une autorité centrale</Box>. Elles s&apos;appuient sur des contrats intelligents, des programmes informatiques qui s&apos;exécutent automatiquement et de manière <Box as="span" color="indian-yellow">transparente</Box>, pour assurer une prise de décision et des transactions commerciales partagées.
+				Les DAO représentent une nouvelle forme d&apos;organisation qui émerge avec la technologie blockchain. Elles fonctionnent <Box as="span" color="indian-yellow">sans l&apos;intervention d&apos;une autorité centrale</Box>. Elles s&apos;appuient sur des contrats intelligents, des programmes informatiques qui s&apos;exécutent <Box as="span" color="fulvous">automatiquement</Box> et de manière <Box as="span" color="indian-yellow">transparente</Box>, pour assurer une prise de décision et des transactions commerciales partagées.
 
-				Les DAO présentent de nombreux avantages, tels que l&apos;élimination des intermédiaires et leurs coûts associés, <Box as="span" color="indian-yellow">une gouvernance démocratique</Box> avec des droits de vote égaux pour tous les membres et une transparence totale avec des enregistrements immuables de toutes les transactions sur la blockchain.
+				Les DAO présentent de nombreux avantages, tels que <Box as="span" color="fulvous">l&apos;élimination des intermédiaires</Box> et leurs coûts associés, <Box as="span" color="indian-yellow">une gouvernance démocratique</Box> avec des droits de vote égaux pour tous les membres et <Box as="span" color="fulvous">une transparence totale</Box> avec des enregistrements immuables de toutes les transactions sur la blockchain.
 
-				Les DAO ouvrent de nouvelles opportunités <Box as="span" color="indian-yellow">d&apos;innovation</Box>, de collaboration et de <Box as="span" color="indian-yellow">création de valeurs</Box> à travers les communautés en ligne.
+				Les DAO ouvrent de nouvelles opportunités <Box as="span" color="indian-yellow">d&apos;innovation</Box>, de <Box as="span" color="fulvous">collaboration</Box> et de <Box as="span" color="indian-yellow">création de valeurs</Box> à travers les communautés en ligne.
 			</Text>,
 		mode: "dark"
 	},
@@ -63,13 +63,13 @@ export const slides = [
 		modalHeading: <>L’oracle</>,
 		modalBody:
 			<Text color="vampire-black">
-				Les oracles de la blockchain sont l&apos;élément clé qui permet aux contrats intelligents de communiquer avec le monde réel. Ces oracles agissent comme des ponts entre les données externes et les applications basées sur la blockchain.
+				Les oracles de la blockchain sont <Box as="span" color="indian-yellow">l&apos;élément clé</Box> qui permet aux contrats intelligents de <Box as="span" color="fulvous">communiquer avec le monde réel</Box>. Ces oracles agissent comme des ponts entre les données externes et les applications basées sur la blockchain.
 
-				Les contrats intelligents d&apos;Oracle fonctionnent de manière fiable et sécurisée pour fournir des informations en temps réel à partir de sources externes telles que les prix des devises, les conditions météorologiques et les résultats des matchs sportifs.
+				Les contrats intelligents d&apos;Oracle fonctionnent de manière <Box as="span" color="indian-yellow">fiable</Box> et sécurisée pour fournir <Box as="span" color="indian-yellow">des informations en temps réel</Box> à partir de sources externes telles que les prix des devises, les conditions météorologiques et les résultats des matchs sportifs.
 
-				Ces données sont validées avant d&apos;être intégrées dans des contrats intelligents pour garantir l&apos;intégrité et l&apos;authenticité des informations transmises.
+				Ces données sont <Box as="span" color="fulvous">validées avant d&apos;être intégrées</Box> dans des contrats intelligents pour <Box as="span" color="indian-yellow">garantir l&apos;intégrité et l&apos;authenticité</Box> des informations transmises.
 
-				Que ce soit pour les applications financières, les marchés de prédiction ou les systèmes d&apos;assurance décentralisés, les oracles blockchain fournissent une solution fiable et transparente pour intégrer des données externes dans des applications basées sur la blockchain.
+				Que ce soit pour les applications financières, les marchés de prédiction ou les systèmes d&apos;assurance décentralisés, les oracles blockchain fournissent une solution fiable et transparente pour <Box as="span" color="fulvous">intégrer des données externes dans des applications basées sur la blockchain</Box>.
 			</Text>,
 		mode: "dark"
 	},
@@ -88,11 +88,11 @@ export const slides = [
 		modalHeading: <>IA Actuarielle</>,
 		modalBody:
 			<Text color="vampire-black">
-				L&apos;IA actuarielle, ou intelligence actuarielle artificielle, est un système informatique qui combine les avancées de l&apos;intelligence artificielle et des compétences actuarielles pour analyser et évaluer les risques financiers et assurantiels.
+				L&apos;IA actuarielle, ou intelligence actuarielle artificielle, est un système informatique qui combine les avancées de l&apos;intelligence artificielle et des compétences actuarielles pour <Box as="span" color="indian-yellow">analyser et évaluer les risques financiers et assurantiels</Box>.
 
-				Ces IA utilisent des algorithmes avancés et des techniques d&apos;apprentissage automatique pour traiter d&apos;énormes quantités de données et créer des modèles prédictifs précis. L&apos;IA actuarielle a la capacité de reconnaître des modèles et des tendances complexes, permettant aux professionnels de l&apos;assurance et de la finance de prendre des décisions éclairées concernant la tarification des produits, la gestion de portefeuilles et l&apos;estimation des sinistres.
+				Ces IA utilisent des algorithmes avancés et des techniques d&apos;apprentissage automatique pour traiter d&apos;énormes quantités de données et <Box as="span" color="fulvous">créer des modèles prédictifs précis</Box>. L&apos;IA actuarielle a la capacité de <Box as="span" color="indian-yellow">reconnaître des modèles et des tendances complexes</Box>, permettant aux professionnels de l&apos;assurance et de la finance de prendre des décisions éclairées concernant la tarification des produits, la gestion de portefeuilles et l&apos;estimation des sinistres.
 
-				Ces systèmes innovants peuvent également automatiser certaines tâches répétitives, libérant ainsi les actuaires pour se concentrer sur des activités à plus forte valeur ajoutée.
+				Ces systèmes innovants peuvent également <Box as="span" color="fulvous">automatiser certaines tâches répétitives</Box>, libérant ainsi les actuaires pour se concentrer sur des activités à plus forte valeur ajoutée.
 			</Text>,
 		mode: "ligth"
 	},
