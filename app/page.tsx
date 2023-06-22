@@ -17,6 +17,7 @@ export default function Home() {
       <Hero></Hero>
       <MainDAO></MainDAO>
       <MainCaroussel></MainCaroussel>
+      {/*
       <MainProjet></MainProjet>
       <MainCommunauté></MainCommunauté>
       <MainSimplifier></MainSimplifier>
@@ -24,6 +25,7 @@ export default function Home() {
       <MainMessage></MainMessage>
       <MainRoadmap></MainRoadmap>
       <MainTeam></MainTeam>
+      */}
     </main>
   )
 }
