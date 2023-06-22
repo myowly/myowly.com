@@ -5,7 +5,7 @@ import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
 export default function Hero() {
   return (
-    <Box w="100%" bgColor="cultured" pb="5">
+    <Box w="100%" bgColor="cultured">
       <Box w="100%" bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)" borderBottomRadius="xl">
         <Flex pt="10" pl="8">
           <Box flex="1" display="flex" flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="space-around">
@@ -102,7 +102,7 @@ export default function Hero() {
         </Flex>
 
         <Center pt="8" px="8" display="flex" flexDirection={{ base: "column", md: "row" }}>
-          <Heading as="h1" textTransform="uppercase" fontSize="5xl" color="cultured" lineHeight="1">
+          <Heading as="h1" textTransform="uppercase" fontSize="6xl" fontWeight="extrabold" color="cultured" lineHeight="0.8" >
             Soyez
             <Text as="span" color="vampire-black" textShadow="-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"> votre </Text><br />
             meilleur<br />
