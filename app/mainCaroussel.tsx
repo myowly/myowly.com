@@ -1,28 +1,8 @@
-// import { Grid, Text, chakra, Heading, Image, GridItem, Button, Box } from "@chakra-ui/react";
-//
-// export default function MainCaroussel() {
-//     return (
-//         <Grid
-//             display='flex'
-//             templateColumns='repeat(3, 1fr)'
-//             justifyContent='center'
-//             alignItems='center'
-//             flexDirection="column"
-//         >
-//             <GridItem
-//                 zIndex='-1'
-//             >
-//                 <Image as='img' src="/backgrounds/field.webp" w='100%' h='auto' margin='auto' alt='Plaine' />
-//             </GridItem>
-//             <Box position='relative'>Blabla</Box>
-//         </Grid>
-//
-//     )
-// }
-
 import React, { useState } from "react";
-import { Box, Button, Flex, HStack, Heading, Image, Stack, Text } from "@chakra-ui/react";
-import ArrowBlack from "@/ui/icon/arrow-black";
+import { Box, Button, Flex, Heading, IconButton, Icon, Text } from "@chakra-ui/react";
+import ArrowBlack from "@/svg/arrow-black";
+import ArrowWhite from "@/svg/arrow-white";
+import Beak from '@/svg/beak';
 
 export default function MainCaroussel() {
 	const arrowStyles = {
@@ -36,12 +16,8 @@ export default function MainCaroussel() {
 		fontWeight: "bold",
 		fontSize: "18px",
 		transition: "0.6s ease",
-		borderRadius: "9999px",
 		userSelect: "none",
-		_hover: {
-			opacity: 0.2,
-			bg: "black",
-		},
+		bgColor: "transparent"
 	} as const;
 
 	const slides = [
@@ -60,28 +36,43 @@ export default function MainCaroussel() {
 				</>
 			),
 			description: "Une indemnisation plus rapide et plus efficace et sans avoir à prouver les pertes subies.",
-			border: "vampire-black"
+			mode: "ligth"
 		},
 		{
 			img: "/backgrounds/cube.webp",
-			title: "La Dao",
-			subtitle: "La solution d’assurance du futur",
+			title: (<><Box as="span" color="spanish-orange">La</Box> Dao</>),
+			subtitle: (<>
+				La solution d’assurance <Box as="span" color="fulvous">du </Box>
+				<Box as="span" color="fulvous">futur</Box>
+			</>),
 			description: "Une pool de liquidités et des couvertures autogérées par la communauté.",
-			border: "cultured"
+			mode: "dark"
 		},
 		{
 			img: "/backgrounds/oracle.webp",
-			title: "L’oracle MYOWLY",
-			subtitle: "la fiabilité des contrats intelligents",
+			title: (<><Box as="span" color="indian-yellow" >L’oracle</Box> MYOWLY</>),
+			subtitle: (
+				<>
+					La <Box as="span" color="indian-yellow" >fiabilité</Box> des
+					<Box as="span" color="spanish-orange"> contrats intelligents</Box>
+				</>
+			),
 			description: "Des sources de données fiables utilisées pour déclencher les smart contracts.",
-			border: "cultured"
+			mode: "dark"
 		},
 		{
 			img: "/backgrounds/ia.webp",
-			title: "Une IA ACTUARIELLE",
-			subtitle: "La précision, pour un avenir sûr",
+			title: (
+				<>
+					<Box as="span" color="vampire-black">Une</Box> <Box as="span" color="indian-yellow">IA</Box> ACTUARIELLE
+
+				</>),
+			subtitle: (
+				<>La <Box as="span" color="indian-yellow">précision</Box>,
+					pour <Box as="span" color="spanish-orange">un avenir sûr</Box>
+				</>),
 			description: "L'intelligence artificielle  analyse des données complexes et prévoit les risques futurs avec une précision accrue.",
-			border: "vampire-black"
+			mode: "ligth"
 		},
 	];
 
@@ -98,8 +89,7 @@ export default function MainCaroussel() {
 	const setSlide = (slide: number) => {
 		setCurrentSlide(slide);
 	};
-	const carouselStyle = {
-		transition: "all .5s",
+	const carouselSlice = {
 		ml: `-${currentSlide * 100}%`,
 	};
 
@@ -121,7 +111,11 @@ export default function MainCaroussel() {
 				bgSize="cover"
 				bgPosition="center"
 			>
-				<Flex w="full" {...carouselStyle}>
+				<Flex
+					w="full"
+					transition="all .5s"
+					{...carouselSlice}
+				>
 					{slides.map((slide, sid) => (
 						<Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
 							<Flex
@@ -130,8 +124,9 @@ export default function MainCaroussel() {
 								alignItems="center"
 								w="full"
 								h="100vh"
-								py={['20px', '100px']}
+								pt={['20px', '100px']}
 								px={['22px', '15.5%']}
+								pb={['20px', '100px']}
 							>
 								<Flex
 									direction="column"
@@ -141,7 +136,7 @@ export default function MainCaroussel() {
 									px={['14%', '54px']}
 									backdropFilter="blur(10px)"
 									border="1px solid"
-									borderColor={slide.border}
+									borderColor={slide.mode === 'ligth' ? 'vampire-black' : 'cultured'}
 									borderRadius="56px"
 									bgGradient="linear(110.72deg, rgba(255, 255, 255, 0.36) 1.21%, rgba(196, 196, 196, 0.06) 100%);"
 								>
@@ -160,7 +155,7 @@ export default function MainCaroussel() {
 										as="h4"
 										mt={['35px', '50px', '100px']}
 										fontFamily="body"
-										color="vampire-black"
+										color={slide.mode == 'ligth' ? "vampire-black" : "cultured"}
 										textTransform="uppercase"
 										fontWeight="600"
 										fontSize={['24px', '25px']}
@@ -169,7 +164,7 @@ export default function MainCaroussel() {
 										{slide.subtitle}
 									</Heading>
 									<Text
-										color="vampire-black"
+										color={slide.mode == 'ligth' ? "vampire-black" : "cultured"}
 										mt="20px"
 									>{slide.description}</Text>
 									<Button
@@ -190,29 +185,46 @@ export default function MainCaroussel() {
 						</Box>
 					))}
 				</Flex>
-				<Box left="0" onClick={prevSlide} {...arrowStyles} transform="rotate(90deg)" marginLeft={[null, '7%']}>
-					<ArrowBlack />
-				</Box>
-				<Box right="0" onClick={nextSlide} {...arrowStyles} transform="rotate(-90deg)" marginRight={[null, '7%']}>
-					<ArrowBlack />
-				</Box>
-				<HStack justify="center" pos="absolute" bottom="8px" w="full">
+				<IconButton
+					left="0"
+					onClick={prevSlide}
+					transform="rotate(90deg)"
+					marginLeft={[null, '7%']}
+					aria-label="previous slide"
+					icon={<Icon as={slides[currentSlide].mode == 'ligth' ? ArrowBlack : ArrowWhite} />}
+					{...arrowStyles}
+				/>
+				<IconButton
+					right="0"
+					onClick={nextSlide}
+					transform="rotate(-90deg)"
+					marginRight={[null, '7%']}
+					aria-label="previous slide"
+					icon={<Icon as={slides[currentSlide].mode == 'ligth' ? ArrowBlack : ArrowWhite} />}
+					{...arrowStyles}
+				/>
+				{/* Beak slide selctors */}
+				<Flex justifyContent="center" w="full" position="absolute" bottom="30px">
 					{Array.from({ length: slidesCount }).map((_, slide) => (
-						<Box
+						<IconButton
 							key={`dots-${slide}`}
 							cursor="pointer"
-							boxSize={["7px", null, "15px"]}
 							m="0 2px"
-							bg={currentSlide === slide ? "blackAlpha.800" : "blackAlpha.500"}
-							rounded="50%"
+							bgColor="transparent"
+							{...(currentSlide === slide ? {
+								icon: <Beak height="24" width="auto" />
+							} : {
+								icon: <Beak height="14" width="auto" />,
+								sx: { filter: "grayscale(1)" }
+							})}
 							display="inline-block"
 							transition="background-color 0.6s ease"
-							_hover={{ bg: "blackAlpha.800" }}
+							aria-label={'go to slide ' + slide + 1}
 							onClick={() => setSlide(slide)}
-						></Box>
+						></IconButton>
 					))}
-				</HStack>
+				</Flex>
 			</Flex>
-		</Flex>
+		</Flex >
 	);
 };
