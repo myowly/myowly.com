@@ -3,7 +3,7 @@
 import Hero from "./hero"
 import MainDAO from "./mainDao"
 import MainCaroussel from "./mainCaroussel"
-// import MainProjet from "./mainProjet"
+import MainProjet from "./mainProjet"
 // import MainCommunauté from "./mainCommunauté"
 // import MainSimplifier from "./mainSimplifier"
 // import MainRejoignez from "./mainRejoignez"
@@ -17,8 +17,8 @@ export default function Home() {
       <Hero></Hero>
       <MainDAO></MainDAO>
       <MainCaroussel></MainCaroussel>
-      {/*
       <MainProjet></MainProjet>
+      {/*
       <MainCommunauté></MainCommunauté>
       <MainSimplifier></MainSimplifier>
       <MainRejoignez></MainRejoignez>
