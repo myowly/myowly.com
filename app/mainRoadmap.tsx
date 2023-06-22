@@ -1,32 +1,73 @@
-import { Grid, Text, chakra, Heading, Image, GridItem, Button, Box } from "@chakra-ui/react";
+import { Flex, Text, Heading, Image, GridItem, Button, Box } from "@chakra-ui/react";
+import {
+	Step,
+	StepDescription,
+	StepIndicator,
+	StepSeparator,
+	StepStatus,
+	StepTitle,
+	Stepper,
+	useSteps,
+} from '@chakra-ui/react'
+import { RoadmapEllipseGreen, RoadmapEllipseOrange } from "@/svg/roadmap-ellipse";
 
 export default function MainRoadmap() {
-    return (
-        <Grid
-            display='flex'
-            templateColumns='repeat(3, 1fr)'
-            justifyContent='center'
-            alignItems='center'
-            flexDirection="column"
-            w='100%'
-            bgGradient='linear(-10deg, #3BBFA1 -23%, #081B17 10%, #081B17 80%, #3BBFA1)'
-        >
-            <GridItem
-                boxSize='xl'
-                display='flex'
-                transform='rotate(90deg)'
-                justifyContent='start'
-                alignItems='start'
-                ml={0}
-                mr='16em'
-                mb={6}
-                mt={6}
-                borderTopLeftRadius={14}
-                borderTopRightRadius={14}
-            >
-                <Image as='img' src="/cristaux.png" alt="cristaux" />
-                <Box position='relative'>Blabla</Box>
-            </GridItem>
-        </Grid>
-    )
+	const steps = [
+		{
+			title: <>Mai 2023</>,
+			description: <>Création de la marque et de son identité</>
+		},
+		{
+			title: <>Juin 2023</>,
+			description: <>Lancement Landing Page</>
+		},
+		{
+			title: <>Septembre 2023</>,
+			description: <>Seed<br />1ères embauches<br />Lancement campagne NFT</>
+		},
+		{
+			title: <>Janvier 2024</>,
+			description: <>Vente NFT<br />DAO Événementielle</>
+		},
+	]
+
+	const { activeStep } = useSteps({
+		index: 1,
+		count: steps.length,
+	})
+
+	return (
+		<Flex bgColor="cultured">
+			<Stepper index={activeStep} orientation='vertical' height='400px' gap='0' size="md" colorScheme="blackAlpha">
+				{steps.map((step, index) => (
+					<Step key={index}>
+						<StepIndicator>
+							<StepStatus
+								complete={<RoadmapEllipseGreen />}
+								incomplete={<RoadmapEllipseOrange />}
+								active={<RoadmapEllipseGreen />}
+							/>
+						</StepIndicator>
+
+						<Box flexShrink='0'>
+							<StepTitle>
+								<Heading
+									as="h4"
+									color="keppel"
+									fontFamily="body"
+									fontSize="18px"
+									lineHeight="20px"
+								>{step.title}
+								</Heading>
+
+							</StepTitle>
+							<StepDescription>{step.description}</StepDescription>
+						</Box>
+
+						<StepSeparator />
+					</Step>
+				))}
+			</Stepper>
+		</Flex>
+	)
 }

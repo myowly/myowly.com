@@ -1,7 +1,7 @@
 'use client'
 
 import { CacheProvider } from '@chakra-ui/next-js'
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
 import { Inter, Staatliches } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,24 +22,47 @@ const colors = {
   'cultured': '#f6f6f6',
   'transparent': 'transparent'
 }
+
+const stepperTheme = {
+  baseStyle: {
+    indicator: {
+      height: '20px',
+      width: '20px',
+      margin: '7px',
+      _active: {
+        bgColor: "fulvous"
+      }
+    },
+    separator: {
+      bgColor: "vampire-black"
+    }
+  }
+}
+
 // Extend the theme to include custom colors, fonts, etc
-export const theme = extendTheme({
-  colors,
-  fonts: {
-    heading: `${staatliches.style.fontFamily}, sans-serif`,
-    body: `${inter.style.fontFamily}, sans-serif`,
-  },
-  styles: {
-    global: {
-      p: {
-        color: 'cultured',
-        fontWeight: 500,
-        fontSize: '18px',
-        lineHeight: '21px',
+export const theme = extendTheme(
+  {
+    colors,
+    fonts: {
+      heading: `${staatliches.style.fontFamily}, sans-serif`,
+      body: `${inter.style.fontFamily}, sans-serif`,
+    },
+    styles: {
+      global: {
+        p: {
+          color: 'cultured',
+          fontWeight: 500,
+          fontSize: '18px',
+          lineHeight: '21px',
+        },
       },
     },
+    components: {
+      Stepper: stepperTheme,
+    },
   },
-})
+  withDefaultColorScheme({ colorScheme: 'vampire-black' })
+)
 
 export function Providers({ children }) {
   return (
