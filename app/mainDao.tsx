@@ -45,7 +45,7 @@ export default function MainDAO() {
         </Box>
 
         <Box position={{ md: "absolute"}} top="20" zIndex="-1" w="100%">
-          <Flex flexDirection="row">
+          <Flex flexDirection="row" overflow="hidden">
             <Image as="img" w="228px" h="auto" src="/owls/MyOwly.png" alt="Chouette MyOwly" />
             <Image as="img" w="228px" h="auto" src="/owls/MaitreBois.png" alt="Chouette MaitreBois" />
             <Image as="img" w="228px" h="auto" src="/owls/Moyen-Duc.png" alt="Chouette Moyen-Duc" />
