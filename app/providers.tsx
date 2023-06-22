@@ -13,6 +13,7 @@ const colors = {
   'sherwood-green': '#093f32',
   'fulvous': '#e67a04',
   'indian-yellow': '#ee9e4e',
+  "spanish-orange": '#E46500',
   'saddle-brown': '#8e420c',
   'grey': '#bdbdbd',
   'vampire-black': '#0b0b0b',
