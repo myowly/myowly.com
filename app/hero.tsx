@@ -12,6 +12,7 @@ export default function Hero() {
             <Box maxWidth="500px">
               <Image mb={4} pt="4" pr="28" src="/Logo.png" alt="Logo MyOwly" />
             </Box>
+            {/*
             <Box pr="14">
               <Box hideFrom="md">
                 <Link
@@ -79,10 +80,12 @@ export default function Hero() {
                 <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/discord.svg" alt="Discord" />
                 <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/twitter.svg" alt="Twitter" />
                 <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/reddit.svg" alt="Reddit" />
-                <ButtonSocialNetwork href="https://github.com/myowly" src="/reseaux/github-white.svg"alt="Github" />
+                <ButtonSocialNetwork href="https://github.com/myowly" src="/reseaux/github-white.svg" alt="Github" />
               </Center>
             </Box>
+            */}
           </Box>
+          {/*
           <Box hideFrom="md">
             <Center
               backgroundColor="keppel"
@@ -96,9 +99,10 @@ export default function Hero() {
               <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/discord.svg" alt="Discord" />
               <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/twitter.svg" alt="Twitter" />
               <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/reddit.svg" alt="Reddit" />
-              <ButtonSocialNetwork href="https://github.com/myowly" src="/reseaux/github-white.svg"alt="Github" />
+              <ButtonSocialNetwork href="https://github.com/myowly" src="/reseaux/github-white.svg" alt="Github" />
             </Center>
           </Box>
+          */}
         </Flex>
 
         <Center pt="8" px="8" display="flex" flexDirection={{ base: "column", md: "row" }}>
