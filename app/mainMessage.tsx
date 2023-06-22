@@ -19,7 +19,7 @@ export default function MainMessage() {
                 p={4}
                 mt={16}
             >
-                <Heading as='p' color='black' fs='l' textTransform='uppercase' fontWeight='regular'>
+                <Heading as='p' color='black' textTransform='uppercase' fontWeight='regular'>
                     Utilisez&nbsp;<chakra.span fontStyle='italic' fontWeight='thin'>les</chakra.span><br />
                     <chakra.span fontStyle='italic' fontWeight='thin'>dernières<br />technologies&nbsp;</chakra.span>pour<br />
                     vous offrir&nbsp;<chakra.span fontWeight='bold'>une protection&nbsp;</chakra.span><chakra.span fontWeight='bold' fontStyle='italic' color='#E67A04'>adaptée<br />à vos besoins.</chakra.span>
@@ -39,7 +39,7 @@ export default function MainMessage() {
                 textAlign='center'
                 p={4}
             >
-                <Heading as='p' color='black' fs='l' textTransform='uppercase' fontWeight='regular'>
+                <Heading as='p' color='black' textTransform='uppercase' fontWeight='regular'>
                     <chakra.span fontWeight='bold'>Concentre-vous</chakra.span><br />
                     sur ce qui compte<br />
                     <chakra.span fontWeight='bold' color='#3BBFA1'>vraiment.</chakra.span>
@@ -60,7 +60,7 @@ export default function MainMessage() {
                 p={4}
                 mb={12}
             >
-                <Heading as='p' color='black' fs='l' textTransform='uppercase' fontWeight='regular'>
+                <Heading as='p' color='black' textTransform='uppercase' fontWeight='regular'>
                     Une protection<br />
                     <chakra.span fontStyle='italic' fontWeight='bold' color='#E67A04'>d&apos;entreprises</chakra.span>&nbsp;et<br />
                     de&nbsp;<chakra.span fontStyle='italic' fontWeight='bold' color='#E46500'>particuliers</chakra.span><br />
