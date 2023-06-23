@@ -25,13 +25,13 @@ export default function MainDAO() {
       <Box position={{ md: "relative"}}>
         <Box maxWidth="500px" p="8" my={{ md: "4"}} mx={{ base: "auto", md: "28"}} bgColor="white">
           <Heading as="h3" textTransform="uppercase" color="vampire-black" fontSize="4xl" mb="4">
-            <Box whiteSpace="nowrap">
+            <Box>
               <Text as="span" color="fulvous" fontWeight="extrabold">Une DAO </Text>
               appuyée
             </Box>
-            <Box whiteSpace="nowrap">
+            <Box>
               <Text as="span">sur </Text>
-              <Text as="span" color="fulvous" fontSize="5xl" fontWeight="extrabold" textDecoration="underline">un oracle</Text>
+              <Text as="span" color="fulvous" fontSize="4xl" fontWeight="extrabold" textDecoration="underline">un oracle</Text>
             </Box>        
           </Heading>
 
