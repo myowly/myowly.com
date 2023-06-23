@@ -10,6 +10,7 @@ import MainProjet from "./mainProjet"
 // import MainMessage from "./mainMessage"
 // import MainRoadmap from "./mainRoadmap"
 // import MainTeam from "./mainTeam"
+import Footer from './footer'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <MainRoadmap></MainRoadmap>
       <MainTeam></MainTeam>
       */}
+      <Footer></Footer>
     </main>
   )
 }
