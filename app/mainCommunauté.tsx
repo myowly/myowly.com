@@ -10,7 +10,9 @@ export default function MainCommunauté() {
             flexDirection="column"
             w='100%'
             bgGradient='linear(-10deg, #3BBFA1 -23%, #081B17 10%, #081B17 80%, #3BBFA1)'
+            height="2px"
         >
+            {/*
             <GridItem
                 boxSize='xl'
                 display='flex'
@@ -27,6 +29,7 @@ export default function MainCommunauté() {
                 <Image as='img' src="/cristaux.png" alt="cristaux" />
                 <Box position='relative'>Blabla</Box>
             </GridItem>
+            */}
         </Grid>
     )
 }

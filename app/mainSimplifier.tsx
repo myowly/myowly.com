@@ -1,105 +1,61 @@
-import { Grid, Text, chakra, Heading, Image, GridItem, Button, Box } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
+
+import ButtonPressed from "@/ui/button/button-pressed";
+import Card from "@/ui/card";
 
 export default function MainSimplifier() {
-    return (
-        <Grid
-            display='flex'
-            templateColumns='repeat(3, 1fr)'
-            justifyContent='center'
-            alignItems='center'
-            flexDirection="column"
-            w='100%'
-            bgColor='#F6F6F6'
-        >
-            <GridItem
-                colSpan={3}
-                justifyContent='start'
-                alignItems='start'
-                textAlign='left'
-            >
-                <Image as='img' src="/owls/MyOwly.png" width='320px' h='354px' alt="Chouette MyOwly" />
-                <Heading as='h2' textTransform='uppercase' color='black' mb={14}>
-                    <chakra.span
-                        textShadow='0 0 4px black'
-                        color='white'
-                    >
-                        En quoi
-                    </chakra.span>
-                    &nbsp;allons nous&nbsp;
-                    <chakra.span
-                        textShadow='0 0 4px black'
-                        color='white'
-                    >
-                        vous
-                    </chakra.span>
-                    &nbsp;simplifier la vie&nbsp;
-                    <chakra.span
-                        textShadow='0 0 4px black'
-                        color='white'
-                    >
-                        ?
-                    </chakra.span>
-                </Heading>
-            </GridItem>
-            <GridItem
-                colSpan={3}
-                justifyContent='start'
-                alignItems='start'
-                textAlign='start'
-                p={4}
-            >
-                <Heading as='h3' textTransform='uppercase' color='black' mb={4}>
-                    Des&nbsp;
-                    <chakra.span color='#EE9E4E'>provisions</chakra.span><br />
-                    et non<br />des&nbsp;
-                    <chakra.span color='#E67A04'>cotisations</chakra.span>
-                </Heading>
-                <Text color='black'>Changeons votre perception et reprenez confiance. Ici, l&apos;argent versé reste la propriété de l&apos;utilisateur. </Text>
-            </GridItem>
-            <GridItem
-                colSpan={3}
-                justifyContent='end'
-                alignItems='end'
-                textAlign='end'
-                p={4}
-            >
-                <Heading as='h3' textTransform='uppercase' color='black' mb={4}>
-                    Une&nbsp;
-                    <chakra.span color='#EE9E4E'>transparance<br />totale&nbsp;</chakra.span>
-                    envers<br />
-                    <chakra.span color='#E67A04'>l&apos;utilisateur</chakra.span>
-                </Heading>
-                <Text color='black'>Ici, vous comprenez exactement ce que vous payez et ce que vous pouvez attendre en retour. Vous pouvez à tout moment consulter les liquidités disponibles.</Text>
-            </GridItem>
-            <GridItem
-                colSpan={3}
-                justifyContent='start'
-                alignItems='start'
-                textAlign='start'
-                p={4}
-            >
-                <Heading as='h3' textTransform='uppercase' color='black' mb={4}>
-                    Jusqu&apos;à<br />
-                    <chakra.span color='#EE9E4E'>-90%&nbsp;</chakra.span>
-                    <chakra.span color='#E67A04'>de frais</chakra.span>
-                </Heading>
-                <Text color='black'>Un système automatisé réduisant drastiquement les coûts notamment par la suppression de nombreux frais d&apos;intermédiaires.</Text>
-            </GridItem>
-            <GridItem
-                colSpan={3}
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                textAlign="center"
-                flexDirection="column"
-            >
-                <Button mb={6} background="transparent" boxShadow='inset 1px 0.5px 2px black, inset -1px 2px 2px white' borderRadius={16} w="100%" justifyContent="center">
-                    <Text as="p" color="#3BBFA1" textTransform="uppercase" fontWeight="bold">Déroulement du projet</Text>
-                </Button>
-                <Button background="transparent" boxShadow='inset 1px 0.5px 2px black, inset -1px 2px 2px white' borderRadius={16} w="100%" justifyContent="center" mb={14}>
-                    <Text as="p" color="#3BBFA1" textTransform="uppercase" fontWeight="bold">Rejoindre la Newsletter</Text>
-                </Button>
-            </GridItem>
-        </Grid>
-    )
+  return (
+    <Box py="16">
+      <Flex>
+        <Box minWidth="114px" minHeight="228px" hideBelow="md" hideFrom="lg" backgroundImage="/owls/MyOwly.png" backgroundSize="228px 228px" backgroundRepeat="no-repeat" backgroundPosition="right" ></Box>
+        <Heading as="h2" textTransform="uppercase" fontSize="6xl" fontWeight="extrabold" color="vampire-black" lineHeight="1" pl={{ base: "8", md: 0, lg: "8" }} textAlign="end">
+          <Text as="span" color="white" textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)">En quoi </Text>
+          allons nous
+          <Text as="span" color="white" textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)"> vous </Text>
+          simplifier la vie
+          <Text as="span" color="white" textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)"> ?</Text>
+        
+        </Heading>
+        <Box minWidth="114px" minHeight="228px" hideBelow="lg" backgroundImage="/owls/MyOwly.png" backgroundSize="228px 228px" backgroundRepeat="no-repeat" ></Box>
+      </Flex>
+    
+      <Flex flexDirection={{ base:"column", lg: "row"}} p="4">
+        <Card align="left">
+          <Heading as="h3" textTransform="uppercase" fontSize="3xl" mb="2">
+            Des
+            <Text as="span" color="indian-yellow" fontWeight="extrabold"> provisions </Text><br/>
+            et non<br/>
+            <Text as="span" color="fulvous" fontWeight="extrabold">des cotisations</Text>
+          </Heading>
+          <Text color="vampire-black">Changeons votre perception et reprenez confiance. Ici, l&apos;argent versé reste la propriété de l&apos;utilisateur.</Text>
+        </Card>
+
+        <Card align="right">
+          <Heading as="h3" textTransform="uppercase" fontSize="3xl" mb="2">
+            Une
+            <Text as="span" color="indian-yellow" fontWeight="extrabold"> transparance<br/>totale </Text>
+            envers<br/>
+            <Text as="span" color="fulvous" fontWeight="extrabold"> l&apos;utilisateur</Text>
+          </Heading>
+          <Text color="vampire-black">Ici, vous comprenez exactement ce que vous payez et ce que vous pouvez attendre en retour. Vous pouvez à tout moment consulter les liquidités disponibles.</Text>
+        </Card>
+        
+        <Card align="left">
+          <Heading as="h3" textTransform="uppercase" fontSize="3xl" mb="2">
+            Jusqu&apos;à<br/>
+            <Text as="span" color="indian-yellow" fontWeight="extrabold"> -90% </Text>
+            <Text as="span" color="fulvous" fontWeight="extrabold"> de frais</Text>
+          </Heading>
+        <Text color="vampire-black">Un système automatisé réduisant drastiquement les coûts notamment par la suppression de nombreux frais d&apos;intermédiaires.</Text>
+        </Card>
+      </Flex>
+
+      <Center p="8">
+        <Box maxWidth="400px">
+        <ButtonPressed>Déroulement du projet</ButtonPressed>
+        <ButtonPressed>Rejoindre la Newsletter</ButtonPressed>
+        </Box>
+      </Center>      
+    </Box>
+  )
 }
