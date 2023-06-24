@@ -25,8 +25,8 @@ export default function Footer() {
           zIndex="1"
           position='absolute'
           bottom={{
-            md: '4.4%',
-            base: '8.1%'
+            md: '440px',
+            base: '14.5%'
           }}
         >
           <Center
