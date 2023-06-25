@@ -69,7 +69,7 @@ export default function MainCommunauté() {
           >
             <ButtonSocialNetwork socialNetwork="Discord" />
             <ButtonSocialNetwork socialNetwork="Twitter" />
-            <ButtonSocialNetwork socialNetwork="Reddit" />
+            {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
             <ButtonSocialNetwork socialNetwork="Github" />
           </Center>
 

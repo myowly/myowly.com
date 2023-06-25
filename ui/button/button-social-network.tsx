@@ -9,14 +9,14 @@ export default function ButtonSocialNetwork({
   height?: number,
   socialNetwork?: "Discord" | "Twitter" | "Reddit" | "Github"
 }) {
-  let href = "https://github.com/myowly"
+  let href = "https://discord.gg/5T8pCz6f"
   let src = "/reseaux/discord.svg"
 
   if (socialNetwork == "Twitter") {
-    href = "https://github.com/myowly"
+    href = "https://twitter.com/MyOwly_Oracle"
     src = "/reseaux/twitter.svg"
   } else if (socialNetwork == "Reddit") {
-    href = "https://github.com/myowly"
+    href = "#"
     src = "/reseaux/reddit.svg"
   } else if (socialNetwork == "Github") {
     href = "https://github.com/myowly"

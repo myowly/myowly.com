@@ -12,7 +12,6 @@ export default function Hero() {
             <Box maxWidth="500px">
               <Image mb={4} pt="4" pr="28" src="/Logo.png" alt="Logo MyOwly" />
             </Box>
-            {/*
             <Box pr="14">
               <Box hideFrom="md">
                 <Link
@@ -79,13 +78,11 @@ export default function Hero() {
               >
                 <ButtonSocialNetwork socialNetwork="Discord" />
                 <ButtonSocialNetwork socialNetwork="Twitter" />
-                <ButtonSocialNetwork socialNetwork="Reddit" />
+                {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
                 <ButtonSocialNetwork socialNetwork="Github" />
               </Center>
             </Box>
-            */}
           </Box>
-          {/*
           <Box hideFrom="md">
             <Center
               backgroundColor="keppel"
@@ -98,11 +95,10 @@ export default function Hero() {
             >
               <ButtonSocialNetwork socialNetwork="Discord" />
               <ButtonSocialNetwork socialNetwork="Twitter" />
-              <ButtonSocialNetwork socialNetwork="Reddit" />
+              {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
               <ButtonSocialNetwork socialNetwork="Github" />
             </Center>
           </Box>
-          */}
         </Flex>
 
         <Center pt="8" px="8" display="flex" flexDirection={{ base: "column", md: "row" }}>
@@ -114,7 +110,7 @@ export default function Hero() {
           </Heading>
           <Box display="flex">
             <Image as="img" src="/island.png" w="350" h="350" alt="Island 3D Model" transform={{ base: "translateY(-50px);", md: "translateY(30px)" }} />
-            <Image as="img" src="/Cristals.png" w="320" h="165" alt="Cristals" transform={{ base: "translate(-35px, -80px);", md: "translate(-400px, -20px) rotate(0.80turn)" }} />
+            <Image as="img" src="/Cristals.png" w="320" h="165" alt="Cristals" transform={{ base: "translate(-60px, -80px);", md: "translate(-400px, -20px) rotate(0.80turn)" }} />
           </Box>
         </Center>
 
