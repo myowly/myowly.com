@@ -57,8 +57,8 @@ export default function MainRejoignez() {
           <Heading as="h2" textTransform="uppercase" fontSize="3xl" my="2" lineHeight="1">Rejoingez-nous</Heading>
           
           <Text my="8" textTransform="uppercase" fontSize="xl" fontWeight="bold">
-            <Text as="span" color="indian-yellow">Restez connecté</Text>
-            avec notre
+            <Text as="span" color="indian-yellow">Restez connecté </Text><br/>
+            avec notre<br/>
             <Text as="span" color="fulvous"> newsletter</Text>
           </Text>
 
