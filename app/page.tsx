@@ -14,20 +14,24 @@ import MainRejoignez from "./mainRejoignez"
 
 export default function Home() {
   return (
-    <main>
-      <Hero></Hero>
-      <MainDAO></MainDAO>
-      <MainCaroussel></MainCaroussel>
-      <MainProjet></MainProjet>
-      <MainCommunauté></MainCommunauté>
-      <MainSimplifier></MainSimplifier>
-      <MainRejoignez></MainRejoignez>
-      {/*
-      <MainMessage></MainMessage>
-      <MainRoadmap></MainRoadmap>
-      <MainTeam></MainTeam>
-      <Footer></Footer>
-      */}
-    </main>
+    <>
+      <main>
+        <Hero></Hero>
+        <MainDAO></MainDAO>
+        <MainCaroussel></MainCaroussel>
+        <MainProjet></MainProjet>
+        <MainCommunauté></MainCommunauté>
+        <MainSimplifier></MainSimplifier>
+        <MainRejoignez></MainRejoignez>
+        {/*
+        <MainMessage></MainMessage>
+        <MainRoadmap></MainRoadmap>
+        <MainTeam></MainTeam>
+        <Footer></Footer>
+        */}
+      </main>
+
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/139772533.js"></script>
+    </>
   )
 }
