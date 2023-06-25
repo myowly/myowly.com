@@ -114,7 +114,7 @@ export default function Hero() {
           </Heading>
           <Box display="flex">
             <Image as="img" src="/island.png" w="350" h="350" alt="Island 3D Model" transform={{ base: "translateY(-50px);", md: "translateY(30px)" }} />
-            <Image as="img" src="/Cristals.png" w="320" h="165" alt="Cristals" transform={{ base: "translate(-60px, -80px);", md: "translate(-400px, -20px) rotate(0.80turn)" }} />
+            <Image as="img" src="/Cristals.png" w="320" h="165" alt="Cristals" transform={{ base: "translate(-35px, -80px);", md: "translate(-400px, -20px) rotate(0.80turn)" }} />
           </Box>
         </Center>
 
