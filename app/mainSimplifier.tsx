@@ -5,7 +5,7 @@ import Card from "@/ui/card";
 
 export default function MainSimplifier() {
   return (
-    <Box py="16">
+    <Box py="16" id="benefits">
       <Flex justifyContent="end">
         <Box minWidth="114px" minHeight="228px" hideBelow="md" hideFrom="lg" backgroundImage="/owls/MyOwly.png" backgroundSize="228px 228px" backgroundRepeat="no-repeat" backgroundPosition="right" ></Box>
         <Heading as="h2" textTransform="uppercase" fontSize="6xl" fontWeight="extrabold" color="vampire-black" lineHeight="1" pl={{ base: "8", md: 0, lg: "8" }} pr={{ base: "8", lg: "0" }} textAlign="end">
@@ -52,8 +52,8 @@ export default function MainSimplifier() {
 
       <Center p="8">
         <Box maxWidth="400px">
-        <ButtonPressed>Déroulement du projet</ButtonPressed>
-        <ButtonPressed>Rejoindre la Newsletter</ButtonPressed>
+        {/* <ButtonPressed>Déroulement du projet</ButtonPressed> */}
+        <ButtonPressed href="#joinUs">Rejoindre la Newsletter</ButtonPressed>
         </Box>
       </Center>      
     </Box>

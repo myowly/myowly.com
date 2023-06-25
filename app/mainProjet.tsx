@@ -5,7 +5,7 @@ import Card from "@/ui/card";
 
 export default function MainProjet() {
   return (
-    <Box py="16">
+    <Box py="16" id="project">
       <Flex>
         <Box minWidth="114px" minHeight="228px" hideBelow="lg" backgroundImage="/owls/MyOwly.png" backgroundSize="228px 228px" backgroundRepeat="no-repeat" backgroundPosition="right" ></Box>
         <Heading as="h2" textTransform="uppercase" fontSize="6xl" fontWeight="extrabold" color="vampire-black" lineHeight="1" pl={{ base: "8", lg: 0 }}>
@@ -50,8 +50,8 @@ export default function MainProjet() {
 
       <Center p="8">
         <Box maxWidth="400px">
-          <ButtonPressed>Quels sont mes avantages ?</ButtonPressed>
-          <ButtonPressed>Rester informé</ButtonPressed>
+          <ButtonPressed href="#benefits">Quels sont mes avantages ?</ButtonPressed>
+          <ButtonPressed href="#joinUs">Rester informé</ButtonPressed>
         </Box>
       </Center>      
     </Box>

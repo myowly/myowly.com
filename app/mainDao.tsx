@@ -4,7 +4,7 @@ import ButtonPressed from "@/ui/button/button-pressed";
 
 export default function MainDAO() {
   return (
-    <Box mb="8">
+    <Box mb="8" id="DAO">
       <Flex flexDirection={{ base:"column", md: "row"}} justifyContent="space-around"  alignItems="center" px="16" py="8">
         <Box maxWidth="500px" px={{ base:"0", md: "8"}}>
           <Image as="img" src="/Logotype-Noir.png" alt="MyOwly" />
@@ -40,8 +40,8 @@ export default function MainDAO() {
             Les prix et les conditions de réalisation des indemnisations sont réalisés automatiquement par un oracle.
           </Text>
 
-          <ButtonPressed>Comment ça marche ?</ButtonPressed>
-          <ButtonPressed>Rester en relation</ButtonPressed>
+          <ButtonPressed href="#carousel">Comment ça marche ?</ButtonPressed>
+          <ButtonPressed href="#joinUs">Rester en relation</ButtonPressed>
         </Box>
 
         <Box position={{ md: "absolute"}} top="20" zIndex="-1" w="100%">

@@ -15,7 +15,7 @@ export default function Hero() {
             <Box pr="14">
               <Box hideFrom="md">
                 <Link
-                  href="#"
+                  href="#joinUs"
                   textTransform="uppercase"
                   display="flex"
                   alignItems="center"
@@ -33,6 +33,7 @@ export default function Hero() {
                   Rejoindre la Newsletter
                 </Link>
               </Box>
+              {/*
               <Link
                 href="#"
                 textTransform="uppercase"
@@ -51,10 +52,11 @@ export default function Hero() {
                 />
                 Découvrir l&apos;équipe
               </Link>
+              */}
             </Box>
             <Box hideBelow="md" border="1px solid" borderColor="keppel" borderRadius="14" mr={{ base: "0", md: "4" }}>
               <Link
-                href="#"
+                href="#joinUs"
                 textTransform="uppercase"
                 alignItems="center"
                 cursor="pointer"
@@ -129,8 +131,8 @@ export default function Hero() {
             Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.
           </Text>
 
-          <ButtonBeak mb="4">En savoir plus</ButtonBeak>
-          <ButtonBeak mb="14">Se tenir informé</ButtonBeak>
+          <ButtonBeak mb="4" href="#DAO">En savoir plus</ButtonBeak>
+          <ButtonBeak mb="14" href="#joinUs">Se tenir informé</ButtonBeak>
         </Box>
       </Box>
     </Box>

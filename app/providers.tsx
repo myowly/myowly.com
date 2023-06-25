@@ -49,6 +49,9 @@ export const theme = extendTheme(
     },
     styles: {
       global: {
+        html: {
+          scrollBehavior: 'smooth'
+        },
         p: {
           color: 'cultured',
           fontWeight: 500,

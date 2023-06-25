@@ -6,7 +6,7 @@ import Beak from "@/svg/beak"
 
 export default function MainRejoignez() {
   return (
-    <Box w="100%" bgColor="cultured">
+    <Box w="100%" bgColor="cultured" id="joinUs">
       <Flex
         py="14"
         w="100%"

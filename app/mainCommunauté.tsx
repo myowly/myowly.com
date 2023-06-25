@@ -1,4 +1,4 @@
-import { Box, Button, Center, Flex, Heading, Icon, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Flex, Heading, Icon, Image, Link, Text } from "@chakra-ui/react";
 
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
@@ -6,7 +6,7 @@ import Beak from "@/svg/beak"
 
 export default function MainCommunauté() {
   return (
-    <Box w="100%" bgColor="cultured">
+    <Box w="100%" bgColor="cultured" id="community">
       <Flex
         py="14"
         w="100%"
@@ -78,25 +78,27 @@ export default function MainCommunauté() {
             avec notre
             <Text as="span" color="fulvous"> newsletter</Text>
           </Text>
-          <Button
-            my="2"
-            width="100%"
-            bgColor="cultured"
-            borderBottom="4px solid"
-            borderColor="keppel"
-            boxShadow="0 0 5px var(--chakra-colors-cultured)"
-            color="keppel"
-            textTransform="uppercase"
-            _hover={{
-              bgColor: "keppel",
-              borderBottom: "4px solid",
-              borderColor: "cultured",
-              boxShadow: "0 0 5px var(--chakra-colors-keppel)",
-              color: "cultured",
-            }}
-          >
-            Je m&apos;inscris
-          </Button>
+          <Link href="#joinUs">
+            <Button
+              my="2"
+              width="100%"
+              bgColor="cultured"
+              borderBottom="4px solid"
+              borderColor="keppel"
+              boxShadow="0 0 5px var(--chakra-colors-cultured)"
+              color="keppel"
+              textTransform="uppercase"
+              _hover={{
+                bgColor: "keppel",
+                borderBottom: "4px solid",
+                borderColor: "cultured",
+                boxShadow: "0 0 5px var(--chakra-colors-keppel)",
+                color: "cultured",
+              }}
+            >
+              Je m&apos;inscris
+            </Button>
+          </Link>
         </Box>
       </Flex>
     </Box>

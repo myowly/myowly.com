@@ -16,18 +16,18 @@ export default function Home() {
   return (
     <>
       <main>
-        <Hero></Hero>
-        <MainDAO></MainDAO>
-        <MainCaroussel></MainCaroussel>
-        <MainProjet></MainProjet>
-        <MainCommunauté></MainCommunauté>
-        <MainSimplifier></MainSimplifier>
-        <MainRejoignez></MainRejoignez>
+        <Hero/>
+        <MainDAO/>
+        <MainCaroussel/>
+        <MainProjet/>
+        <MainCommunauté/>
+        <MainSimplifier/>
+        <MainRejoignez/>
         {/*
-        <MainMessage></MainMessage>
-        <MainRoadmap></MainRoadmap>
-        <MainTeam></MainTeam>
-        <Footer></Footer>
+        <MainMessage/>
+        <MainRoadmap/>
+        <MainTeam/>
+        <Footer/>
         */}
       </main>
 

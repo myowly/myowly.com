@@ -158,6 +158,7 @@ export default function MainCaroussel() {
 			_dark={{ bg: "#3e3e3e" }}
 			alignItems="center"
 			justifyContent="center"
+			id="carousel"
 		>
 			<Flex
 				w="full"
