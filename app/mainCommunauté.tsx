@@ -42,6 +42,7 @@ export default function MainCommunauté() {
         <Box
           p="10"
           m="8"
+          ml={{ md: "32"}}
           maxWidth="450px"
           border="1px solid var(--chakra-colors-cultured)"
           borderRadius="32"
