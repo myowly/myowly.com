@@ -2,6 +2,8 @@
 
 import { Box, Button, Center, Flex, Heading, Image, Link, Text, VStack, Grid, GridItem, FormControl, Checkbox, Input, FormLabel, Divider } from "@chakra-ui/react"
 
+import ButtonSocialNetwork from "@/ui/button/button-social-network"
+
 export default function Footer() {
   return (
     <Box w="100%" bgColor="cultured">
@@ -39,10 +41,10 @@ export default function Footer() {
             display="flex"
             flexDirection="row"
           >
-            <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/discord.svg" w="30" h="30" alt="Logo Discord" m="3" /></Link>
-            <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/twitter.svg" w="30" h="30" alt="Logo Twitter" m="3" /></Link>
-            <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/reddit.svg" w="30" h="30" alt="Logo Reddit" m="3" /></Link>
-            <Link href="https://app.myowly.com"><Image as="img" src="/reseaux/github-white.svg" w="30" h="30" alt="Logo Github" m="3" /></Link>
+            <ButtonSocialNetwork socialNetwork="Discord" />
+            <ButtonSocialNetwork socialNetwork="Twitter" />
+            <ButtonSocialNetwork socialNetwork="Reddit" />
+            <ButtonSocialNetwork socialNetwork="Github" />
           </Center>
         </Box>
         <Flex pt="10" pl="12">

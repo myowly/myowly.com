@@ -77,10 +77,10 @@ export default function Hero() {
                 display="flex"
                 flexDirection="row"
               >
-                <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/discord.svg" alt="Discord" />
-                <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/twitter.svg" alt="Twitter" />
-                <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/reddit.svg" alt="Reddit" />
-                <ButtonSocialNetwork href="https://github.com/myowly" src="/reseaux/github-white.svg" alt="Github" />
+                <ButtonSocialNetwork socialNetwork="Discord" />
+                <ButtonSocialNetwork socialNetwork="Twitter" />
+                <ButtonSocialNetwork socialNetwork="Reddit" />
+                <ButtonSocialNetwork socialNetwork="Github" />
               </Center>
             </Box>
             */}
@@ -96,10 +96,10 @@ export default function Hero() {
               flexDirection="column"
               zIndex="1"
             >
-              <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/discord.svg" alt="Discord" />
-              <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/twitter.svg" alt="Twitter" />
-              <ButtonSocialNetwork href="https://app.myowly.com" src="/reseaux/reddit.svg" alt="Reddit" />
-              <ButtonSocialNetwork href="https://github.com/myowly" src="/reseaux/github-white.svg" alt="Github" />
+              <ButtonSocialNetwork socialNetwork="Discord" />
+              <ButtonSocialNetwork socialNetwork="Twitter" />
+              <ButtonSocialNetwork socialNetwork="Reddit" />
+              <ButtonSocialNetwork socialNetwork="Github" />
             </Center>
           </Box>
           */}

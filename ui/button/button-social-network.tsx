@@ -3,19 +3,29 @@ import { Image, Link } from "@chakra-ui/react"
 export default function ButtonSocialNetwork({
   width=30,
   height=30,
-  href,
-  src,
-  alt
+  socialNetwork="Discord"
 }: {
   width?: number,
   height?: number,
-  href?: string,
-  src?: string,
-  alt?: string
+  socialNetwork?: "Discord" | "Twitter" | "Reddit" | "Github"
 }) {
+  let href = "https://github.com/myowly"
+  let src = "/reseaux/discord.svg"
+
+  if (socialNetwork == "Twitter") {
+    href = "https://github.com/myowly"
+    src = "/reseaux/twitter.svg"
+  } else if (socialNetwork == "Reddit") {
+    href = "https://github.com/myowly"
+    src = "/reseaux/reddit.svg"
+  } else if (socialNetwork == "Github") {
+    href = "https://github.com/myowly"
+    src = "/reseaux/github-white.svg"
+  }
+
   return (
     <Link href={href}>
-      <Image as="img" src={src} w={width} h={height} alt={alt} m="3" />
+      <Image as="img" src={src} w={width} h={height} alt={socialNetwork} m="3" />
     </Link>
   );
 }
