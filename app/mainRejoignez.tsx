@@ -12,7 +12,7 @@ export default function MainRejoignez() {
         w="100%"
         bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)"
         borderRadius="xl"
-        justifyContent={{ base: "center", md: "start"}}
+        justifyContent={{ base: "center", md: "start" }}
         position="relative"
       >
         <Flex
@@ -42,7 +42,7 @@ export default function MainRejoignez() {
         <Box
           p="10"
           m="8"
-          ml={{ md: "32"}}
+          ml={{ md: "32" }}
           maxWidth="450px"
           border="1px solid var(--chakra-colors-cultured)"
           borderRadius="32"
@@ -55,10 +55,10 @@ export default function MainRejoignez() {
 
           <Text fontStyle="italic">Qu&apos;attendez-vous ? ...</Text>
           <Heading as="h2" textTransform="uppercase" fontSize="3xl" my="2" lineHeight="1">Rejoingez-nous</Heading>
-          
+
           <Text my="8" textTransform="uppercase" fontSize="xl" fontWeight="bold">
-            <Text as="span" color="indian-yellow">Restez connecté </Text><br/>
-            avec notre<br/>
+            <Text as="span" color="indian-yellow">Restez connecté </Text><br />
+            avec notre<br />
             <Text as="span" color="fulvous"> newsletter</Text>
           </Text>
 
@@ -69,7 +69,7 @@ export default function MainRejoignez() {
                 color="vampire-black"
                 bgColor="cultured"
                 placeholder='Votre nom'
-                _placeholder={{ color: "vampire-black" }} 
+                _placeholder={{ color: "vampire-black" }}
               />
             </FormControl>
             <FormControl isRequired mb={4}>
@@ -78,7 +78,7 @@ export default function MainRejoignez() {
                 color="vampire-black"
                 bgColor="cultured"
                 placeholder='Votre email'
-                _placeholder={{ color: "vampire-black" }} 
+                _placeholder={{ color: "vampire-black" }}
               />
             </FormControl>
             <FormControl isRequired mb="4" display="flex" flexDirection="row" justifyContent="space-between">
@@ -118,9 +118,10 @@ export default function MainRejoignez() {
               justifyContent="space-around"
               position="absolute"
               bottom="-9"
-              
+
             >
               <ButtonSocialNetwork socialNetwork="Discord" />
+              <ButtonSocialNetwork socialNetwork="LinkedIn" />
               <ButtonSocialNetwork socialNetwork="Twitter" />
               {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
               <ButtonSocialNetwork socialNetwork="Github" />

@@ -12,7 +12,7 @@ export default function MainCommunauté() {
         w="100%"
         bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)"
         borderRadius="xl"
-        justifyContent={{ base: "center", md: "start"}}
+        justifyContent={{ base: "center", md: "start" }}
         position="relative"
       >
         <Flex
@@ -42,7 +42,7 @@ export default function MainCommunauté() {
         <Box
           p="10"
           m="8"
-          ml={{ md: "32"}}
+          ml={{ md: "32" }}
           maxWidth="450px"
           border="1px solid var(--chakra-colors-cultured)"
           borderRadius="32"
@@ -54,7 +54,7 @@ export default function MainCommunauté() {
           <Icon as={Beak} width="auto" height="20" position="absolute" top="-10" right="8" />
 
           <Heading as="h2" textTransform="uppercase" fontSize="3xl" my="2" lineHeight="1">Rejoingez la communauté</Heading>
-          
+
           <Text mt="8" textTransform="uppercase" fontSize="xl" fontWeight="bold">
             sur nos
             <Text as="span" color="indian-yellow"> réseaux sociaux</Text>
@@ -69,6 +69,7 @@ export default function MainCommunauté() {
             justifyContent="space-around"
           >
             <ButtonSocialNetwork socialNetwork="Discord" />
+            <ButtonSocialNetwork socialNetwork="LinkedIn" />
             <ButtonSocialNetwork socialNetwork="Twitter" />
             {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
             <ButtonSocialNetwork socialNetwork="Github" />

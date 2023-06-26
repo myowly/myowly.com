@@ -79,6 +79,7 @@ export default function Hero() {
                 flexDirection="row"
               >
                 <ButtonSocialNetwork socialNetwork="Discord" />
+                <ButtonSocialNetwork socialNetwork="LinkedIn" />
                 <ButtonSocialNetwork socialNetwork="Twitter" />
                 {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
                 <ButtonSocialNetwork socialNetwork="Github" />
@@ -96,6 +97,7 @@ export default function Hero() {
               zIndex="1"
             >
               <ButtonSocialNetwork socialNetwork="Discord" />
+              <ButtonSocialNetwork socialNetwork="LinkedIn" />
               <ButtonSocialNetwork socialNetwork="Twitter" />
               {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
               <ButtonSocialNetwork socialNetwork="Github" />

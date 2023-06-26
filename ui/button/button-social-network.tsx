@@ -1,13 +1,13 @@
 import { Image, Link } from "@chakra-ui/react"
 
 export default function ButtonSocialNetwork({
-  width=30,
-  height=30,
-  socialNetwork="Discord"
+  width = 30,
+  height = 30,
+  socialNetwork = "Discord"
 }: {
   width?: number,
   height?: number,
-  socialNetwork?: "Discord" | "Twitter" | "Reddit" | "Github"
+  socialNetwork?: "Discord" | "Twitter" | "Reddit" | "Github" | "LinkedIn"
 }) {
   let href = "https://discord.gg/5T8pCz6f"
   let src = "/reseaux/discord.svg"
@@ -21,10 +21,13 @@ export default function ButtonSocialNetwork({
   } else if (socialNetwork == "Github") {
     href = "https://github.com/myowly"
     src = "/reseaux/github-white.svg"
+  } else if (socialNetwork == "LinkedIn") {
+    href = "https://www.linkedin.com/company/myowly/"
+    src = "/reseaux/linkedin.svg"
   }
 
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
       <Image as="img" src={src} w={width} h={height} alt={socialNetwork} m="3" />
     </Link>
   );
