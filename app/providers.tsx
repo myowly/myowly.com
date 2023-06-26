@@ -43,6 +43,8 @@ const stepperTheme = {
 export const theme = extendTheme(
   {
     colors,
+    initialColorMode: 'light',
+    useSystemColorMode: false,
     fonts: {
       heading: `${staatliches.style.fontFamily}, sans-serif`,
       body: `${inter.style.fontFamily}, sans-serif`,
