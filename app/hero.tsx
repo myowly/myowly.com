@@ -115,9 +115,24 @@ export default function Hero() {
             lineHeight={["0.8", null, null, "0.9"]}
           >
             Soyez
-            <Text as="span" color="vampire-black" textShadow="-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"> votre </Text><br />
+            <Text
+              as="span"
+              color="transparent"
+              sx={{
+                'text-stroke': "1px var(--chakra-colors-cultured)",
+                '-webkit-text-stroke': '1px var(--chakra-colors-cultured)'
+              }}
+            > votre </Text><br />
             meilleur<br />
-            <Text as="span" color="vampire-black" textShadow="-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"> assureur </Text>
+            <Text
+              as="span"
+              color="transparent"
+              sx={{
+                'text-stroke': "1px var(--chakra-colors-cultured)",
+                '-webkit-text-stroke': '1px var(--chakra-colors-cultured)'
+              }}
+            > assureur
+            </Text>
           </Heading>
           <Box display="flex" position="relative" overflow="visible">
             <Image as="img"
@@ -166,6 +181,6 @@ export default function Hero() {
           <ButtonBeak mb="14" href="#joinUs">Se tenir informé</ButtonBeak>
         </Box>
       </Box>
-    </Box>
+    </Box >
   )
 }
