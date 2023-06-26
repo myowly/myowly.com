@@ -6,7 +6,10 @@ import ButtonSocialNetwork from "@/ui/button/button-social-network"
 export default function Hero() {
   return (
     <Box w="100%" bgColor="cultured">
-      <Box w="100%" bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)" borderBottomRadius="xl">
+      <Box w="100%"
+        bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%, black-bean 71%, sherwood-green 100%)"
+        borderBottomRadius="xl"
+      >
         <Flex pt="10" pl="8">
           <Box flex="1" display="flex" flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="space-around">
             <Box maxWidth="500px">
