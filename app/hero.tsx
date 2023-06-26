@@ -5,10 +5,18 @@ import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
 export default function Hero() {
   return (
-    <Box w="100%" bgColor="cultured">
-      <Box w="100%"
-        bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%, black-bean 71%, sherwood-green 100%)"
-        borderBottomRadius="xl"
+    <Box w="100%"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%, black-bean 71%, sherwood-green 100%)"
+      borderBottomRadius="xl"
+    >
+      <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        maxWidth={[null, null, null, "1300px", "1500px"]}
       >
         <Flex pt="10" pl="8">
           <Box flex="1" display="flex" flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="space-around">
@@ -108,7 +116,12 @@ export default function Hero() {
           </Box>
         </Flex>
 
-        <Center pt="8" px="8" display="flex" flexDirection={["column", null, null, "row"]}>
+        <Box
+          pt="8"
+          px="8"
+          display="flex"
+          flexDirection={["column", null, null, "row"]}
+        >
           <Heading
             as="h1"
             textTransform="uppercase"
@@ -163,17 +176,33 @@ export default function Hero() {
               ]}
             />
           </Box>
-        </Center>
+        </Box>
 
         <Box display="flex" justifyContent="center" pt={{ base: "0", md: "14" }} pb="14">
           <Image as="img" w="16.45" h="auto" src="/arrow-white.svg" alt="Owl Arrow Down" />
         </Box>
 
-        <Box px="8" maxWidth="500px" m="auto">
-          <Heading as="h2" mb={4} textTransform="uppercase" lineHeight="1">
-            <Text as="span" color="cultured" fontSize="4xl"> La Blockchain </Text>
-            <Text as="span" color="indian-yellow" fontSize="4xl"> révolutionne </Text>
-            <Text as="span" color="fulvous" fontSize="5xl"> l&apos;assurance </Text>
+        <Box px="8" maxWidth={["460px", null, null, "567px"]} alignSelf={[null, null, null, "flex-start"]}>
+          <Heading as="h2" mb={4} textTransform="uppercase" fontFamily="body" fontWeight="800">
+            <Text
+              as="span"
+              color="cultured"
+              fontSize={['30px', '42px', null, "60px"]}
+              lineHeight={['40px', '51px', null, '1.1']}
+            > La Blockchain </Text>
+            <Text
+              as="span"
+              color="indian-yellow"
+              fontSize={["31px", "44px", null, "63px"]}
+              lineHeight={['40px', '51px', null, '1.1']}
+            > révolutionne </Text>
+            <Text
+              as="span"
+              color="fulvous"
+              fontSize={["36px", "50px", null, "72px"]}
+              lineHeight={['34px', '47px', null, '1.1']}
+              verticalAlign="text-top"
+            > l&apos;assurance </Text>
           </Heading>
 
           <Text mb={12}>
