@@ -179,7 +179,13 @@ export default function Hero() {
           </Box>
         </Box>
 
-        <Box display="flex" justifyContent="center" pt={{ base: "0", md: "14" }} pb="14">
+        <Box
+          display="flex"
+          justifyContent="center"
+          pt={{ base: "0", md: "14" }}
+          pb="14"
+          transform={[null, "translateY(-20px)", "translateY(-50px)", "translateY(-12px)"]}
+        >
           <Image as="img" w="16.45" h="auto" src="/arrow-white.svg" alt="Owl Arrow Down" />
         </Box>
 
