@@ -16,13 +16,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <Hero/>
-        <MainDAO/>
-        <MainCaroussel/>
-        <MainProjet/>
-        <MainCommunauté/>
-        <MainSimplifier/>
-        <MainRejoignez/>
+        <Hero />
         {/*
         <MainMessage/>
         <MainRoadmap/>

@@ -105,16 +105,45 @@ export default function Hero() {
           </Box>
         </Flex>
 
-        <Center pt="8" px="8" display="flex" flexDirection={{ base: "column", md: "row" }}>
-          <Heading as="h1" textTransform="uppercase" fontSize="6xl" fontWeight="extrabold" color="cultured" lineHeight="0.8" >
+        <Center pt="8" px="8" display="flex" flexDirection={["column", null, null, "row"]}>
+          <Heading
+            as="h1"
+            textTransform="uppercase"
+            fontSize={['60px', '90px', '110px', '130px', '150px']}
+            fontWeight="extrabold"
+            color="cultured"
+            lineHeight={["0.8", null, null, "0.9"]}
+          >
             Soyez
             <Text as="span" color="vampire-black" textShadow="-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"> votre </Text><br />
             meilleur<br />
             <Text as="span" color="vampire-black" textShadow="-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"> assureur </Text>
           </Heading>
-          <Box display="flex">
-            <Image as="img" src="/island.png" w="350" h="350" alt="Island 3D Model" transform={{ base: "translateY(-50px);", md: "translateY(30px)" }} />
-            <Image as="img" src="/Cristals.png" w="320" h="165" alt="Cristals" transform={{ base: "translate(-60px, -80px);", md: "translate(-400px, -20px) rotate(0.80turn)" }} />
+          <Box display="flex" position="relative" overflow="visible">
+            <Image as="img"
+              src="/island.png"
+              w={['350px', '500px', '580px', '470px', '651px']}
+              h={['350px', '500px', '580px', '470px', '651px']}
+              alt="Island 3D Model"
+              transform={["translateY(-50px);", "translateY(-90px)", null, "translateY(30px)"]}
+            />
+            <Image
+              as="img"
+              src="/Cristals.png"
+              w="320"
+              h={["165px", "210px", "260px", "180px"]}
+              alt="Cristals"
+              position="absolute"
+              left={[null, null, null, "-180px"]}
+              right={["-45px", null, null, "unset"]}
+              top={["-90px", "-130px", null, "-40px"]}
+              transform={[
+                null,
+                null,
+                null,
+                "rotate(0.80turn)"
+              ]}
+            />
           </Box>
         </Center>
 
