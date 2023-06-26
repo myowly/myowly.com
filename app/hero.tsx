@@ -129,6 +129,7 @@ export default function Hero() {
             fontWeight="extrabold"
             color="cultured"
             lineHeight={["0.8", null, null, "0.9"]}
+            maxWidth="600px"
           >
             Soyez
             <Text
