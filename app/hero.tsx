@@ -1,4 +1,4 @@
-import { Box, Button, Center, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
+import { Box, Center, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
 
 import ButtonBeak from "@/ui/button/button-beak"
 import ButtonSocialNetwork from "@/ui/button/button-social-network"

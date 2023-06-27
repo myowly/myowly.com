@@ -1,4 +1,4 @@
-import { Flex, Text, Box, Image, Container } from "@chakra-ui/react";
+import { Text, Box, Image, Container } from "@chakra-ui/react";
 
 export default function MainMessage() {
   return (
