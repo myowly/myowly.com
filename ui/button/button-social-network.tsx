@@ -3,10 +3,12 @@ import { Image, Link } from "@chakra-ui/react"
 export default function ButtonSocialNetwork({
   width = 30,
   height = 30,
+  margin = "12px",
   socialNetwork = "Discord"
 }: {
   width?: number,
   height?: number,
+  margin?: string,
   socialNetwork?: "Discord" | "Twitter" | "Reddit" | "Github" | "LinkedIn"
 }) {
   let href = "https://discord.gg/5T8pCz6f"
@@ -28,7 +30,7 @@ export default function ButtonSocialNetwork({
 
   return (
     <Link href={href} target="_blank">
-      <Image as="img" src={src} w={width} h={height} alt={socialNetwork} m="3" />
+      <Image as="img" src={src} w={width} h={height} alt={socialNetwork} m={margin} />
     </Link>
   );
 }

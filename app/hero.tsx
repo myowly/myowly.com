@@ -12,14 +12,26 @@ export default function Hero() {
       borderBottomRadius="xl"
     >
       <Container
+        p={0}
         centerContent
         maxWidth={[null, null, null, "1300px", "1400px"]}
         alignItems="stretch"
       >
         <Flex pt="10" pl="8">
-          <Flex flex="1" flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="space-between">
+          <Flex
+            flex="1"
+            flexDirection={["column", null, "row"]}
+            alignItems="center"
+            justifyContent={["flex-start", null, "space-between"]}
+          >
             <Box maxWidth="500px">
-              <Image mb={4} pt="4" pr="28" src="/Logo.png" alt="Logo MyOwly" />
+              <Image
+                mb={4}
+                pt={[null, "16px"]}
+                pr={["50px", "112px"]}
+                src="/Logo.png"
+                alt="Logo MyOwly"
+              />
             </Box>
             <Box pr="14">
               <Box hideFrom="md">
@@ -99,17 +111,18 @@ export default function Hero() {
             <Center
               backgroundColor="keppel"
               m={0}
+              p="5px"
               display="flex"
               borderStartRadius={14}
               boxShadow="0 0 10px var(--chakra-colors-keppel)"
               flexDirection="column"
               zIndex="1"
             >
-              <ButtonSocialNetwork socialNetwork="Discord" />
-              <ButtonSocialNetwork socialNetwork="LinkedIn" />
-              <ButtonSocialNetwork socialNetwork="Twitter" />
-              {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
-              <ButtonSocialNetwork socialNetwork="Github" />
+              <ButtonSocialNetwork socialNetwork="Discord" margin="5px" />
+              <ButtonSocialNetwork socialNetwork="LinkedIn" margin="5px" />
+              <ButtonSocialNetwork socialNetwork="Twitter" margin="5px" />
+              {/* <ButtonSocialNetwork socialNetwork="Reddit" margin="5px" /> */}
+              <ButtonSocialNetwork socialNetwork="Github" margin="5px" />
             </Center>
           </Box>
         </Flex>
