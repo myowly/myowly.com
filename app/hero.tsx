@@ -1,25 +1,23 @@
-import { Box, Center, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
+import { Box, Center, Container, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
 
 import ButtonBeak from "@/ui/button/button-beak"
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
 export default function Hero() {
   return (
-    <Box w="100%"
-      display="flex"
+    <Flex
       flexDirection="column"
-      alignItems="center"
+      alignItems="stretch"
       bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%, black-bean 71%, sherwood-green 100%)"
       borderBottomRadius="xl"
     >
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        maxWidth={[null, null, null, "1300px", "1500px"]}
+      <Container
+        centerContent
+        maxWidth={[null, null, null, "1300px", "1400px"]}
+        alignItems="stretch"
       >
         <Flex pt="10" pl="8">
-          <Box flex="1" display="flex" flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="space-around">
+          <Flex flex="1" flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="space-between">
             <Box maxWidth="500px">
               <Image mb={4} pt="4" pr="28" src="/Logo.png" alt="Logo MyOwly" />
             </Box>
@@ -96,7 +94,7 @@ export default function Hero() {
                 <ButtonSocialNetwork socialNetwork="Github" />
               </Center>
             </Box>
-          </Box>
+          </Flex>
           <Box hideFrom="md">
             <Center
               backgroundColor="keppel"
@@ -116,11 +114,12 @@ export default function Hero() {
           </Box>
         </Flex>
 
-        <Box
+        <Flex
+          flexDirection={["column", null, null, "row"]}
+          alignItems="center"
+          justifyContent="space-between"
           pt="8"
           px="8"
-          display="flex"
-          flexDirection={["column", null, null, "row"]}
         >
           <Heading
             as="h1"
@@ -177,7 +176,7 @@ export default function Hero() {
               ]}
             />
           </Box>
-        </Box>
+        </Flex>
 
         <Box
           display="flex"
@@ -219,7 +218,7 @@ export default function Hero() {
           <ButtonBeak mb="4" href="#DAO">En savoir plus</ButtonBeak>
           <ButtonBeak mb="14" href="#joinUs">Se tenir informé</ButtonBeak>
         </Box>
-      </Box>
-    </Box >
+      </Container>
+    </Flex>
   )
 }
