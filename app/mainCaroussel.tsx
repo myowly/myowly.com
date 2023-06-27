@@ -1,9 +1,28 @@
 import React, { useState } from "react";
-import { Box, Button, Flex, Heading, IconButton, Icon, Text, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter } from "@chakra-ui/react";
+import {
+	Box,
+	Button,
+	Flex,
+	Heading,
+	IconButton,
+	Icon,
+	Image,
+	Text,
+	useDisclosure,
+	Modal,
+	ModalOverlay,
+	ModalContent,
+	ModalHeader,
+	ModalCloseButton,
+	ModalBody,
+}
+	from
+	"@chakra-ui/react";
 import ArrowBlack from "@/svg/arrow-black";
 import ArrowWhite from "@/svg/arrow-white";
 import Beak from '@/svg/beak';
 import { slides } from './slides';
+import ReactDOM from "react-dom";
 
 export default function MainCaroussel() {
 	const arrowStyles = {
@@ -43,6 +62,10 @@ export default function MainCaroussel() {
 			`-${currentSlide * 33}%`
 		],
 	};
+
+	ReactDOM.preload(slides[1].img, { as: "image" as "script" })
+	ReactDOM.preload(slides[2].img, { as: "image" as "script" })
+	ReactDOM.preload(slides[3].img, { as: "image" as "script" })
 
 	const Slide = ({ slide, sid }) => {
 		const { isOpen, onOpen, onClose } = useDisclosure();
@@ -152,75 +175,78 @@ export default function MainCaroussel() {
 	};
 
 	return (
-		<Flex
-			w="full"
-			bg="#edf3f8"
-			_dark={{ bg: "#3e3e3e" }}
-			alignItems="center"
-			justifyContent="center"
-			id="carousel"
-		>
+		<>
 			<Flex
 				w="full"
-				h="100vh"
-				pos="relative"
-				overflow="hidden"
-				bgImage={slides[currentSlide].img}
-				transition="all .8s"
-				bgSize="cover"
-				bgPosition="center"
+				bg="#edf3f8"
+				_dark={{ bg: "#3e3e3e" }}
+				alignItems="center"
+				justifyContent="center"
+				id="carousel"
 			>
 				<Flex
-					w={['100%', null, '50%', '45%', '33%']}
-					transition="all .5s"
-					{...carouselSlice}
+					w="full"
+					h="100vh"
+					pos="relative"
+					overflow="hidden"
+					bgImage={slides[currentSlide].img}
+					transition="all .8s"
+					bgSize="cover"
+					bgPosition="center"
 				>
-					{slides.map((slide, sid) => (
-						<Slide slide={slide} sid={sid} key={`slide-${sid}`} />
-					))}
+
+					<Flex
+						w={['100%', null, '50%', '45%', '33%']}
+						transition="all .5s"
+						{...carouselSlice}
+					>
+						{slides.map((slide, sid) => (
+							<Slide slide={slide} sid={sid} key={`slide-${sid}`} />
+						))}
+					</Flex>
+					<IconButton
+						display={[null, null, 'none']}
+						left="0"
+						onClick={prevSlide}
+						transform="rotate(90deg)"
+						marginLeft={[null, '7%']}
+						aria-label="previous slide"
+						icon={<Icon as={slides[currentSlide].mode == 'ligth' ? ArrowBlack : ArrowWhite} />}
+						{...arrowStyles}
+					/>
+					<IconButton
+						display={[null, null, 'none']}
+						right="0"
+						onClick={nextSlide}
+						transform="rotate(-90deg)"
+						marginRight={[null, '7%']}
+						aria-label="previous slide"
+						icon={<Icon as={slides[currentSlide].mode == 'ligth' ? ArrowBlack : ArrowWhite} />}
+						{...arrowStyles}
+					/>
+					{/* Beak slide selctors */}
+					<Flex justifyContent="center" w="full" position="absolute" bottom="30px">
+						{Array.from({ length: slidesCount }).map((_, slide) => (
+							<IconButton
+								key={`dots-${slide}`}
+								cursor="pointer"
+								m="0 2px"
+								bgColor="transparent"
+								{...(currentSlide === slide ? {
+									icon: <Beak height="24" width="auto" />
+								} : {
+									icon: <Beak height="14" width="auto" />,
+									sx: { filter: "grayscale(1)" }
+								})}
+								display="inline-block"
+								transition="background-color 0.6s ease"
+								aria-label={'go to slide ' + slide + 1}
+								onClick={() => setSlide(slide)}
+							></IconButton>
+						))}
+					</Flex>
 				</Flex>
-				<IconButton
-					display={[null, null, 'none']}
-					left="0"
-					onClick={prevSlide}
-					transform="rotate(90deg)"
-					marginLeft={[null, '7%']}
-					aria-label="previous slide"
-					icon={<Icon as={slides[currentSlide].mode == 'ligth' ? ArrowBlack : ArrowWhite} />}
-					{...arrowStyles}
-				/>
-				<IconButton
-					display={[null, null, 'none']}
-					right="0"
-					onClick={nextSlide}
-					transform="rotate(-90deg)"
-					marginRight={[null, '7%']}
-					aria-label="previous slide"
-					icon={<Icon as={slides[currentSlide].mode == 'ligth' ? ArrowBlack : ArrowWhite} />}
-					{...arrowStyles}
-				/>
-				{/* Beak slide selctors */}
-				<Flex justifyContent="center" w="full" position="absolute" bottom="30px">
-					{Array.from({ length: slidesCount }).map((_, slide) => (
-						<IconButton
-							key={`dots-${slide}`}
-							cursor="pointer"
-							m="0 2px"
-							bgColor="transparent"
-							{...(currentSlide === slide ? {
-								icon: <Beak height="24" width="auto" />
-							} : {
-								icon: <Beak height="14" width="auto" />,
-								sx: { filter: "grayscale(1)" }
-							})}
-							display="inline-block"
-							transition="background-color 0.6s ease"
-							aria-label={'go to slide ' + slide + 1}
-							onClick={() => setSlide(slide)}
-						></IconButton>
-					))}
-				</Flex>
-			</Flex>
-		</Flex >
+			</Flex >
+		</>
 	);
 };
