@@ -1,73 +1,52 @@
-import { Grid, Text, chakra, Heading, Image, GridItem, Button } from "@chakra-ui/react";
+import { Flex, Text, Box, Image, Container } from "@chakra-ui/react";
 
 export default function MainMessage() {
-    return (
-        <Grid
-            display='flex'
-            templateColumns='repeat(3, 1fr)'
-            justifyContent='center'
-            alignItems='center'
-            flexDirection="column"
-            w='100%'
-            bgColor='#F6F6F6'
+  return (
+    <Container maxWidth={[null, null, null, "1300px", "1500px"]} centerContent>
+      <Box alignSelf="end" mt={["100px"]} mx={["20px"]} mb="50px" >
+        <Text
+          color="vampire-black"
+          textTransform="uppercase"
+          fontWeight="normal"
+          fontSize="30px"
+          lineHeight="36px"
         >
-            <GridItem
-                colSpan={3}
-                justifyContent='end'
-                alignItems='end'
-                textAlign='end'
-                p={4}
-                mt={16}
-            >
-                <Heading as='p' color='black' textTransform='uppercase' fontWeight='regular'>
-                    Utilisez&nbsp;<chakra.span fontStyle='italic' fontWeight='thin'>les</chakra.span><br />
-                    <chakra.span fontStyle='italic' fontWeight='thin'>dernières<br />technologies&nbsp;</chakra.span>pour<br />
-                    vous offrir&nbsp;<chakra.span fontWeight='bold'>une protection&nbsp;</chakra.span><chakra.span fontWeight='bold' fontStyle='italic' color='#E67A04'>adaptée<br />à vos besoins.</chakra.span>
-                </Heading>
-            </GridItem>
-            <GridItem
-                transform='rotate(-90deg)'
-                mt={0}
-                mb={0}
-            >
-                <Image src="/Cristals.png" alt="encore des petits cristaux" />
-            </GridItem>
-            <GridItem
-                colSpan={3}
-                justifyContent='center'
-                alignItems='center'
-                textAlign='center'
-                p={4}
-            >
-                <Heading as='p' color='black' textTransform='uppercase' fontWeight='regular'>
-                    <chakra.span fontWeight='bold'>Concentre-vous</chakra.span><br />
-                    sur ce qui compte<br />
-                    <chakra.span fontWeight='bold' color='#3BBFA1'>vraiment.</chakra.span>
-                </Heading>
-            </GridItem>
-            <GridItem
-                transform='rotate(90deg)'
-                mt={0}
-                mb={0}
-            >
-                <Image src="/Cristals.png" alt="encore des petits cristaux" />
-            </GridItem>
-            <GridItem
-                colSpan={3}
-                justifyContent='start'
-                alignItems='start'
-                textAlign='start'
-                p={4}
-                mb={12}
-            >
-                <Heading as='p' color='black' textTransform='uppercase' fontWeight='regular'>
-                    Une protection<br />
-                    <chakra.span fontStyle='italic' fontWeight='bold' color='#E67A04'>d&apos;entreprises</chakra.span>&nbsp;et<br />
-                    de&nbsp;<chakra.span fontStyle='italic' fontWeight='bold' color='#E46500'>particuliers</chakra.span><br />
-                    <chakra.span fontWeight='bold'>sur mesure</chakra.span><br />
-                    et&nbsp;<chakra.span fontWeight='bold'>sécurisée.</chakra.span>
-                </Heading>
-            </GridItem>
-        </Grid>
-    )
+          Utilisez <Box as="span" fontStyle='italic' fontWeight='hairline'>les dernières technologies </Box>pour
+          vous offrir <Box as="span" fontWeight='bold'>une protection </Box>
+          <Box as="span" fontWeight='extrabold' fontStyle='italic' color="fulvous">adaptée à vos besoins</Box>.
+        </Text>
+      </Box>
+      <Box display={[null, null, "none"]} mx="auto" >
+        <Image src="/Cristals_2b.png" alt="" />
+      </Box>
+      <Box alignSelf='center' my="50px" mx={["20px"]} >
+        <Text
+          color="vampire-black"
+          textTransform="uppercase"
+          fontWeight="normal"
+          fontSize="30px"
+          lineHeight="36px"
+        >
+          <Box as="span" fontWeight='bold'>Concentrez-vous</Box> sur ce qui compte <Box
+            as="span" fontWeight='extrabold' color="keppel" textDecoration={[null, null, null, "underline"]}>vraiment</Box>.
+        </Text>
+      </Box>
+      <Box display={[null, null, "none"]} mx="auto" >
+        <Image src="/Cristals_2b.png" alt="" />
+      </Box>
+      <Box alignSelf='start' my="50px" mx={["20px"]} mb={["100px"]} >
+        <Text
+          color="vampire-black"
+          textTransform="uppercase"
+          fontWeight="normal"
+          fontSize="30px"
+          lineHeight="30px"
+        >
+          Une protection <Box as="span" fontStyle='italic' fontWeight='extrabold' color="fulvous">d&apos;entreprises</Box> et
+          de <Box as="span" fontStyle='italic' fontWeight='extrabold' color="spanish-orange">particuliers</Box>
+          <Box as="span" fontWeight='bold'> sur mesure</Box> et <Box as="span" fontWeight='bold'>sécurisée.</Box>
+        </Text>
+      </Box>
+    </Container>
+  )
 }

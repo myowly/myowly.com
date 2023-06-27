@@ -7,7 +7,7 @@ import MainProjet from "./mainProjet"
 import MainCommunauté from "./mainCommunauté"
 import MainSimplifier from "./mainSimplifier"
 import MainRejoignez from "./mainRejoignez"
-// import MainMessage from "./mainMessage"
+import MainMessage from "./mainMessage"
 // import MainRoadmap from "./mainRoadmap"
 // import MainTeam from "./mainTeam"
 // import Footer from './footer'
@@ -23,8 +23,8 @@ export default function Home() {
         <MainCommunauté />
         <MainSimplifier />
         <MainRejoignez />
+        <MainMessage />
         {/*
-        <MainMessage/>
         <MainRoadmap/>
         <MainTeam/>
         <Footer/>
