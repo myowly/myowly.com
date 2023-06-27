@@ -7,6 +7,7 @@ import MainProjet from "./mainProjet"
 import MainCommunauté from "./mainCommunauté"
 import MainSimplifier from "./mainSimplifier"
 import MainRejoignez from "./mainRejoignez"
+import Script from "next/script"
 import MainMessage from "./mainMessage"
 // import MainRoadmap from "./mainRoadmap"
 // import MainTeam from "./mainTeam"
@@ -31,7 +32,7 @@ export default function Home() {
         */}
       </main>
 
-      <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/139772533.js"></script>
+      <Script src="//js-eu1.hs-scripts.com/139772533.js" />
     </>
   )
 }
