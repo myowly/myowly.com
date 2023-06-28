@@ -97,11 +97,17 @@ export default function MainDAO() {
 
           <Box position={{ md: "absolute" }} top="145px" zIndex="-1" w="100vw">
             <Flex flexDirection="row" overflow="hidden">
-              <Image as="img" w="228px" h="auto" src="/owls/MyOwly.png" alt="Chouette MyOwly" />
-              <Image as="img" w="228px" h="auto" src="/owls/MaitreBois.png" alt="Chouette MaitreBois" />
-              <Image as="img" w="228px" h="auto" src="/owls/Moyen-Duc.png" alt="Chouette Moyen-Duc" />
-              <Image as="img" w="228px" h="auto" src="/owls/DesMarais.png" alt="Chouette DesMarais" />
-              <Box flex="auto" bgImage="/owls/DesMarais.png" backgroundRepeat="repeat-x" backgroundSize="auto 100%" />
+              <Image as="img" w="228px" h="auto" src="/owls/Athena.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/DEurope.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/Effraie.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/DesMarais.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/GrandDEurope.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/Moyen-Duc.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/MaitreBois.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/MyOwly.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/Redoutable.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/Strié.png" alt="" />
+              <Image as="img" w="228px" h="auto" src="/owls/Tengmalm.png" alt="" />
             </Flex>
           </Box>
         </Box>
