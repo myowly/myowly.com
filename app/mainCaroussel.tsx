@@ -70,18 +70,19 @@ export default function MainCaroussel() {
 	const Slide = ({ slide, sid }) => {
 		const { isOpen, onOpen, onClose } = useDisclosure();
 		return (
-			<Box
+			<Flex
 				boxSize="full"
+				alignItems="stretch"
 				flex="none"
 				{...(sid === 0 ? { ml: [null, null, '40%'] } : {})}
 				mr={[null, null, '50px', '70px']}
+				py="80px"
 			>
 				<Flex
 					direction="column"
 					justifyContent="center"
 					alignItems="center"
 					w="full"
-					h="100vh"
 					pt={['20px', '100px', 0]}
 					px={['22px', '15.5%', 0]}
 					pb={['20px', '100px', 0]}
@@ -169,7 +170,7 @@ export default function MainCaroussel() {
 						</ModalBody>
 					</ModalContent>
 				</Modal>
-			</Box>
+			</Flex>
 		);
 
 	};
@@ -186,7 +187,7 @@ export default function MainCaroussel() {
 			>
 				<Flex
 					w="full"
-					h="100vh"
+					minHeight="100vh"
 					pos="relative"
 					overflow="hidden"
 					bgImage={slides[currentSlide].img}
