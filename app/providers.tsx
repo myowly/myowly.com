@@ -52,7 +52,13 @@ export const theme = extendTheme(
     styles: {
       global: {
         html: {
-          scrollBehavior: 'smooth'
+          scrollBehavior: 'smooth',
+          maxWidth: '100vw',
+          overflowX: 'hidden'
+        },
+        body: {
+          maxWidth: '100vw',
+          overflowX: 'hidden'
         },
         p: {
           color: 'cultured',
