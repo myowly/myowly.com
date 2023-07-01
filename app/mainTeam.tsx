@@ -22,9 +22,9 @@ export default function MainTeam() {
       
       <Flex
         flexDirection={["column", null, "row"]}
-        backgroundImage ={[null, null, "/Cristals_2b.png"]}
-        backgroundRepeat="repeat-x"
-        backgroundSize="auto"
+        backgroundImage ={["/Cristals_2.png", null, "/Cristals_2b.png"]}
+        backgroundRepeat={["repeat-y", null, "repeat-x"]}
+        backgroundSize={["70px", null, "auto"]}
         backgroundPosition="center"
       >
         <Flex flexDirection="column" justifyContent="center" order={["2", null, "1"]}>
