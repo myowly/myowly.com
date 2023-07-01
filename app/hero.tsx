@@ -54,9 +54,8 @@ export default function Hero() {
                   Rejoindre la Newsletter
                 </Link>
               </Box>
-              {/*
               <Link
-                href="#"
+                href="#team"
                 textTransform="uppercase"
                 display="flex"
                 alignItems="center"
@@ -73,7 +72,6 @@ export default function Hero() {
                 />
                 Découvrir l&apos;équipe
               </Link>
-              */}
             </Box>
             <Box hideBelow="md" border="1px solid" borderColor="keppel" borderRadius="14" mr={{ base: "0", md: "4" }}>
               <Link
