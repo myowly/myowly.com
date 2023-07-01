@@ -10,7 +10,7 @@ import MainRejoignez from "./mainRejoignez"
 import Script from "next/script"
 import MainMessage from "./mainMessage"
 // import MainRoadmap from "./mainRoadmap"
-// import MainTeam from "./mainTeam"
+import MainTeam from "./mainTeam"
 // import Footer from './footer'
 
 export default function Home() {
@@ -26,9 +26,11 @@ export default function Home() {
         <MainRejoignez />
         <MainMessage />
         {/*
-        <MainRoadmap/>
-        <MainTeam/>
-        <Footer/>
+        <MainRoadmap />
+        */}
+        <MainTeam />
+        {/*
+        <Footer />
         */}
       </main>
 

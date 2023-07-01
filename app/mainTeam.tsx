@@ -1,60 +1,94 @@
-import { Grid, Text, chakra, Heading, Image, GridItem, Button, Box } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+
+import CardTeam from "@/ui/card-team";
 
 export default function MainTeam() {
-    return (
-        <Grid
-            display='flex'
-            templateColumns='repeat(4, 1fr)'
-            justifyContent='center'
-            alignItems='center'
-            flexDirection="column"
-            w='100%'
-            bgColor='#F6F6F6'
-            pt={6}
+  return (
+    <Box
+      py="16"
+      px="8"
+      id="team"
+    >
+      <Flex justifyContent={["center", null, "start"]} px="8" mb="4">
+        <Heading as="h2"
+          textTransform="uppercase"
+          fontSize="6xl"
+          fontWeight="extrabold"
+          color="vampire-black"
         >
-            <GridItem
-                colSpan={4}
-            >
-                <Heading as='h2' color='black' textTransform='uppercase'>L&apos;équipe MyOwly</Heading>
-            </GridItem>
-            <GridItem colSpan={2}>
-                <Box
-                    bgGradient='linear(to-b, white 0%, white 20%, #3bbfa1 100%)'
-                    borderRadius='50%'
-                    width='164px'
-                    height='164px'
-                    justifyContent='center'
-                    alignItems='center'
-                    textAlign='center'
-                    position='relative'
-                    ml='auto'
-                    mr='auto'
-                    zIndex='0'
-                >
-                    <Image backgroundColor='white' ml='auto' mr='auto' borderRadius='50%' as='img' src="/team/jean-sebastien.png" alt="Photo de Jean-Sébastien" width='160px' height='160px' />
-                </Box>
-                <Box
-                    bgGradient='linear(to-b, #3bbfa1 0%, #3bbfa1 20%, white 100%)'
-                    borderRadius='2rem'
-                    width='202px'
-                    height='222px'
-                    justifyContent='center'
-                    alignItems='center'
-                    textAlign='center'
-                    bottom={20}
-                >
-                    <Box
-                        borderRadius='2rem'
-                        width='198px'
-                        height='218px'
-                        bgColor='white'
-                        ml='auto'
-                        mr='auto'
-                    >
-
-                    </Box>
-                </Box>
-            </GridItem>
-        </Grid>
-    )
+          L'équipe MyOwly
+        </Heading>
+      </Flex>
+      
+      <Flex
+        flexDirection={["column", null, "row"]}
+        backgroundImage ={[null, null, "/Cristals_2b.png"]}
+        backgroundRepeat="repeat-x"
+        backgroundSize="auto"
+        backgroundPosition="center"
+      >
+        <Flex flexDirection="column" justifyContent="center" order={["2", null, "1"]}>
+          <CardTeam
+            alignSelf={["center", null, "auto"]}
+            imgSrc="team/noemie.png"
+            linkedInUrl="https://fr.linkedin.com/in/no%C3%A9mie-rivi%C3%A8re"
+          >
+            <Text color="vampire-black" fontWeight="bold">Noémie</Text>
+            <Text color="vampire-black">UX Researcher</Text>
+          </CardTeam>
+          <CardTeam
+            alignSelf={["start", null, "auto"]}
+            borderType="inner"
+          >
+            <Text color="vampire-black" fontWeight="bold">Lilian</Text>
+            <Text color="vampire-black">Graphic designer</Text>
+          </CardTeam>
+        </Flex>
+        <Flex flexDirection="column" order={["1", null, "2"]}>
+          <CardTeam
+            alignSelf={["center", null, "auto"]}
+            borderType="inner"
+            imgSrc="team/jean-sebastien.png"
+            linkedInUrl="https://fr.linkedin.com/in/jean-s%C3%A9bastien-lefevre"
+          >
+            <Text color="vampire-black" fontWeight="bold">Jean-Sébastien</Text>
+            <Text color="vampire-black">CEO</Text>
+          </CardTeam>
+          <CardTeam
+            alignSelf={["start", null, "auto"]}
+            imgSrc="team/thomas.png"
+            linkedInUrl="https://fr.linkedin.com/in/thomas-castellengo"
+          >
+            <Text color="vampire-black" fontWeight="bold">Thomas</Text>
+            <Text color="vampire-black">DevOps</Text>
+          </CardTeam>
+          <CardTeam
+            alignSelf={["end", null, "auto"]}
+            borderType="inner"
+            imgSrc="team/adeline.png"
+          >
+            <Text color="vampire-black" fontWeight="bold">Adeline</Text>
+            <Text color="vampire-black">Dev Fullstack</Text>
+          </CardTeam>
+        </Flex>
+        <Flex flexDirection="column" justifyContent="center" order="3">
+          <CardTeam
+            alignSelf={["end", null, "auto"]}
+            imgSrc="team/nassara.png"
+          >
+            <Text color="vampire-black" fontWeight="bold">Nassara</Text>
+            <Text color="vampire-black">Data Scientist</Text>
+          </CardTeam>
+          <CardTeam
+            alignSelf={["center", null, "auto"]}
+            borderType="inner"
+            imgSrc="team/tahani.png"
+          >
+            <Text color="vampire-black" fontWeight="bold">Tahani</Text>
+            <Text color="vampire-black">AI Researcher</Text>
+          </CardTeam>
+        </Flex>
+      </Flex>
+    </Box>
+  )
 }
