@@ -60,7 +60,7 @@ export default function MainTeam() {
             linkedInUrl="https://fr.linkedin.com/in/thomas-castellengo"
           >
             <Text color="vampire-black" fontWeight="bold">Thomas</Text>
-            <Text color="vampire-black">DevOps</Text>
+            <Text color="vampire-black">CTO</Text>
           </CardTeam>
           <CardTeam
             alignSelf={["end", null, "auto"]}
