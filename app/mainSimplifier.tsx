@@ -46,7 +46,7 @@ export default function MainSimplifier() {
             <Text as="span" color="indian-yellow" fontWeight="extrabold"> -90% </Text>
             <Text as="span" color="fulvous" fontWeight="extrabold"> de frais</Text>
           </Heading>
-        <Text color="vampire-black">Un système automatisé réduisant drastiquement les coûts notamment par la suppression de nombreux frais d&apos;intermédiaires.</Text>
+          <Text color="vampire-black">Un système automatisé réduisant drastiquement les coûts notamment par la suppression de nombreux frais d&apos;intermédiaires.</Text>
         </Card>
       </Flex>
 

@@ -1,5 +1,7 @@
 'use client'
 
+import Script from "next/script"
+
 import Hero from "./hero"
 import MainDAO from "./mainDao"
 import MainCaroussel from "./mainCaroussel"
@@ -7,10 +9,10 @@ import MainProjet from "./mainProjet"
 import MainCommunauté from "./mainCommunauté"
 import MainSimplifier from "./mainSimplifier"
 import MainRejoignez from "./mainRejoignez"
-import Script from "next/script"
 import MainMessage from "./mainMessage"
 // import MainRoadmap from "./mainRoadmap"
 import MainTeam from "./mainTeam"
+import MainApp from "./mainApp"
 // import Footer from './footer'
 
 export default function Home() {
@@ -29,6 +31,7 @@ export default function Home() {
         <MainRoadmap />
         */}
         <MainTeam />
+        <MainApp />
         {/*
         <Footer />
         */}
