@@ -68,7 +68,7 @@ export default function MainRejoignez() {
                 type="text"
                 color="vampire-black"
                 bgColor="cultured"
-                placeholder='Votre nom'
+                placeholder="Votre nom"
                 _placeholder={{ color: "vampire-black" }}
               />
             </FormControl>
@@ -77,7 +77,7 @@ export default function MainRejoignez() {
                 type="email"
                 color="vampire-black"
                 bgColor="cultured"
-                placeholder='Votre email'
+                placeholder="Votre email"
                 _placeholder={{ color: "vampire-black" }}
               />
             </FormControl>

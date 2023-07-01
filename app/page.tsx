@@ -13,7 +13,7 @@ import MainMessage from "./mainMessage"
 // import MainRoadmap from "./mainRoadmap"
 import MainTeam from "./mainTeam"
 import MainApp from "./mainApp"
-// import Footer from './footer'
+import Footer from './footer'
 
 export default function Home() {
   return (
@@ -32,9 +32,7 @@ export default function Home() {
         */}
         <MainTeam />
         <MainApp />
-        {/*
         <Footer />
-        */}
       </main>
 
       <Script src="//js-eu1.hs-scripts.com/139772533.js" />

@@ -1,188 +1,180 @@
-"use client"
-
-import { Box, Button, Center, Flex, Heading, Image, Link, Text, VStack, Grid, GridItem, FormControl, Checkbox, Input, FormLabel, Divider } from "@chakra-ui/react"
+import { Box, Button, Center, Checkbox, Container, Divider, Flex, FormControl, FormLabel, Heading, Image, Input, Link, Text } from "@chakra-ui/react"
 
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
 export default function Footer() {
   return (
-    <Box w="100%" bgColor="cultured">
-      <Box w="100%" bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)" borderTopRadius="xl">
-        <Box
-          display={{ base: "block", md: "block" }}
-          w="fit-content"
-          boxShadow="0 0 10px var(--chakra-colors-keppel)"
-          bgColor="keppel"
-          left={{
-            base: '20%',
-            md: '40%'
-          }}
-          right={{
-            base: '20%',
-            md: '40%'
-          }}
-          ml="auto"
-          mr="auto"
-          borderRadius="6"
-          zIndex="1"
-          position='absolute'
-          bottom={{
-            md: '440px',
-            base: '14.5%'
-          }}
-        >
-          <Center
-            backgroundColor="transparent"
-            m={0}
-            p={{
-              base: '1',
-              md: '2'
-            }}
+    <Flex
+      flexDirection="column"
+      alignItems="stretch"
+      bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%, black-bean 71%, sherwood-green 100%)"
+      borderTopRadius="xl"
+      position="relative"
+      p="8"
+    >
+      <Container
+        p={0}
+        centerContent
+        maxWidth={[null, null, null, "1300px", "1400px"]}
+        alignItems="stretch"
+      >
+        <Center>
+          <Box
+            my="2"
+            borderRadius="lg"
+            backgroundColor="keppel"
+            boxShadow="0 0 5px var(--chakra-colors-cultured)"
             display="flex"
             flexDirection="row"
+            justifyContent="space-around"
+            position="absolute"
+            top="-9"
+
           >
             <ButtonSocialNetwork socialNetwork="Discord" />
+            <ButtonSocialNetwork socialNetwork="LinkedIn" />
             <ButtonSocialNetwork socialNetwork="Twitter" />
-            <ButtonSocialNetwork socialNetwork="Reddit" />
+            {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
             <ButtonSocialNetwork socialNetwork="Github" />
-          </Center>
-        </Box>
-        <Flex pt="10" pl="12">
-          <Box flex="1" display="flex" flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="space-around">
-            <Box maxWidth="500px" mb={8}>
-              <Image mb={4} pt={{ base: '2', md: "4" }} pr={{ base: '10', md: "28" }} src="/Logo.png" alt="Logo MyOwly" />
-              <Heading as='h4' mb={4} textTransform='uppercase' color='HighlightText'>Le projet MyOwly</Heading>
-              <Box display='flex' flexDirection='column' justifyContent='start' textAlign='start'>
-                <Link
-                  href="#"
-                  textTransform="uppercase"
-                  cursor="pointer"
-                  color="cultured"
-                  mb={{ base: '2' }}
-                >
-                  Découvrir le projet MyOwly
-                </Link>
-                <Link
-                  href="#"
-                  textTransform="uppercase"
-                  cursor="pointer"
-                  color="cultured"
-                  mb={{ base: '2' }}
-                >
-                  Suivre la communauté
-                </Link>
-                <Link
-                  href="#"
-                  textTransform="uppercase"
-                  cursor="pointer"
-                  color="cultured"
-                  mb={{ base: '2' }}
-                >
-                  Rejoindre la Newsletter
-                </Link>
-                <Link
-                  href="#"
-                  textTransform="uppercase"
-                  cursor="pointer"
-                  color="cultured"
-                  mb={{ base: '2' }}
-                >
-                  Roadmap
-                </Link>
-                <Link
-                  href="#"
-                  textTransform="uppercase"
-                  cursor="pointer"
-                  color="cultured"
-                >
-                  L&apos;équipe
-                </Link>
-              </Box>
+          </Box>
+        </Center>
+        
+        <Flex
+          mt="16"
+          flexDirection={["column", null, "row"]}
+          justifyContent="space-around"
+        >
+          <Box
+            flexGrow="1"
+            flexBasis="0"
+            maxWidth="500px"
+          >
+            <Box maxWidth="500px">
+              <Image
+                mb="8"
+                pt={[null, "16px"]}
+                pr={["50px", "112px"]}
+                src="/Logo.png"
+                alt="Logo MyOwly"
+              />
             </Box>
-            <Box pr="14" maxWidth="500px" display='flex' flexDirection='column' justifyContent='end' textAlign='end'>
-              <Heading as="h4" mb={4} textTransform="uppercase" lineHeight="1">
-                <Text as="span" color="indian-yellow" fontSize="4xl"> Rester connecté </Text>
-                <Text as="span" color="cultured" fontSize="4xl"> avec notre </Text>
-                <Text as="span" color="fulvous" fontSize="4xl">newsletter </Text>
-              </Heading>
+
+            <Heading as='h4' mb="4" textTransform="uppercase" color="cultured">Le projet MyOwly</Heading>
+
+            <Flex flexDirection="column">
+              <Link
+                href="#project"
+                textTransform="uppercase"
+                cursor="pointer"
+                color="cultured"
+                mb="2"
+              >
+                Découvrir le projet MyOwly
+              </Link>
+              <Link
+                href="#community"
+                textTransform="uppercase"
+                cursor="pointer"
+                color="cultured"
+                mb="2"
+              >
+                Suivre la communauté
+              </Link>
+              <Link
+                href="#joinUs"
+                textTransform="uppercase"
+                cursor="pointer"
+                color="cultured"
+                mb="2"
+              >
+                Rejoindre la Newsletter
+              </Link>
+              {/* <Link
+                href="#"
+                textTransform="uppercase"
+                cursor="pointer"
+                color="cultured"
+                mb="2"
+              >
+                Roadmap
+              </Link> */}
+              <Link
+                href="#team"
+                textTransform="uppercase"
+                cursor="pointer"
+                color="cultured"
+                mb="2"
+              >
+                L&apos;équipe
+              </Link>
+            </Flex>
+          </Box>
+          
+          <Divider hideFrom="md" variant="solid" border="2" borderColor="indian-yellow" my="2" />
+
+          <Box
+            flexGrow="1"
+            flexBasis="0"
+            maxWidth="500px"
+          >
+            <Text my="8" textTransform="uppercase" fontSize="xl" fontWeight="bold" textAlign={["start", null, "end"]}>
+              <Text as="span" color="indian-yellow">Rester connecté </Text><br />
+              avec notre
+              <Text as="span" color="fulvous"> newsletter</Text>
+            </Text>
+            
+            <form>
               <FormControl isRequired mb={4}>
-                <Input bgColor='white' _placeholder={{ color: 'vampire-black' }} color='vampire-black' type='text' placeholder='Votre Nom' />
+                <Input
+                  type="text"
+                  color="vampire-black"
+                  bgColor="cultured"
+                  placeholder="Votre nom"
+                  _placeholder={{ color: "vampire-black" }}
+                />
               </FormControl>
               <FormControl isRequired mb={4}>
-                <Input bgColor='white' _placeholder={{ color: 'vampire-black' }} color='vampire-black' type='email' placeholder='Votre Email' />
+                <Input
+                  type="email"
+                  color="vampire-black"
+                  bgColor="cultured"
+                  placeholder="Votre email"
+                  _placeholder={{ color: "vampire-black" }}
+                />
               </FormControl>
-              <FormControl isRequired mb={4} display='flex' flexDirection='row' justifyContent='space-between'>
-                <Checkbox isRequired iconColor='white' color='white' mr='1rem'>
-                </Checkbox>
-                <FormLabel color='white' as='label' fontSize='sm' fontStyle={{ base: 'italic', }}>J’accepte que mes informations soient stockées et utilisées pour m&apos;enregistrer et participer à la newsletter Myowly.</FormLabel>
+              <FormControl isRequired mb="4" display="flex" flexDirection="row" justifyContent="space-between">
+                <Checkbox iconColor="cultured" color="cultured" mr="4" />
+                <FormLabel color="cultured" as="label" fontSize="sm" fontStyle="italic">J&apos;accepte que mes informations soient stockées et utilisées pour m&apos;enregistrer et participer à la newsletter Myowly.</FormLabel>
               </FormControl>
+
               <Button
-                type='submit'
-                mb={4}
-                color='keppel'
-                bgColor='white'
-                textTransform='uppercase'
-                borderBottom='4px solid'
-                borderColor='keppel'
+                type="submit"
+                my="2"
+                width="100%"
+                bgColor="cultured"
+                borderBottom="4px solid"
+                borderColor="keppel"
+                boxShadow="0 0 5px var(--chakra-colors-cultured)"
+                color="keppel"
+                textTransform="uppercase"
                 _hover={{
-                  borderBottom: '4px white solid',
-                  bgColor: 'keppel',
-                  color: 'white',
+                  bgColor: "keppel",
+                  borderBottom: "4px solid",
+                  borderColor: "cultured",
+                  boxShadow: "0 0 5px var(--chakra-colors-keppel)",
+                  color: "cultured",
                 }}
               >
                 Envoyer
               </Button>
-            </Box>
+            </form>
           </Box>
         </Flex>
-        <VStack ml='4%' mr='4%' mt={4}>
-          <Divider variant='solid' borderWidth={2} borderColor='indian-yellow' />
-        </VStack>
-        <Flex pt="2" pl="12" display='flex'>
-          <Box flex="1" display="flex" alignItems="center" flexDirection={{base:'row-reverse',md:'row'}} justifyContent="space-between">
-            <Box maxWidth="500px" mb={{base:'4',md:'6'}} ml={{base:'0',md:'7%'}}>
-              <Text justifyContent='start' display={{ base: 'none', md: 'flex' }} alignItems='start' textAlign='start' color='white'>Copyright © 2023 MYOWLY. Tous droits réservés.</Text>
-              <Text justifyContent='start' display={{base:'flex',md:'none'}} alignItems='start' textAlign='start' fontSize='xs' color='white'>2023 MYOWLY. Tous droits réservés.</Text>
-            </Box>
-            <Box pr="14" maxWidth="500px" display='flex' flexDirection='row' fontSize={{base:'xs',md:'auto'}} justifyContent='end' textAlign='end' mr={{sm:'0',md:'7%'}} mb={{base:'2',md:'6'}}>
-              <Link
-                href="#"
-                textTransform="uppercase"
-                cursor="pointer"
-                color="cultured"
-                textDecoration='underline'
-                mr={{ base: '6' }}
-                display={{
-                  base: 'none',
-                  md: 'flex'
-                }}
-              >
-                Conditions
-              </Link>
-              <Link
-                href="#"
-                textTransform="uppercase"
-                cursor="pointer"
-                color="cultured"
-                textDecoration='underline'
-                ml={{base:'0',md:'8'}}
-              >
-                Confidentialité
-              </Link>
-              <Link
-                href="#"
-                textTransform="uppercase"
-                cursor="pointer"
-                color="cultured"
-                textDecoration='underline'
-                ml={8}
-              >
-                Cookies
-              </Link>
-            </Box>
-          </Box>
-        </Flex>
-      </Box>
-    </Box>
+
+        <Divider variant="solid" border="2" borderColor="indian-yellow" mt="10" mb="2" />
+
+        <Text color="cultured" fontSize="xs" mb="1">Copyright © 2023 MYOWLY. Tous droits réservés.</Text>
+      </Container>
+    </Flex>
   )
 }
