@@ -38,7 +38,7 @@ export default function Footer() {
             <ButtonSocialNetwork socialNetwork="Github" />
           </Box>
         </Center>
-        
+
         <Flex
           mt="16"
           flexDirection={["column", null, "row"]}
@@ -89,15 +89,15 @@ export default function Footer() {
               >
                 Rejoindre la Newsletter
               </Link>
-              {/* <Link
-                href="#"
+              <Link
+                href="#roadmap"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
                 mb="2"
               >
                 Roadmap
-              </Link> */}
+              </Link>
               <Link
                 href="#team"
                 textTransform="uppercase"
@@ -109,7 +109,7 @@ export default function Footer() {
               </Link>
             </Flex>
           </Box>
-          
+
           <Divider hideFrom="md" variant="solid" border="2" borderColor="indian-yellow" my="2" />
 
           <Box
@@ -122,7 +122,7 @@ export default function Footer() {
               avec notre
               <Text as="span" color="fulvous"> newsletter</Text>
             </Text>
-            
+
             <form>
               <FormControl isRequired mb={4}>
                 <Input
