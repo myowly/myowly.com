@@ -16,13 +16,13 @@ export default function MainTeam() {
           fontWeight="extrabold"
           color="vampire-black"
         >
-          L'équipe MyOwly
+          L&apos;équipe MyOwly
         </Heading>
       </Flex>
-      
+
       <Flex
         flexDirection={["column", null, "row"]}
-        backgroundImage ={["/Cristals_2.png", null, "/Cristals_2b.png"]}
+        backgroundImage={["/Cristals_2.png", null, "/Cristals_2b.png"]}
         backgroundRepeat={["repeat-y", null, "repeat-x"]}
         backgroundSize={["70px", null, "auto"]}
         backgroundPosition="center"
