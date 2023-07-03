@@ -1,4 +1,4 @@
-import { Flex, Text, Heading, Image, Box, Icon } from "@chakra-ui/react";
+import { Flex, Text, Heading, Image, Box, Icon, Show } from "@chakra-ui/react";
 import { RoadmapEllipseGreen, RoadmapEllipseOrange } from "@/svg/roadmap-ellipse";
 import ArrowBlack from "@/svg/arrow-black";
 import { useEffect, useRef, useState } from "react";
@@ -14,7 +14,7 @@ export default function MainRoadmap() {
 			description: <>Lancement Landing Page</>
 		},
 		{
-			title: <>Septembre 2023</>,
+			title: <>Sept. 2023</>,
 			description: <>Seed<br />1ères embauches<br />Lancement campagne NFT</>
 		},
 		{
@@ -67,7 +67,6 @@ export default function MainRoadmap() {
 
 	return (
 		<Flex
-			id="roadmap"
 			flexDirection={["column"]}
 			justifyContent="space-between"
 			alignItems="center"
@@ -78,15 +77,42 @@ export default function MainRoadmap() {
 			position="relative"
 		>
 			<Flex
-				hideFrom="md"
 				position="absolute"
 				top="0"
-				w="100%"
+				w="150%"
 				h="100%"
-				justifyContent="center"
+				justifyContent={["center", null, "space-around"]}
+				alignItems="center"
+				overflow="hidden"
+				alignContent="space-around"
+				flexWrap="wrap"
 			>
-				<Image as="img" src="/Cristals_2.png" alt="Cristaux" m="4" height="80%" />
-				<Image as="img" src="/Cristals_2.png" alt="Cristaux" m="4" height="80%" mt="auto" />
+				<Show below="md">
+					<Image as="img" src="/Cristals_2.png" alt="" m="4" height="80%" />
+					<Image as="img" src="/Cristals_2.png" alt="" m="4" height="70%" mt="auto" />
+				</Show>
+				<Show above="md">
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="25%" mt="50px" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="15%" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="0" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="0" width="620px" />
+				</Show>
+				<Show above="xl">
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="0" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="15%" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="0" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="0" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="0" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="10%" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="10%" width="620px" />
+				</Show>
+				<Show above="md">
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="15%" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="0" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="15%" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="20%" width="620px" />
+					<Image as="img" src="/Cristals_2b.png" alt="" ml="0" mb="50px" width="620px" />
+				</Show>
 			</Flex>
 			<Flex
 				marginY={["85px", "104px"]}
@@ -113,77 +139,128 @@ export default function MainRoadmap() {
 				</Heading>
 				<Flex
 					ref={divRef}
-					flexDirection="column"
+					flexDirection={["column", null, "row"]}
 					justifyContent="space-between"
-					alignItems="flex-start"
+					alignItems={["flex-start", null, "flex-end"]}
 					position="relative"
-					padding="20px"
+					paddingX={["20px", null, "50px"]}
+					paddingTop="20px"
+					paddingBottom={["20px", null, "180px"]}
 					bgColor="cultured"
 					borderRadius="20px"
-					overflowY="scroll"
+					overflowY={["scroll", null, "visible",]}
+					overflowX={[null, null, "scroll"]}
 					maxHeight="50vh"
+					maxWidth={[null, null, "80vw"]}
 					scrollBehavior="smooth"
 				>
 					{steps.map((step, index) => (
-						<Flex
+						<Box
 							key={index}
-							position="relative"
-							flexDirection="column"
-							alignItems="flex-start"
-							borderLeft="3px solid"
+							borderLeftWidth={["3px", null, "0"]}
+							borderBottomWidth={[null, null, "3px"]}
+							borderStyle="solid"
 							borderColor="vampire-black"
 						>
 							<Flex
-								as="h4"
 								position="relative"
-								left="-10px"
-								fontFamily="body"
-								fontWeight="700"
-								fontSize="18px"
-								lineHeight="20px"
-							>
-								{index <= activeStep ? (
-									<>
-										<Box
-											boxShadow="0px 0px 20px 0px var(--chakra-colors-keppel)"
-											borderRadius="9999px"
-										>
-											<Icon as={RoadmapEllipseGreen} />
+								paddingRight={[null, null, "30px"]}
+								alignItems="flex-start"
+								minWidth={[null, null, "250px"]}
+								minHeight={[null, null, "150px"]}
+								flexBasis="max-content"
+								paddingBottom={[null, null, "30px"]}
+								{...(index % 2 == 0 ? {
+									position: "relative",
+									bottom: "-180px",
+									flexDirection: "column"
+								} : {
+									flexDirection: ["column", null, "column-reverse"]
 
-										</Box>
-										<Text as="span" marginLeft="10px" color="keppel">{step.title}</Text>
-									</>
-								) : (
-									<>
-										<Icon as={RoadmapEllipseOrange} />
-										<Text as="span" marginLeft="10px" color="fulvous">{step.title}</Text>
-									</>
-								)}
+								})}
+							>
+								<Flex
+									as="h4"
+									position={["relative", null, "initial"]}
+									left="-10px"
+									fontFamily="body"
+									fontWeight="700"
+									fontSize="18px"
+									lineHeight="20px"
+									paddingBottom="5px"
+								>
+									{index <= activeStep ? (
+										<>
+											<Box
+												boxShadow="0px 0px 20px 0px var(--chakra-colors-keppel)"
+												borderRadius="9999px"
+												position="absolute"
+												left="-2px"
+												{...(index % 2 == 0 ? {
+													top: "-39px"
+												} : {
+													bottom: "-11px"
+												})}
+											>
+												<Icon as={RoadmapEllipseGreen} />
+
+											</Box>
+											<Text
+												as="span"
+												marginLeft={["10px", null, "0"]}
+												color="keppel"
+												textTransform="uppercase"
+											>{step.title}</Text>
+										</>
+									) : (
+										<>
+											<Box
+												position="absolute"
+												left="-2px"
+												{...(index % 2 == 0 ? {
+													top: "-39px"
+												} : {
+													bottom: "-11px"
+												})}
+											>
+												<Icon as={RoadmapEllipseOrange} />
+											</Box>
+											<Text
+												as="span"
+												marginLeft={["10px", null, "0"]}
+												color="fulvous"
+												textTransform="uppercase"
+											>{step.title}</Text>
+										</>
+									)}
+								</Flex>
+
+								<Text
+									color="vampire-black"
+									paddingX={["10px", null, "0"]}
+									paddingBottom={["30px", null, "10px"]}
+									fontSize="15px"
+								>
+									{step.description}
+								</Text>
 							</Flex>
-
-							<Text
-								color="vampire-black"
-								paddingTop="5px"
-								paddingX="10px"
-								paddingBottom="30px"
-								fontSize="15px"
-							>
-								{step.description}
-							</Text>
-						</Flex>
+						</Box>
 					))}
 					<Box
-						borderLeftWidth="3px"
+						borderLeftWidth={["3px", null, "0"]}
+						borderBottomWidth={[null, null, "3px"]}
 						borderStyle="dashed"
 						borderColor="vampire-black"
 					>
-						<Box height="35px" />
+						<Box boxSize="35px" />
 						{isScrolledToMax ? null :
 							<Box
 								onClick={handleArrowClick}
 								position="fixed"
 								bottom="63px"
 								right="55px"
+								cursor="pointer"
+								transform={[null, null, "rotate(-90deg)"]}
 							>
 								<Icon
 									as={ArrowBlack}
