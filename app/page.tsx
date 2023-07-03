@@ -10,7 +10,7 @@ import MainCommunauté from "./mainCommunauté"
 import MainSimplifier from "./mainSimplifier"
 import MainRejoignez from "./mainRejoignez"
 import MainMessage from "./mainMessage"
-// import MainRoadmap from "./mainRoadmap"
+import MainRoadmap from "./mainRoadmap"
 import MainTeam from "./mainTeam"
 import MainApp from "./mainApp"
 import Footer from './footer'
@@ -27,9 +27,7 @@ export default function Home() {
         <MainSimplifier />
         <MainRejoignez />
         <MainMessage />
-        {/*
         <MainRoadmap />
-        */}
         <MainTeam />
         <MainApp />
         <Footer />
