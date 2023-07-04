@@ -144,8 +144,8 @@ export default function MainRoadmap() {
 					justifyContent="space-between"
 					alignItems={["flex-start", null, "flex-end"]}
 					position="relative"
-					paddingX={["20px", null, "50px"]}
-					paddingTop="20px"
+					paddingX={["30px", "50px"]}
+					paddingTop={["30px", "50px"]}
 					paddingBottom={["20px", null, "180px"]}
 					bgColor="cultured"
 					borderRadius="20px"
@@ -172,7 +172,7 @@ export default function MainRoadmap() {
 								flexBasis="max-content"
 								paddingBottom={[null, null, "30px"]}
 								{...(index % 2 == 0 ? {
-									position: "relative",
+									position: [null, null, "relative"],
 									bottom: "-180px",
 									flexDirection: "column"
 								} : {
@@ -195,7 +195,7 @@ export default function MainRoadmap() {
 											<Box
 												boxShadow="0px 0px 20px 0px var(--chakra-colors-keppel)"
 												borderRadius="9999px"
-												position="absolute"
+												position={[null, null, "absolute"]}
 												left="-2px"
 												{...(index % 2 == 0 ? {
 													top: "-39px"
@@ -216,7 +216,7 @@ export default function MainRoadmap() {
 									) : (
 										<>
 											<Box
-												position="absolute"
+												position={[null, null, "absolute"]}
 												left="-2px"
 												{...(index % 2 == 0 ? {
 													top: "-39px"
