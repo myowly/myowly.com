@@ -6,8 +6,8 @@ export default function ButtonSocialNetwork({
   margin = "12px",
   socialNetwork = "Discord"
 }: {
-  width?: number,
-  height?: number,
+  width?: number | number[],
+  height?: number | number[],
   margin?: string,
   socialNetwork?: "Discord" | "Twitter" | "Reddit" | "Github" | "LinkedIn"
 }) {

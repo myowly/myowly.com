@@ -6,14 +6,20 @@ import Beak from "@/svg/beak"
 
 export default function MainCommunauté() {
   return (
-    <Box w="100%" bgColor="cultured" id="community">
+    <Flex
+      id="community"
+      py="14"
+      w="100%"
+      bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)"
+      borderRadius="xl"
+      justifyContent="center"
+      alignItems="center"
+      position="relative"
+      minHeight="100vh"
+    >
       <Flex
-        py="14"
-        w="100%"
-        bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)"
-        borderRadius="xl"
-        justifyContent={{ base: "center", md: "start" }}
-        position="relative"
+        flexGrow="1"
+        maxWidth={[null, null, null, "1300px", "1400px"]}
       >
         <Flex
           hideFrom="md"
@@ -40,7 +46,8 @@ export default function MainCommunauté() {
         </Box>
 
         <Box
-          p="10"
+          py="60px"
+          px="10"
           m="8"
           ml={{ md: "32" }}
           maxWidth="450px"
@@ -53,14 +60,29 @@ export default function MainCommunauté() {
         >
           <Icon as={Beak} width="auto" height="20" position="absolute" top="-10" right="8" />
 
-          <Heading as="h2" textTransform="uppercase" fontSize="3xl" my="2" lineHeight="1">Rejoingez la communauté</Heading>
+          <Heading
+            as="h2"
+            textTransform="uppercase"
+            fontSize={["40px", "60px"]}
+            fontWeight="400"
+            my="2"
+            lineHeight="1"
+          >
+            Rejoingez la communauté
+          </Heading>
 
-          <Text mt="8" textTransform="uppercase" fontSize="xl" fontWeight="bold">
+          <Text
+            mt="8"
+            textTransform="uppercase"
+            fontSize={["19px", null, null, "30px"]}
+            lineHeight="1"
+            fontWeight={["600", null, null, "800"]}
+          >
             sur nos
             <Text as="span" color="indian-yellow"> réseaux sociaux</Text>
           </Text>
           <Center
-            my="2"
+            my="2.5"
             borderRadius="lg"
             backgroundColor="cultured"
             boxShadow="0 0 5px var(--chakra-colors-cultured)"
@@ -68,20 +90,26 @@ export default function MainCommunauté() {
             flexDirection="row"
             justifyContent="space-around"
           >
-            <ButtonSocialNetwork socialNetwork="Discord" />
-            <ButtonSocialNetwork socialNetwork="LinkedIn" />
-            <ButtonSocialNetwork socialNetwork="Twitter" />
+            <ButtonSocialNetwork socialNetwork="Discord" width={[30, null, null, 50]} height={[30, null, null, 50]} />
+            <ButtonSocialNetwork socialNetwork="LinkedIn" width={[30, null, null, 50]} height={[30, null, null, 50]} />
+            <ButtonSocialNetwork socialNetwork="Twitter" width={[30, null, null, 50]} height={[30, null, null, 50]} />
             {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
-            <ButtonSocialNetwork socialNetwork="Github" />
+            <ButtonSocialNetwork socialNetwork="Github" width={[30, null, null, 50]} height={[30, null, null, 50]} />
           </Center>
 
-          <Text mt="8" textTransform="uppercase" fontSize="xl" fontWeight="bold">
+          <Text
+            mt="8"
+            textTransform="uppercase"
+            fontSize={["19px", null, null, "30px"]}
+            lineHeight="1"
+            fontWeight={["600", null, null, "800"]}
+          >
             avec notre
             <Text as="span" color="fulvous"> newsletter</Text>
           </Text>
           <Link href="#joinUs">
             <Button
-              my="2"
+              my="2.5"
               width="100%"
               bgColor="cultured"
               borderBottom="4px solid"
@@ -102,6 +130,6 @@ export default function MainCommunauté() {
           </Link>
         </Box>
       </Flex>
-    </Box>
+    </Flex>
   )
 }

@@ -6,14 +6,20 @@ import Beak from "@/svg/beak"
 
 export default function MainRejoignez() {
   return (
-    <Box w="100%" bgColor="cultured" id="joinUs">
+    <Flex
+      id="joinUs"
+      py="14"
+      w="100%"
+      bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)"
+      borderRadius="xl"
+      justifyContent="center"
+      alignItems="center"
+      position="relative"
+      minHeight="100vh"
+    >
       <Flex
-        py="14"
-        w="100%"
-        bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)"
-        borderRadius="xl"
-        justifyContent={{ base: "center", md: "start" }}
-        position="relative"
+        flexGrow="1"
+        maxWidth={[null, null, null, "1300px", "1400px"]}
       >
         <Flex
           hideFrom="md"
@@ -40,7 +46,8 @@ export default function MainRejoignez() {
         </Box>
 
         <Box
-          p="10"
+          py="130px"
+          px="10"
           m="8"
           ml={{ md: "32" }}
           maxWidth="450px"
@@ -54,11 +61,27 @@ export default function MainRejoignez() {
           <Icon as={Beak} width="auto" height="20" position="absolute" top="-10" right="8" />
 
           <Text fontStyle="italic">Qu&apos;attendez-vous ? ...</Text>
-          <Heading as="h2" textTransform="uppercase" fontSize="3xl" my="2" lineHeight="1">Rejoingez-nous</Heading>
+          <Heading
+            as="h2"
+            textTransform="uppercase"
+            fontSize={["40px", "60px"]}
+            fontWeight="400"
+            my="2"
+            lineHeight="1"
+          >
+            Rejoingez-nous
+          </Heading>
 
-          <Text my="8" textTransform="uppercase" fontSize="xl" fontWeight="bold">
+          <Text
+            mt="8"
+            mb="30px"
+            textTransform="uppercase"
+            fontSize={["20px", null, null, "30px"]}
+            lineHeight="1"
+            fontWeight="900"
+          >
             <Text as="span" color="indian-yellow">Restez connecté </Text><br />
-            avec notre<br />
+            avec notre
             <Text as="span" color="fulvous"> newsletter</Text>
           </Text>
 
@@ -129,6 +152,6 @@ export default function MainRejoignez() {
           </Center>
         </Box>
       </Flex>
-    </Box>
+    </Flex>
   )
 }
