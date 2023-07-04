@@ -1,3 +1,5 @@
+![MyOwly logo](https://myowly.com/Logo.png)
+
 # MyOwly.com
 
 Welcome to the public website repository for MyOwly.com!
@@ -9,7 +11,7 @@ MyOwly.com is a project that aims to reinvent the way we protect each other by r
 ## Contributing
 We welcome contributions to improve the MyOwly.com website. If you encounter any issues or have suggestions for enhancements, please open an issue on GitHub. We appreciate your feedback and are committed to continuously improving our website.
 
-To contribute code changes, please follow the steps outlined in our [CONTRIBUTING](CONTRIBUTING) guide.
+To contribute code changes, please follow the steps outlined in our [CONTRIBUTING](CONTRIBUTING.md) guide.
 
 ## Local Development
 
