@@ -18,6 +18,7 @@ export default function ButtonPressed({
           justifyContent="center"
           py="4"
           my="2"
+          minWidth={[null, null, null, "500px"]}
         >
           <Text
             color="keppel"
@@ -39,6 +40,7 @@ export default function ButtonPressed({
         justifyContent="center"
         py="4"
         my="2"
+        minWidth={[null, null, null, "500px"]}
       >
         <Text
           color="keppel"
