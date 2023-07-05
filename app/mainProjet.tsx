@@ -84,9 +84,10 @@ export default function MainProjet() {
         flexDirection={["column", null, null, "row"]}
         justifyContent="center"
         marginTop={[null, null, null, "100px"]}
-        gap="124px"
+        marginX={["20px", null, null, 0]}
+        gap={["10px", null, null, "124px"]}
       >
-        <ButtonPressed href="#benefits" >Quels sont mes avantages ?</ButtonPressed>
+        <ButtonPressed href="#benefits">Quels sont mes avantages ?</ButtonPressed>
         <ButtonPressed href="#joinUs">Rester informé</ButtonPressed>
       </Flex>
     </Box >

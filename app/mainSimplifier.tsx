@@ -77,7 +77,8 @@ export default function MainSimplifier() {
         flexDirection={["column", null, null, "row"]}
         justifyContent="center"
         marginTop={[null, null, null, "100px"]}
-        gap="124px"
+        marginX={["20px", null, null, 0]}
+        gap={["10px", null, null, "124px"]}
       >
         <ButtonPressed href="#roadmap">Déroulement du projet</ButtonPressed>
         <ButtonPressed href="#joinUs">Rejoindre la Newsletter</ButtonPressed>
