@@ -1,7 +1,8 @@
-import { Box, Center, Container, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
+import { Box, Center, Container, Flex, Heading, Icon, Image, Link, Text } from "@chakra-ui/react"
 
 import ButtonLinkBeak from "@/ui/button/button-link-beak"
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
+import Beak from "@/svg/beak"
 
 export default function Hero() {
   return (
@@ -196,7 +197,7 @@ export default function Hero() {
           pb="14"
           transform={[null, "translateY(-20px)", "translateY(-50px)", "translateY(-12px)"]}
         >
-          <Image as="img" w="6" h="auto" src="/bec.svg" alt="Owl Arrow Down" />
+          <Icon as={Beak} w="6" h="auto" />
         </Box>
 
         <Box px="8" maxWidth={["460px", null, null, "567px"]} alignSelf={[null, null, null, "flex-start"]}>

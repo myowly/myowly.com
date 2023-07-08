@@ -30,8 +30,11 @@ export default function Home() {
         <MainRoadmap />
         <MainTeam />
         <MainApp />
-        <Footer />
       </main>
+
+      <footer>
+        <Footer />
+      </footer>      
 
       <Script src="//js-eu1.hs-scripts.com/139772533.js" />
     </>
