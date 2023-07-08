@@ -17,23 +17,41 @@ export default function ButtonBeak({
   background?: string,
   target?: string
 }) {
+  let backgroundHover = color
+  let colorHover = (background == "transparent")? "sherwood-green" : background
+
+  let button =
+    <Button
+      mb={mb}
+      w="100%"
+      border="1px solid"
+      borderColor="keppel"
+      borderRadius={16}
+      boxShadow="0 0 10px var(--chakra-colors-keppel)"
+      background={background}
+      color={color}
+      justifyContent="space-between"
+      _hover={{
+        background: backgroundHover,
+        color: colorHover
+      }}
+    >
+      <Icon as={Beak} width="auto" height="27" />
+      <Box textTransform="uppercase" fontWeight="bold">{children}</Box>
+      <Icon as={Beak} width="auto" height="27" />
+    </Button>
+
   if (href) {
     return (
       <Link href={href} target={target}>
-        <Button mb={mb} background={background} border="1px solid" borderColor="keppel" borderRadius={16} w="100%" justifyContent="space-between" boxShadow="0 0 10px var(--chakra-colors-keppel)">
-          <Icon as={Beak} width="auto" height="27" />
-          <Box color={color} textTransform="uppercase" fontWeight="bold">{children}</Box>
-          <Icon as={Beak} width="auto" height="27" />
-        </Button>
+        {button}
       </Link>
     );
   } else {
     return (
-      <Button mb={mb} background={background} border="1px solid" borderColor="keppel" borderRadius={16} w="100%" justifyContent="space-between" boxShadow="0 0 10px var(--chakra-colors-keppel)">
-        <Icon as={Beak} width="auto" height="27" />
-        <Box color={color} textTransform="uppercase" fontWeight="bold">{children}</Box>
-        <Icon as={Beak} width="auto" height="27" />
-      </Button>
+      <>
+        {button}
+      </>
     );
   }
 }
