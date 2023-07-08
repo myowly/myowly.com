@@ -1,5 +1,6 @@
-import { Box, Button, Center, Flex, Heading, Icon, Image, Link, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, Icon, Image, Text } from "@chakra-ui/react";
 
+import ButtonLink from "@/ui/button/button-link";
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
 import Beak from "@/svg/beak"
@@ -107,27 +108,7 @@ export default function MainCommunauté() {
             avec notre
             <Text as="span" color="fulvous"> newsletter</Text>
           </Text>
-          <Link href="#joinUs">
-            <Button
-              my="2.5"
-              width="100%"
-              bgColor="cultured"
-              borderBottom="4px solid"
-              borderColor="keppel"
-              boxShadow="0 0 5px var(--chakra-colors-cultured)"
-              color="keppel"
-              textTransform="uppercase"
-              _hover={{
-                bgColor: "keppel",
-                borderBottom: "4px solid",
-                borderColor: "cultured",
-                boxShadow: "0 0 5px var(--chakra-colors-keppel)",
-                color: "cultured",
-              }}
-            >
-              Je m&apos;inscris
-            </Button>
-          </Link>
+          <ButtonLink href="#joinUs" background="cultured">Je m&apos;inscris</ButtonLink>
         </Box>
       </Flex>
     </Flex>

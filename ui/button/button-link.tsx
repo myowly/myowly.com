@@ -2,10 +2,14 @@ import { Button, Link, Text } from "@chakra-ui/react"
 
 export default function ButtonLink({
   children,
-  href
+  href,
+  background = "transparent",
+  minWidth = ["100%"]
 }: {
   children: string | JSX.Element | JSX.Element[],
-  href?: string
+  href?: string,
+  background?: string,
+  minWidth?: string[]
 }) {
 
   let button =
@@ -13,12 +17,12 @@ export default function ButtonLink({
       data-group
       my="2"
       w="100%"
-      minWidth={[null, null, null, "300px", "500px"]}
+      minWidth={minWidth}
       py="4"
       borderColor="keppel"
       borderRadius={16}
       boxShadow="0 0 10px var(--chakra-colors-keppel)"
-      background="transparent"
+      background={background}
       justifyContent="center"
       _hover={{
         borderColor: "cultured",

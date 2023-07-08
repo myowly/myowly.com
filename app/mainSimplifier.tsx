@@ -80,8 +80,8 @@ export default function MainSimplifier() {
         marginX={["20px", null, null, 0]}
         gap={["10px", null, null, "124px"]}
       >
-        <ButtonLink href="#roadmap">Déroulement du projet</ButtonLink>
-        <ButtonLink href="#joinUs">Rejoindre la Newsletter</ButtonLink>
+        <ButtonLink href="#roadmap" minWidth={[null, null, null, "500px"]}>Déroulement du projet</ButtonLink>
+        <ButtonLink href="#joinUs" minWidth={[null, null, null, "500px"]}>Rejoindre la Newsletter</ButtonLink>
       </Flex>
     </Box >
   )
