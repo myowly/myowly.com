@@ -14,6 +14,7 @@ import MainRoadmap from "./mainRoadmap"
 import MainTeam from "./mainTeam"
 import MainApp from "./mainApp"
 import Footer from './footer'
+import ButtonUp from "@/ui/button/button-up"
 
 export default function Home() {
   return (
@@ -34,7 +35,9 @@ export default function Home() {
 
       <footer>
         <Footer />
-      </footer>      
+      </footer>
+
+      <ButtonUp />
 
       <Script src="//js-eu1.hs-scripts.com/139772533.js" />
     </>
