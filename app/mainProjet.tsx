@@ -87,8 +87,8 @@ export default function MainProjet() {
         marginX={["20px", null, null, 0]}
         gap={["10px", null, null, "124px"]}
       >
-        <ButtonLink href="#benefits" minWidth={[null, null, null, "500px"]}>Quels sont mes avantages ?</ButtonLink>
-        <ButtonLink href="#joinUs" minWidth={[null, null, null, "500px"]}>Rester informé</ButtonLink>
+        <ButtonLink href="#benefits" minWidth={[null, null, null, "400px", "500px"]}>Quels sont mes avantages ?</ButtonLink>
+        <ButtonLink href="#joinUs" minWidth={[null, null, null, "400px", "500px"]}>Rester informé</ButtonLink>
       </Flex>
     </Box >
   )
