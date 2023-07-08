@@ -131,18 +131,39 @@ export default function Footer() {
 
         <Divider variant="solid" border="2" borderColor="indian-yellow" mt="10" mb="2" />
 
-        <Flex justifyContent="space-between" alignItems="baseline">
-          <Text color="cultured" fontSize="xs" mb="1">Copyright © 2023 MYOWLY. Tous droits réservés.</Text>
-          <Link
-            href="/legal"
-            fontSize="xs"
-            textTransform="uppercase"
-            cursor="pointer"
+        <Flex flexDirection={["column", null, "row"]} justifyContent="space-between" alignItems="baseline">
+          <Flex flexDirection={["column", null, "row"]}>
+            <Link
+              href="/legal"
+              fontSize="xs"
+              textTransform="uppercase"
+              cursor="pointer"
+              color="cultured"
+              my={["2", null, "0"]}
+              mr={["0", null, "2"]}
+            >
+              Mentions légales
+            </Link>
+            <Link
+              href="/legal"
+              fontSize="xs"
+              textTransform="uppercase"
+              cursor="pointer"
+              color="cultured"
+              my={["2", null, "0"]}
+              mx={["0", null, "2"]}
+            >
+              Confidentialité
+            </Link>
+          </Flex>
+          <Text
             color="cultured"
-            mb="1"
+            fontSize="xs"
+            alignSelf={["center"]}
+            my="1"
           >
-            Mentions légales
-          </Link>
+            Copyright © 2023 MYOWLY. Tous droits réservés.
+          </Text>
         </Flex>        
       </Container>
     </Flex>
