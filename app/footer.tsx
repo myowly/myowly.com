@@ -2,6 +2,8 @@ import { Box, Button, Center, Checkbox, Container, Divider, Flex, FormControl, F
 
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
+import FormNewsletter from './formNewsletter'
+
 export default function Footer() {
   return (
     <Flex
@@ -123,51 +125,7 @@ export default function Footer() {
               <Text as="span" color="fulvous"> newsletter</Text>
             </Text>
 
-            <form>
-              <FormControl isRequired mb={4}>
-                <Input
-                  type="text"
-                  color="vampire-black"
-                  bgColor="cultured"
-                  placeholder="Votre nom"
-                  _placeholder={{ color: "vampire-black" }}
-                />
-              </FormControl>
-              <FormControl isRequired mb={4}>
-                <Input
-                  type="email"
-                  color="vampire-black"
-                  bgColor="cultured"
-                  placeholder="Votre email"
-                  _placeholder={{ color: "vampire-black" }}
-                />
-              </FormControl>
-              <FormControl isRequired mb="4" display="flex" flexDirection="row" justifyContent="space-between">
-                <Checkbox iconColor="cultured" color="cultured" mr="4" />
-                <FormLabel color="cultured" as="label" fontSize="sm" fontStyle="italic">J&apos;accepte que mes informations soient stockées et utilisées pour m&apos;enregistrer et participer à la newsletter Myowly.</FormLabel>
-              </FormControl>
-
-              <Button
-                type="submit"
-                my="2"
-                width="100%"
-                bgColor="cultured"
-                borderBottom="4px solid"
-                borderColor="keppel"
-                boxShadow="0 0 5px var(--chakra-colors-cultured)"
-                color="keppel"
-                textTransform="uppercase"
-                _hover={{
-                  bgColor: "keppel",
-                  borderBottom: "4px solid",
-                  borderColor: "cultured",
-                  boxShadow: "0 0 5px var(--chakra-colors-keppel)",
-                  color: "cultured",
-                }}
-              >
-                Envoyer
-              </Button>
-            </form>
+            <FormNewsletter />
           </Box>
         </Flex>
 
