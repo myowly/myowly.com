@@ -13,7 +13,7 @@ export default function ButtonLink({
       data-group
       my="2"
       w="100%"
-      minWidth={[null, null, null, "500px"]}
+      minWidth={[null, null, null, "300px", "500px"]}
       py="4"
       borderColor="keppel"
       borderRadius={16}
