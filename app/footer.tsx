@@ -131,7 +131,19 @@ export default function Footer() {
 
         <Divider variant="solid" border="2" borderColor="indian-yellow" mt="10" mb="2" />
 
-        <Text color="cultured" fontSize="xs" mb="1">Copyright © 2023 MYOWLY. Tous droits réservés.</Text>
+        <Flex justifyContent="space-between" alignItems="baseline">
+          <Text color="cultured" fontSize="xs" mb="1">Copyright © 2023 MYOWLY. Tous droits réservés.</Text>
+          <Link
+            href="/legal"
+            fontSize="xs"
+            textTransform="uppercase"
+            cursor="pointer"
+            color="cultured"
+            mb="1"
+          >
+            Mentions légales
+          </Link>
+        </Flex>        
       </Container>
     </Flex>
   )
