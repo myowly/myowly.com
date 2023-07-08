@@ -164,7 +164,7 @@ export default function MainCaroussel() {
 						<ModalHeader
 							textTransform="uppercase"
 							color="keppel"
-							fontSize="50px"
+							fontSize="42px"
 							lineHeight="50px"
 						>{slide.modalHeading}</ModalHeader>
 						<ModalCloseButton color="vampire-black" />
