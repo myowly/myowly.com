@@ -3,6 +3,7 @@
 import { Container, Flex, Heading, Icon, Text } from "@chakra-ui/react";
 import ButtonLink from "@/ui/button/button-link";
 import Beak from "@/svg/beak";
+import ButtonPageUp from "@/ui/button/button-page-up";
 
 export default function Page() {
   return (
@@ -160,7 +161,7 @@ export default function Page() {
         </Container>
       </Flex>
       
-      
+      <ButtonPageUp />
     </>
   )
 }
