@@ -196,7 +196,7 @@ export default function Hero() {
           pb="14"
           transform={[null, "translateY(-20px)", "translateY(-50px)", "translateY(-12px)"]}
         >
-          <Image as="img" w="16.45" h="auto" src="/arrow-white.svg" alt="Owl Arrow Down" />
+          <Image as="img" w="6" h="auto" src="/bec.svg" alt="Owl Arrow Down" />
         </Box>
 
         <Box px="8" maxWidth={["460px", null, null, "567px"]} alignSelf={[null, null, null, "flex-start"]}>
