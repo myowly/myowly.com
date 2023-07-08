@@ -1,6 +1,6 @@
 import { Box, Container, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
-import ButtonPressed from "@/ui/button/button-pressed";
+import ButtonLink from "@/ui/button/button-link";
 
 export default function MainDAO() {
   return (
@@ -91,8 +91,8 @@ export default function MainDAO() {
               Les prix et les conditions de réalisation des indemnisations sont réalisés automatiquement par un oracle.
             </Text>
 
-            <ButtonPressed href="#carousel">Comment ça marche ?</ButtonPressed>
-            <ButtonPressed href="#joinUs">Rester en relation</ButtonPressed>
+            <ButtonLink href="#carousel">Comment ça marche ?</ButtonLink>
+            <ButtonLink href="#joinUs">Rester en relation</ButtonLink>
           </Container>
 
           <Box position={{ md: "absolute" }} top="145px" zIndex="-1" w="100vw">

@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
 
-import ButtonPressed from "@/ui/button/button-pressed";
+import ButtonLink from "@/ui/button/button-link";
 import Card from "@/ui/card";
 
 export default function MainProjet() {
@@ -87,8 +87,8 @@ export default function MainProjet() {
         marginX={["20px", null, null, 0]}
         gap={["10px", null, null, "124px"]}
       >
-        <ButtonPressed href="#benefits">Quels sont mes avantages ?</ButtonPressed>
-        <ButtonPressed href="#joinUs">Rester informé</ButtonPressed>
+        <ButtonLink href="#benefits">Quels sont mes avantages ?</ButtonLink>
+        <ButtonLink href="#joinUs">Rester informé</ButtonLink>
       </Flex>
     </Box >
   )
