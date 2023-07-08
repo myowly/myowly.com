@@ -2,7 +2,7 @@ import { Box, Button, Icon, Link } from "@chakra-ui/react"
 
 import Beak from "@/svg/beak"
 
-export default function ButtonBeak({
+export default function ButtonLinkBeak({
   children,
   href,
   mb,
@@ -22,6 +22,7 @@ export default function ButtonBeak({
 
   let button =
     <Button
+      data-group
       mb={mb}
       w="100%"
       border="1px solid"
@@ -29,15 +30,22 @@ export default function ButtonBeak({
       borderRadius={16}
       boxShadow="0 0 10px var(--chakra-colors-keppel)"
       background={background}
-      color={color}
       justifyContent="space-between"
       _hover={{
-        background: backgroundHover,
-        color: colorHover
+        background: backgroundHover
       }}
     >
       <Icon as={Beak} width="auto" height="27" />
-      <Box textTransform="uppercase" fontWeight="bold">{children}</Box>
+      <Box
+        color={color}
+        textTransform="uppercase"
+        fontWeight="bold"
+        _groupHover={{
+          color: colorHover
+        }}
+      >
+        {children}
+      </Box>
       <Icon as={Beak} width="auto" height="27" />
     </Button>
 
