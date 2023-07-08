@@ -30,7 +30,17 @@ export default function ButtonSocialNetwork({
 
   return (
     <Link href={href} target="_blank">
-      <Image as="img" src={src} w={width} h={height} alt={socialNetwork} m={margin} />
+      <Image as="img"
+        src={src}
+        w={width}
+        h={height}
+        alt={socialNetwork}
+        m={margin}
+        borderRadius="100%"
+        _hover={{
+          transform: "scale(1.1)"
+        }}
+      />
     </Link>
   );
 }
