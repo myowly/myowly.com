@@ -1,6 +1,6 @@
 import { Box, Center, Container, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
 
-import ButtonBeak from "@/ui/button/button-beak"
+import ButtonLinkBeak from "@/ui/button/button-link-beak"
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
 export default function Hero() {
@@ -226,8 +226,8 @@ export default function Hero() {
             Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.
           </Text>
 
-          <ButtonBeak mb="4" href="#DAO">En savoir plus</ButtonBeak>
-          <ButtonBeak mb="14" href="#joinUs">Se tenir informé</ButtonBeak>
+          <ButtonLinkBeak mb="4" href="#DAO">En savoir plus</ButtonLinkBeak>
+          <ButtonLinkBeak mb="14" href="#joinUs">Se tenir informé</ButtonLinkBeak>
         </Box>
       </Container>
     </Flex>

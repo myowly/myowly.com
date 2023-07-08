@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
-import ButtonBeak from "@/ui/button/button-beak"
+import ButtonLinkBeak from "@/ui/button/button-link-beak"
 
 export default function MainApp() {
   return (
@@ -56,10 +56,12 @@ export default function MainApp() {
         maxWidth="450px"
         alignSelf={["center", null, "auto"]}
       >
-        {/* <Text my="8" color="vampire-black">
+        {/*     
+        <Text my="8" color="vampire-black">
           Pourquoi ne pas tenter l&apos;aventure. Découvrez la première version de l&apos;application.
         </Text>
-        <ButtonBeak mb="4" href="https://app.myowly.com/" target="_blank" color="cultured" background="keppel">Simuler ma prestation</ButtonBeak> */}
+        <ButtonLinkBeak mb="4" href="https://app.myowly.com/" target="_blank" color="cultured" background="keppel">Simuler ma prestation</ButtonLinkBeak>
+        */}
       </Box>
     </Flex>
   )
