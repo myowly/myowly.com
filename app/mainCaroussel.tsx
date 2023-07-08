@@ -150,6 +150,9 @@ export default function MainCaroussel() {
 							lineHeight="26px"
 							fontWeight="700"
 							onClick={(e) => { e.stopPropagation(); onOpen() }}
+							_hover={{
+								transform: "scale(1.05)"
+							}}
 						>
 							En savoir plus
 						</Button>
