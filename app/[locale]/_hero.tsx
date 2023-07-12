@@ -1,10 +1,13 @@
 import { Box, Center, Container, Flex, Heading, Icon, Image, Link, Text } from "@chakra-ui/react"
+import { useTranslations } from 'next-intl';
 
 import ButtonLinkBeak from "@/ui/button/button-link-beak"
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 import Beak from "@/svg/beak"
 
 export default function Hero() {
+  const t = useTranslations('Home.Hero');
+
   return (
     <Flex
       flexDirection="column"
@@ -52,7 +55,7 @@ export default function Hero() {
                     mr="2"
                     alt="Petite flèche"
                   />
-                  Rejoindre la Newsletter
+                  { t('subscribe_newsletter') }
                 </Link>
               </Box>
               <Link
@@ -71,7 +74,7 @@ export default function Hero() {
                   mr="2"
                   alt="Petite flèche"
                 />
-                Découvrir l&apos;équipe
+                 { t('find_out_team') }
               </Link>
             </Box>
             <Box hideBelow="md" border="1px solid" borderColor="keppel" borderRadius="14" mr={{ base: "0", md: "4" }}>
@@ -89,7 +92,7 @@ export default function Hero() {
                 p="2"
                 boxShadow="0 0 10px var(--chakra-colors-keppel)"
               >
-                Rejoindre la Newsletter
+                { t('subscribe_newsletter') }
               </Link>
               <Center
                 backgroundColor="transparent"
@@ -142,7 +145,7 @@ export default function Hero() {
             lineHeight={["0.8", null, null, "0.9"]}
             maxWidth="600px"
           >
-            Soyez
+            { t('title.part_1') }
             <Text
               as="span"
               color="transparent"
@@ -150,8 +153,10 @@ export default function Hero() {
                 'text-stroke': "1px var(--chakra-colors-cultured)",
                 '-webkit-text-stroke': '1px var(--chakra-colors-cultured)'
               }}
-            > votre </Text><br />
-            meilleur<br />
+            >
+              { t('title.part_2') }
+            </Text><br />
+            { t('title.part_3') }<br />
             <Text
               as="span"
               color="transparent"
@@ -159,7 +164,8 @@ export default function Hero() {
                 'text-stroke': "1px var(--chakra-colors-cultured)",
                 '-webkit-text-stroke': '1px var(--chakra-colors-cultured)'
               }}
-            > assureur
+            >
+              { t('title.part_4') }
             </Text>
           </Heading>
           <Box display="flex" position="relative" overflow="visible">
@@ -207,28 +213,34 @@ export default function Hero() {
               color="cultured"
               fontSize={['30px', '42px', null, "60px"]}
               lineHeight={['40px', '51px', null, '1.1']}
-            > La Blockchain </Text>
+            >
+              { t('subtitle.part_1') }
+            </Text>
             <Text
               as="span"
               color="indian-yellow"
               fontSize={["31px", "44px", null, "63px"]}
               lineHeight={['40px', '51px', null, '1.1']}
-            > révolutionne </Text>
+            >
+              { t('subtitle.part_2') }
+            </Text>
             <Text
               as="span"
               color="fulvous"
               fontSize={["36px", "50px", null, "72px"]}
               lineHeight={['34px', '47px', null, '1.1']}
               verticalAlign="text-top"
-            > l&apos;assurance </Text>
+            >
+              { t('subtitle.part_3') }
+            </Text>
           </Heading>
 
           <Text mb={12}>
-            Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.
+            { t('introduction') }
           </Text>
 
-          <ButtonLinkBeak mb="4" href="#DAO">En savoir plus</ButtonLinkBeak>
-          <ButtonLinkBeak mb="14" href="#joinUs">Se tenir informé</ButtonLinkBeak>
+          <ButtonLinkBeak mb="4" href="#DAO">{ t('read_more') }</ButtonLinkBeak>
+          <ButtonLinkBeak mb="14" href="#joinUs">{ t('stay_informed') }</ButtonLinkBeak>
         </Box>
       </Container>
     </Flex>

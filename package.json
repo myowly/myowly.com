@@ -21,6 +21,7 @@
     "eslint-config-next": "13.4.3",
     "framer-motion": "^10.12.17",
     "next": "13.4.3",
+    "next-intl": "^2.17.5",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",

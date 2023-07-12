@@ -1,0 +1,24 @@
+{
+    "Home": {
+        "Hero": {
+            "subscribe_newsletter": "Subscribe to the newsletter",
+            "find_out_team": "Find out about the team",
+
+            "title": {
+                "part_1": "Be ",
+                "part_2": "your ",
+                "part_3": "best ",
+                "part_4": "insurer"
+            },
+            "subtitle": {
+                "part_1": "Blockchain ",
+                "part_2": "revolutionizes ",
+                "part_3": "insurance"
+            },
+            "introduction": "Whether you're looking to protect yourself against natural hazards, financial loss or any other unforeseen situation, our parametric insurance is here to help.",
+
+            "read_more": "Read more",
+            "stay_informed": "Stay informed"
+        }
+    }
+}
