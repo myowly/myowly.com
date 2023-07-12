@@ -146,7 +146,7 @@ export default function Page() {
             </Text>
           </Box>
           <Flex justifyContent="center" >
-            <ButtonLink href="/privacy" minWidth={[null, null, null, "500px"]}>Politique de confidentialité</ButtonLink>
+            <ButtonLink href="/fr/privacy" minWidth={[null, null, null, "500px"]}>Politique de confidentialité</ButtonLink>
           </Flex>
         </Container> 
       </Flex>
