@@ -3,6 +3,7 @@
 import Beak from "@/svg/beak";
 import ButtonLink from "@/ui/button/button-link";
 import ButtonPageUp from "@/ui/button/button-page-up";
+import LinkMailTo from "@/ui/link-mail-to";
 import { Box, Container, Flex, Heading, Icon, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 
 export default function Page() {
@@ -103,8 +104,8 @@ export default function Page() {
             <Text color="vampire-black" mb="6" lineHeight="1.5">
               Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, veuillez nous contacter à l&apos;adresse suivante&nbsp;:
             </Text>
-            <Text color="vampire-black" lineHeight="1.5">Nom&nbsp;:</Text>
-            <Text color="vampire-black" mb="6" lineHeight="1.5">Adresse e-mail&nbsp;:</Text>
+            <Text color="vampire-black" lineHeight="1.5">Nom&nbsp;: Jean-Sébastien LEFEVRE</Text>
+            <Text color="vampire-black" mb="6" lineHeight="1.5">Adresse e-mail&nbsp;: <LinkMailTo /></Text>
 
             <Heading
               as="h2"
@@ -225,8 +226,8 @@ export default function Page() {
               Vous pouvez également vous opposer au traitement de vos données personnelles.
               Si vous souhaitez exercer l&apos;un de ces droits, veuillez nous contacter à l&apos;adresse suivante&nbsp;:
             </Text>
-            <Text color="vampire-black" textDecoration="underline" mb="6" px="4" lineHeight="1.5">
-              contact@myowly.com
+            <Text mb="6" px="4" lineHeight="1.5">
+              <LinkMailTo />
             </Text>
             <Text color="vampire-black" mb="6" lineHeight="1.5">
               Nous ferons de notre mieux pour répondre à votre demande dans les meilleurs délais.
@@ -322,8 +323,8 @@ export default function Page() {
               <Text color="vampire-black" mb="6" lineHeight="1.5">
                 Si vous avez des questions, des commentaires ou des préoccupations concernant notre politique de confidentialité, veuillez nous contacter à l&apos;adresse suivante&nbsp;:
               </Text>
-              <Text color="vampire-black" textDecoration="underline" px="4" lineHeight="1.5">
-                contact@myowly.com
+              <Text px="4" lineHeight="1.5">
+                <LinkMailTo />
               </Text>
             </Box>
           </Flex>

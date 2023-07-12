@@ -4,6 +4,7 @@ import { Box, Container, Flex, Heading, Icon, Text } from "@chakra-ui/react";
 import ButtonLink from "@/ui/button/button-link";
 import Beak from "@/svg/beak";
 import ButtonPageUp from "@/ui/button/button-page-up";
+import LinkMailTo from "@/ui/link-mail-to";
 
 export default function Page() {
   return (
@@ -82,7 +83,7 @@ export default function Page() {
             <Text color="vampire-black" mb="6" lineHeight="1.5">Siège social&nbsp;: 2 rue Gustave Eiffel - 10430 Rosières-Près-Troyes - France</Text>
 
             <Text color="vampire-black" lineHeight="1.5">Président&nbsp;: Jean-Sébastien LEFEVRE</Text>
-            <Text color="vampire-black" mb="6" lineHeight="1.5">Mail&nbsp;:</Text>
+            <Text color="vampire-black" mb="6" lineHeight="1.5">Mail&nbsp;: <LinkMailTo /></Text>
           
             <Heading
               as="h2"
