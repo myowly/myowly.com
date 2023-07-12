@@ -82,7 +82,7 @@ export default function Page() {
             <Text color="vampire-black" lineHeight="1.5">N° TVA&nbsp;: FR 79 951 671 452</Text>
             <Text color="vampire-black" mb="6" lineHeight="1.5">Siège social&nbsp;: 2 rue Gustave Eiffel - 10430 Rosières-Près-Troyes - France</Text>
 
-            <Text color="vampire-black" lineHeight="1.5">Président&nbsp;: Jean-Sébastien LEFEVRE</Text>
+            <Text color="vampire-black" mb="2" lineHeight="1.5">Président&nbsp;: Jean-Sébastien LEFEVRE</Text>
             <Text color="vampire-black" mb="6" lineHeight="1.5">Mail&nbsp;: <LinkMailTo /></Text>
           
             <Heading
