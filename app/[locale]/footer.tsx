@@ -134,7 +134,7 @@ export default function Footer() {
         <Flex flexDirection={["column", null, "row"]} justifyContent="space-between" alignItems="baseline">
           <Flex flexDirection={["column", null, "row"]}>
             <Link
-              href="/legal"
+              href="/fr/legal"
               fontSize="xs"
               textTransform="uppercase"
               cursor="pointer"
@@ -145,7 +145,7 @@ export default function Footer() {
               Mentions légales
             </Link>
             <Link
-              href="/legal"
+              href="/fr/privacy"
               fontSize="xs"
               textTransform="uppercase"
               cursor="pointer"
