@@ -1,8 +1,11 @@
 import { Box, Container, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { useTranslations } from 'next-intl';
 
 import ButtonLink from "@/ui/button/button-link";
 
 export default function MainDAO() {
+  const t = useTranslations('Home.MainDAO');
+
   return (
     <Flex
       flexDir="column"
@@ -33,20 +36,24 @@ export default function MainDAO() {
           fontWeight="black"
           lineHeight="30px"
         >
-          Et si
+          { t('title.part_1') }
           <Text
             as="span"
             color="indian-yellow"
             fontSize={["34px", "38px"]}
             fontWeight="semibold"
-          > on reprenait</Text><br />
+          >
+            { t('title.part_2') }
+          </Text><br />
           <Text
             as="span"
             color="fulvous"
             fontSize={["41px", "45px"]}
             lineHeight="54px"
             fontWeight="semibold"
-          > le contrôle</Text> ?
+          >
+            { t('title.part_3') }
+          </Text> ?
         </Heading>
       </Flex>
 
@@ -77,22 +84,21 @@ export default function MainDAO() {
               fontFamily="body"
             >
               <Box fontSize={["33px", "37px", null, null, "53px"]} >
-                <Text as="span" color="fulvous" fontWeight="extrabold">Une DAO </Text>
-                appuyée
+                <Text as="span" color="fulvous" fontWeight="extrabold">{ t('subtitle.part_1') }</Text>
+                { t('subtitle.part_2') }
               </Box>
               <Box fontSize={["39px", "43px", null, null, "62px"]}>
-                <Text as="span">sur </Text>
-                <Text as="span" color="spanish-orange" fontWeight="black" textDecoration="underline">un oracle</Text>
+                <Text as="span">{ t('subtitle.part_3') }</Text>
+                <Text as="span" color="spanish-orange" fontWeight="black" textDecoration="underline">{ t('subtitle.part_4') }</Text>
               </Box>
             </Heading>
 
             <Text color="vampire-black" mt="37px" mb="50px">
-              Les membres de la communauté versent les sommes au sein d&apos;une DAO dont ils ont la gestion.
-              Les prix et les conditions de réalisation des indemnisations sont réalisés automatiquement par un oracle.
+              { t('explaination') }
             </Text>
 
-            <ButtonLink href="#carousel">Comment ça marche ?</ButtonLink>
-            <ButtonLink href="#joinUs">Rester en relation</ButtonLink>
+            <ButtonLink href="#carousel">{ t('how_it_works') }</ButtonLink>
+            <ButtonLink href="#joinUs">{ t('stay_in_touch') }</ButtonLink>
           </Container>
 
           <Box position={{ md: "absolute" }} top="145px" zIndex="-1" w="100vw">

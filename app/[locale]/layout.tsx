@@ -21,12 +21,12 @@ export default async function LocaleLayout({ children, params: {locale} }) {
   
   return (
     <html lang={locale}>
-      <body>
-        <Providers>
-          <NextIntlClientProvider locale={locale} messages={messages}>
+      <body>        
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Providers>
             {children}
-          </NextIntlClientProvider>
-        </Providers>
+          </Providers>
+        </NextIntlClientProvider>        
       </body>
     </html>
   )

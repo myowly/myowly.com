@@ -3,7 +3,7 @@
 import Script from "next/script"
 
 import Hero from "./_hero"
-import MainDAO from "./mainDao"
+import MainDAO from "./_mainDao"
 import MainCaroussel from "./mainCaroussel"
 import MainProjet from "./mainProjet"
 import MainCommunauté from "./mainCommunauté"
