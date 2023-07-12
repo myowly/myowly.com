@@ -33,9 +33,49 @@
         "part_3": "on ",
         "part_4": "an oracle"
       },
-      "explaination": "Community members pay into a DAO they manage. An oracle automatically sets the prices and conditions for compensation.",
+      "explanation": "Community members pay into a DAO they manage. An oracle automatically sets the prices and conditions for compensation.",
+      
       "how_it_works": "How it works?",
       "stay_in_touch": "Stay informed"
+    },
+
+    "MainProjet": {
+      "title": {
+        "part_1": "Why ",
+        "part_2": "did we decide ",
+        "part_3": "to change things"
+      },
+      "cards": {
+        "1": {
+          "title": {
+            "part_1": "A growing ",
+            "part_2": "accidente ",
+            "part_3": "rate"
+          },
+          "text": "Climate change has led to an increase in extreme weather events such as storms, floods, droughts..."
+        },
+        "2": {
+          "title": {
+            "part_1": "Very limited ",
+            "part_2": "care ",
+            "part_3": "and support"
+          },
+          "text": "Players unable to provide effective solutions. Technical obstacles, complex insurance products, loss of confidence, increased costs..."
+        },
+        "3": {
+          "title": {
+            "part_1": "Centralized ",
+            "part_2": "solutions ",
+            "part_3": "for ",
+            "part_4": "a collective ",
+            "part_5": "problem"
+          },
+          "text": "We believe that the best answers come from communities. People working together are more likely to find the right answers to the problems they face."
+        }
+      },
+
+      "benefits": "What are my benefits?",
+      "stay_informed": "Keep in touch"
     }
   }
 }

@@ -1,9 +1,12 @@
 import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
+import { useTranslations } from 'next-intl';
 
 import ButtonLink from "@/ui/button/button-link";
 import Card from "@/ui/card";
 
 export default function MainProjet() {
+  const t = useTranslations('Home.MainProjet');
+
   return (
     <Box py="100px" id="project">
       <Flex
@@ -25,18 +28,22 @@ export default function MainProjet() {
           maxWidth="1120px"
           letterSpacing="-2.4px"
         >
-          Pourquoi
+          { t('title.part_1') }
           <Text
             as="span"
             color="white"
             textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)"
-          > avons nous décidé de </Text>
-          changer les choses
+          >
+            { t('title.part_2') }
+          </Text>
+          { t('title.part_3') }
           <Text
             as="span"
             color="white"
             textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)"
-          > ? </Text>
+          >
+            ?
+          </Text>
         </Heading>
         <Image
           alt=""
@@ -52,31 +59,31 @@ export default function MainProjet() {
       <Flex flexDirection={{ base: "column", lg: "row" }} p="4" justifyContent="center">
         <Card align="right">
           <Heading as="h3" textTransform="uppercase" fontSize="3xl" mb="2">
-            Une sinistralité<br />
-            <Text as="span" color="indian-yellow" fontWeight="extrabold"> de plus en plus </Text><br />
-            <Text as="span" color="fulvous" fontWeight="extrabold">importante</Text>
+            { t('cards.1.title.part_1') }<br />
+            <Text as="span" color="indian-yellow" fontWeight="extrabold">{ t('cards.1.title.part_2') }</Text><br />
+            <Text as="span" color="fulvous" fontWeight="extrabold">{ t('cards.1.title.part_3') }</Text>
           </Heading>
-          <Text color="vampire-black">Les changements climatiques ont entraîné une augmentation des événements météorologiques extrêmes tels que les tempêtes, les inondations, les sécheresses...</Text>
+          <Text color="vampire-black">{ t('cards.1.text') }</Text>
         </Card>
 
         <Card align="left">
           <Heading as="h3" textTransform="uppercase" fontSize="3xl" mb="2">
-            Des prises en charge<br />
-            <Text as="span" color="indian-yellow" fontWeight="extrabold"> très </Text>
-            <Text as="span" color="fulvous" fontWeight="extrabold"> limitées </Text>
+            { t('cards.2.title.part_1') }<br />
+            <Text as="span" color="indian-yellow" fontWeight="extrabold">{ t('cards.2.title.part_2') }</Text>
+            <Text as="span" color="fulvous" fontWeight="extrabold">{ t('cards.2.title.part_3') }</Text>
           </Heading>
-          <Text color="vampire-black">Des acteurs ne pouvant pas apporter des réponses efficaces. Des obstacles techniques, la complexité des produits d&apos;assurance, une perte de confiance, une augmentation des coûts...</Text>
+          <Text color="vampire-black">{ t('cards.2.text') }</Text>
         </Card>
 
         <Card align="right">
           <Heading as="h3" textTransform="uppercase" fontSize="3xl" mb="2">
-            Des solutions<br />
-            <Text as="span" color="indian-yellow" fontWeight="extrabold"> centralisées </Text>
-            pour<br />
-            un problème<br />
-            <Text as="span" color="fulvous" fontWeight="extrabold"> collectif </Text>
+            { t('cards.3.title.part_1') }<br />
+            <Text as="span" color="indian-yellow" fontWeight="extrabold">{ t('cards.3.title.part_2') }</Text>
+            { t('cards.3.title.part_3') }<br />
+            { t('cards.3.title.part_4') }<br />
+            <Text as="span" color="fulvous" fontWeight="extrabold">{ t('cards.3.title.part_5') }</Text>
           </Heading>
-          <Text color="vampire-black">Nous pensons que les meilleures réponses viendront des communautés. Les individus travaillant ensemble sont plus susceptibles de trouver des réponses adaptées aux problèmes qu&apos;ils rencontrent.</Text>
+          <Text color="vampire-black">{ t('cards.3.text') }</Text>
         </Card>
       </Flex>
 
@@ -87,8 +94,8 @@ export default function MainProjet() {
         marginX={["20px", null, null, 0]}
         gap={["10px", null, null, "124px"]}
       >
-        <ButtonLink href="#benefits" minWidth={[null, null, null, "400px", "500px"]}>Quels sont mes avantages ?</ButtonLink>
-        <ButtonLink href="#joinUs" minWidth={[null, null, null, "400px", "500px"]}>Rester informé</ButtonLink>
+        <ButtonLink href="#benefits" minWidth={[null, null, null, "400px", "500px"]}>{ t('benefits') }</ButtonLink>
+        <ButtonLink href="#joinUs" minWidth={[null, null, null, "400px", "500px"]}>{ t('stay_informed') }</ButtonLink>
       </Flex>
     </Box >
   )

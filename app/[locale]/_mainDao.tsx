@@ -94,7 +94,7 @@ export default function MainDAO() {
             </Heading>
 
             <Text color="vampire-black" mt="37px" mb="50px">
-              { t('explaination') }
+              { t('explanation') }
             </Text>
 
             <ButtonLink href="#carousel">{ t('how_it_works') }</ButtonLink>

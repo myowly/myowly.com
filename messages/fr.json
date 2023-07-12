@@ -20,6 +20,7 @@
       "read_more": "En savoir plus",
       "stay_informed": "Se tenir informé"
     },
+
     "MainDAO": {
       "title": {
         "part_1": "Et si ",
@@ -32,9 +33,49 @@
         "part_3": "sur ",
         "part_4": "un oracle"
       },
-      "explaination": "Les membres de la communauté versent les sommes au sein d'une DAO dont ils ont la gestion. Les prix et les conditions de réalisation des indemnisations sont réalisés automatiquement par un oracle.",
+      "explanation": "Les membres de la communauté versent les sommes au sein d'une DAO dont ils ont la gestion. Les prix et les conditions de réalisation des indemnisations sont réalisés automatiquement par un oracle.",
+      
       "how_it_works": "Comment ça marche ?",
       "stay_in_touch": "Rester en relation"
+    },
+
+    "MainProjet": {
+      "title": {
+        "part_1": "Pourquoi ",
+        "part_2": "avons nous décidé de ",
+        "part_3": "changer les choses "
+      },
+      "cards": {
+        "1": {
+          "title": {
+            "part_1": "Une sinistralité",
+            "part_2": "de plus en plus ",
+            "part_3": "importante"
+          },
+          "text": "Les changements climatiques ont entraîné une augmentation des événements météorologiques extrêmes tels que les tempêtes, les inondations, les sécheresses..."
+        },
+        "2": {
+          "title": {
+            "part_1": "Des prises en charge ",
+            "part_2": "très ",
+            "part_3": "limitées"
+          },
+          "text": "Des acteurs ne pouvant pas apporter des réponses efficaces. Des obstacles techniques, la complexité des produits d'assurance, une perte de confiance, une augmentation des coûts..."
+        },
+        "3": {
+          "title": {
+            "part_1": "Des solutions ",
+            "part_2": "centralisées ",
+            "part_3": "pour ",
+            "part_4": "un problème ",
+            "part_5": "collectif"
+          },
+          "text": "Nous pensons que les meilleures réponses viendront des communautés. Les individus travaillant ensemble sont plus susceptibles de trouver des réponses adaptées aux problèmes qu'ils rencontrent."
+        }
+      },
+
+      "benefits": "Quels sont mes avantages ?",
+      "stay_informed": "Rester informé"
     }
   }
 }
