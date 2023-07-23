@@ -15,7 +15,7 @@ import MainMessage from "./_mainMessage"
 import MainRoadmap from "./_mainRoadmap"
 import MainTeam from "./_mainTeam"
 import MainApp from "./_mainApp"
-import Footer from './footer'
+import Footer from './_footer'
 
 
 export default function Home() {

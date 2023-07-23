@@ -1,10 +1,14 @@
-import { Box, Button, Center, Checkbox, Container, Divider, Flex, FormControl, FormLabel, Heading, Image, Input, Link, Text } from "@chakra-ui/react"
+import { Box, Center, Container, Divider, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
+import { useTranslations } from 'next-intl';
 
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
 import FormNewsletter from './_formNewsletter'
 
+
 export default function Footer() {
+  const t = useTranslations('Home.Footer');
+
   return (
     <Flex
       flexDirection="column"
@@ -61,7 +65,7 @@ export default function Footer() {
               />
             </Box>
 
-            <Heading as='h4' mb="4" textTransform="uppercase" color="cultured">Le projet MyOwly</Heading>
+            <Heading as='h4' mb="4" textTransform="uppercase" color="cultured">{ t('summary.title') }</Heading>
 
             <Flex flexDirection="column">
               <Link
@@ -71,7 +75,7 @@ export default function Footer() {
                 color="cultured"
                 mb="2"
               >
-                Découvrir le projet MyOwly
+                { t('summary.links.project') }
               </Link>
               <Link
                 href="#community"
@@ -80,7 +84,7 @@ export default function Footer() {
                 color="cultured"
                 mb="2"
               >
-                Suivre la communauté
+                { t('summary.links.community') }
               </Link>
               <Link
                 href="#joinUs"
@@ -89,7 +93,7 @@ export default function Footer() {
                 color="cultured"
                 mb="2"
               >
-                Rejoindre la Newsletter
+                { t('summary.links.newsletter') }
               </Link>
               <Link
                 href="#roadmap"
@@ -98,7 +102,7 @@ export default function Footer() {
                 color="cultured"
                 mb="2"
               >
-                Roadmap
+                { t('summary.links.roadmap') }
               </Link>
               <Link
                 href="#team"
@@ -107,7 +111,7 @@ export default function Footer() {
                 color="cultured"
                 mb="2"
               >
-                L&apos;équipe
+                { t('summary.links.team') }
               </Link>
             </Flex>
           </Box>
@@ -120,9 +124,9 @@ export default function Footer() {
             maxWidth="500px"
           >
             <Text my="8" textTransform="uppercase" fontSize="xl" fontWeight="bold" textAlign={["start", null, "end"]}>
-              <Text as="span" color="indian-yellow">Rester connecté </Text><br />
-              avec notre
-              <Text as="span" color="fulvous"> newsletter</Text>
+              <Text as="span" color="indian-yellow">{ t('form.title.part_1') }</Text><br />
+              { t('form.title.part_2') }
+              <Text as="span" color="fulvous">{ t('form.title.part_3') }</Text>
             </Text>
 
             <FormNewsletter />

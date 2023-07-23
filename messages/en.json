@@ -318,6 +318,26 @@
       }
     },
 
+    "Footer": {
+      "summary": {
+        "title": "The MyOwly project",
+        "links": {
+          "project": "Discover the MyOwly project",
+          "community": "Follow the community",
+          "newsletter": "Join the newsletter",
+          "roadmap" : "Roadmap",
+          "team": "The team"
+        }
+      },
+      "form": {
+        "title": {
+          "part_1": "Stay connected ",
+          "part_2": "with our ",
+          "part_3": "newsletter"
+        }
+      }
+    },
+
     "FormNewsletter": {
       "firstname": "Your fistname",
       "lastname": "Your name",
