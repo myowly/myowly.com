@@ -2,6 +2,8 @@
 
 import Script from "next/script"
 
+import ButtonPageUp from "@/ui/button/button-page-up"
+
 import Hero from "./_hero"
 import MainDAO from "./_mainDao"
 import MainCaroussel from "./_mainCaroussel"
@@ -12,9 +14,8 @@ import MainRejoignez from "./_mainRejoignez"
 import MainMessage from "./_mainMessage"
 import MainRoadmap from "./_mainRoadmap"
 import MainTeam from "./_mainTeam"
-import MainApp from "./mainApp"
+import MainApp from "./_mainApp"
 import Footer from './footer'
-import ButtonPageUp from "@/ui/button/button-page-up"
 
 
 export default function Home() {

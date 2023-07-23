@@ -1,8 +1,11 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { useTranslations } from 'next-intl';
 
 import ButtonLinkBeak from "@/ui/button/button-link-beak"
 
 export default function MainApp() {
+  const t = useTranslations('Home.MainApp');
+
   return (
     <Flex
       flexDir="column"
@@ -32,20 +35,24 @@ export default function MainApp() {
           fontWeight="black"
           lineHeight="30px"
         >
-          Et si
+          { t('title.part_1') }
           <Text
             as="span"
             color="indian-yellow"
             fontSize={["34px", "38px"]}
             fontWeight="semibold"
-          > on reprenait</Text><br />
+          >
+            { t('title.part_2') }
+          </Text><br />
           <Text
             as="span"
             color="fulvous"
             fontSize={["41px", "45px"]}
             lineHeight="54px"
             fontWeight="semibold"
-          > le contrôle</Text> ?
+          >
+            { t('title.part_3') }
+          </Text> ?
         </Heading>
       </Flex>
 

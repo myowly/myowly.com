@@ -310,6 +310,14 @@
       "title": "L'équipe MyOwly"
     },
 
+    "MainApp": {
+      "title": {
+        "part_1": "Et si ",
+        "part_2": "on reprenait ",
+        "part_3": "le contrôle "
+      }
+    },
+
     "FormNewsletter": {
       "firstname": "Votre prénom",
       "lastname": "Votre nom",
