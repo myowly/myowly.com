@@ -1,12 +1,15 @@
-import { Box, Button, Center, Checkbox, Flex, FormControl, FormLabel, Heading, Icon, Input, Image, Text } from "@chakra-ui/react";
-
-import ButtonSocialNetwork from "@/ui/button/button-social-network"
+import { Box, Center, Flex,  Heading, Icon, Image, Text } from "@chakra-ui/react";
+import { useTranslations } from 'next-intl';
 
 import Beak from "@/svg/beak"
+import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
-import FormNewsletter from './formNewsletter'
+import FormNewsletter from './_formNewsletter'
+
 
 export default function MainRejoignez() {
+  const t = useTranslations('Home.MainRejoignez');
+
   return (
     <Flex
       id="joinUs"
@@ -62,7 +65,7 @@ export default function MainRejoignez() {
         >
           <Icon as={Beak} width="auto" height="20" position="absolute" top="-10" right="8" />
 
-          <Text fontStyle="italic">Qu&apos;attendez-vous ? ...</Text>
+          <Text fontStyle="italic">{ t('header') }</Text>
           <Heading
             as="h2"
             textTransform="uppercase"
@@ -71,7 +74,7 @@ export default function MainRejoignez() {
             my="2"
             lineHeight="1"
           >
-            Rejoingez-nous
+            { t('title') }
           </Heading>
 
           <Text
@@ -82,9 +85,9 @@ export default function MainRejoignez() {
             lineHeight="1"
             fontWeight="900"
           >
-            <Text as="span" color="indian-yellow">Restez connecté </Text><br />
-            avec notre
-            <Text as="span" color="fulvous"> newsletter</Text>
+            <Text as="span" color="indian-yellow">{ t('subtitle.part_1') }</Text><br />
+            { t('subtitle.part_2') }
+            <Text as="span" color="fulvous">{ t('subtitle.part_3') }</Text>
           </Text>
 
           <FormNewsletter />

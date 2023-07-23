@@ -2,7 +2,7 @@ import { Box, Button, Center, Checkbox, Container, Divider, Flex, FormControl, F
 
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
-import FormNewsletter from './formNewsletter'
+import FormNewsletter from './_formNewsletter'
 
 export default function Footer() {
   return (

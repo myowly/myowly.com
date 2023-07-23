@@ -5,6 +5,7 @@ import ButtonLinkBeak from "@/ui/button/button-link-beak"
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 import Beak from "@/svg/beak"
 
+
 export default function Hero() {
   const t = useTranslations('Home.Hero');
 

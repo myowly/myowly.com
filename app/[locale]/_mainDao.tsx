@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 
 import ButtonLink from "@/ui/button/button-link";
 
+
 export default function MainDAO() {
   const t = useTranslations('Home.MainDAO');
 

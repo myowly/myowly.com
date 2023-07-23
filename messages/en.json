@@ -196,6 +196,24 @@
         }
       },
       "read_more": "Read more"
+    },
+
+    "MainRejoignez": {
+      "header": "What are you waiting for? ...",
+      "title": "Join us",
+      "subtitle": {
+        "part_1": "Stay connected ",
+        "part_2": "with our ",
+        "part_3": "newsletter"
+      }
+    },
+
+    "FormNewsletter": {
+      "firstname": "Your fistname",
+      "lastname": "Your name",
+      "email": "Your email",
+      "consent": "I agree to my information being stored and used to register and subscribe to the MyOwly newsletter.",
+      "send": "Send"
     }
   }
 }

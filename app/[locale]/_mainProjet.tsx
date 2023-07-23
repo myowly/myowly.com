@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import ButtonLink from "@/ui/button/button-link";
 import Card from "@/ui/card";
 
+
 export default function MainProjet() {
   const t = useTranslations('Home.MainProjet');
 
