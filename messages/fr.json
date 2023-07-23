@@ -248,6 +248,21 @@
       "newsletter": "Rejoindre la newsletter"
     },
 
+    "MainCommunauté": {
+      "title": "Rejoingez la communauté",
+      "subtitles": {
+        "1": {
+          "part_1": "sur nos ",
+          "part_2": "réseaux sociaux"
+        },
+        "2": {
+          "part_1": "avec notre ",
+          "part_2": "newsletter"
+        }
+      },
+      "subscription": "Je m'inscris"
+    },
+
     "FormNewsletter": {
       "firstname": "Votre prénom",
       "lastname": "Votre nom",

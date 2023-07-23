@@ -1,11 +1,14 @@
 import { Box, Center, Flex, Heading, Icon, Image, Text } from "@chakra-ui/react";
+import { useTranslations } from 'next-intl';
 
+import Beak from "@/svg/beak"
 import ButtonLink from "@/ui/button/button-link";
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
-import Beak from "@/svg/beak"
 
 export default function MainCommunauté() {
+  const t = useTranslations('Home.MainCommunauté');
+
   return (
     <Flex
       id="community"
@@ -69,7 +72,7 @@ export default function MainCommunauté() {
             my="2"
             lineHeight="1"
           >
-            Rejoingez la communauté
+            { t('title') }
           </Heading>
 
           <Text
@@ -79,8 +82,8 @@ export default function MainCommunauté() {
             lineHeight="1"
             fontWeight={["600", null, null, "800"]}
           >
-            sur nos
-            <Text as="span" color="indian-yellow"> réseaux sociaux</Text>
+            { t('subtitles.1.part_1') }
+            <Text as="span" color="indian-yellow">{ t('subtitles.1.part_2') }</Text>
           </Text>
           <Center
             my="2.5"
@@ -105,10 +108,10 @@ export default function MainCommunauté() {
             lineHeight="1"
             fontWeight={["600", null, null, "800"]}
           >
-            avec notre
-            <Text as="span" color="fulvous"> newsletter</Text>
+            { t('subtitles.2.part_1') }
+            <Text as="span" color="fulvous">{ t('subtitles.2.part_2') }</Text>
           </Text>
-          <ButtonLink href="#joinUs" background="cultured">Je m&apos;inscris</ButtonLink>
+          <ButtonLink href="#joinUs" background="cultured">{ t('subscription') }</ButtonLink>
         </Box>
       </Flex>
     </Flex>

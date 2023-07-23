@@ -248,6 +248,21 @@
       "newsletter": "Join the newsletter"
     },
 
+    "MainCommunauté": {
+      "title": "Join the community",
+      "subtitles": {
+        "1": {
+          "part_1": "on our ",
+          "part_2": "social networks"
+        },
+        "2": {
+          "part_1": "with our ",
+          "part_2": "newsletter"
+        }
+      },
+      "subscription": "Subscribe"
+    },
+
     "FormNewsletter": {
       "firstname": "Your fistname",
       "lastname": "Your name",
