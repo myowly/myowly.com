@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import ButtonAction from "@/ui/button/button-action";
 
 
-export default function formNewsletter() {
+export default function FormNewsletter() {
   const t = useTranslations('Home.FormNewsletter');
 
   return (
