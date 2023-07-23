@@ -306,6 +306,10 @@
       }
     },
 
+    "MainTeam": {
+      "title": "The MyOwly team"
+    },
+
     "FormNewsletter": {
       "firstname": "Your fistname",
       "lastname": "Your name",

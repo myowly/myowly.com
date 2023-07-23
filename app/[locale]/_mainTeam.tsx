@@ -1,8 +1,12 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { useTranslations } from 'next-intl';
 
 import CardTeam from "@/ui/card-team";
 
+
 export default function MainTeam() {
+  const t = useTranslations('Home.MainTeam');
+
   return (
     <Box
       py="16"
@@ -16,7 +20,7 @@ export default function MainTeam() {
           fontWeight="extrabold"
           color="vampire-black"
         >
-          L&apos;équipe MyOwly
+          { t('title') }
         </Heading>
       </Flex>
 

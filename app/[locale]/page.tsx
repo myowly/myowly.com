@@ -11,7 +11,7 @@ import MainSimplifier from "./_mainSimplifier"
 import MainRejoignez from "./_mainRejoignez"
 import MainMessage from "./_mainMessage"
 import MainRoadmap from "./_mainRoadmap"
-import MainTeam from "./mainTeam"
+import MainTeam from "./_mainTeam"
 import MainApp from "./mainApp"
 import Footer from './footer'
 import ButtonPageUp from "@/ui/button/button-page-up"
