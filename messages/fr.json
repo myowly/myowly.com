@@ -263,6 +263,32 @@
       "subscription": "Je m'inscris"
     },
 
+    "MainMessage": {
+      "texts": {
+        "1": {
+          "part_1": "Utilisez ",
+          "part_2": "les dernières technologies ",
+          "part_3": "pour vous offrir ",
+          "part_4": "une protection ",
+          "part_5": "adaptée à vos besoins"
+        },
+        "2": {
+          "part_1": "Concentrez-vous ",
+          "part_2": "sur ce qui compte ",
+          "part_3": "vraiment"
+        },
+        "3": {
+          "part_1": "Une protection ",
+          "part_2": "d'entreprises ",
+          "part_3": "et de ",
+          "part_4": "particuliers ",
+          "part_5": "sur mesure ",
+          "part_6": "et ",
+          "part_7": "sécurisée"
+        }
+      }
+    },
+
     "FormNewsletter": {
       "firstname": "Votre prénom",
       "lastname": "Votre nom",

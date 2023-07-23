@@ -1,6 +1,10 @@
 import { Text, Box, Image, Container } from "@chakra-ui/react";
+import { useTranslations } from 'next-intl';
+
 
 export default function MainMessage() {
+  const t = useTranslations('Home.MainMessage');
+
   return (
     <Container maxWidth={[null, null, null, "1300px", "1500px"]} centerContent>
       <Box alignSelf="end" mt={["100px"]} mx={["20px"]} mb="50px" >
@@ -11,9 +15,11 @@ export default function MainMessage() {
           fontSize="30px"
           lineHeight="36px"
         >
-          Utilisez <Box as="span" fontStyle='italic' fontWeight='hairline'>les dernières technologies </Box>pour
-          vous offrir <Box as="span" fontWeight='bold'>une protection </Box>
-          <Box as="span" fontWeight='extrabold' fontStyle='italic' color="fulvous">adaptée à vos besoins</Box>.
+          { t('texts.1.part_1') }
+          <Box as="span" fontStyle='italic' fontWeight='hairline'>{ t('texts.1.part_2') }</Box>
+          { t('texts.1.part_3') }
+          <Box as="span" fontWeight='bold'>{ t('texts.1.part_4') }</Box>
+          <Box as="span" fontWeight='extrabold' fontStyle='italic' color="fulvous">{ t('texts.1.part_5') }</Box>.
         </Text>
       </Box>
       <Box display={[null, null, "none"]} mx="auto" >
@@ -27,8 +33,9 @@ export default function MainMessage() {
           fontSize="30px"
           lineHeight="36px"
         >
-          <Box as="span" fontWeight='bold'>Concentrez-vous</Box> sur ce qui compte <Box
-            as="span" fontWeight='extrabold' color="keppel" textDecoration={[null, null, null, "underline"]}>vraiment</Box>.
+          <Box as="span" fontWeight='bold'>{ t('texts.2.part_1') }</Box>
+          { t('texts.2.part_2') }
+          <Box as="span" fontWeight='extrabold' color="keppel" textDecoration={[null, null, null, "underline"]}>{ t('texts.2.part_3') }</Box>.
         </Text>
       </Box>
       <Box display={[null, null, "none"]} mx="auto" >
@@ -42,9 +49,13 @@ export default function MainMessage() {
           fontSize="30px"
           lineHeight="30px"
         >
-          Une protection <Box as="span" fontStyle='italic' fontWeight='extrabold' color="fulvous">d&apos;entreprises</Box> et
-          de <Box as="span" fontStyle='italic' fontWeight='extrabold' color="spanish-orange">particuliers</Box>
-          <Box as="span" fontWeight='bold'> sur mesure</Box> et <Box as="span" fontWeight='bold'>sécurisée.</Box>
+          { t('texts.3.part_1') }
+          <Box as="span" fontStyle='italic' fontWeight='extrabold' color="fulvous">{ t('texts.3.part_2') }</Box>
+          { t('texts.3.part_3') }
+          <Box as="span" fontStyle='italic' fontWeight='extrabold' color="spanish-orange">{ t('texts.3.part_4') }</Box>
+          <Box as="span" fontWeight='bold'>{ t('texts.3.part_5') }</Box>
+          { t('texts.3.part_6') }
+          <Box as="span" fontWeight='bold'>{ t('texts.3.part_7') }</Box>.
         </Text>
       </Box>
     </Container>

@@ -263,6 +263,32 @@
       "subscription": "Subscribe"
     },
 
+    "MainMessage": {
+      "texts": {
+        "1": {
+          "part_1": "Use ",
+          "part_2": "the latest technologies ",
+          "part_3": "to offer ",
+          "part_4": "protection ",
+          "part_5": "tailored to you needs"
+        },
+        "2": {
+          "part_1": "Focus ",
+          "part_2": "on what ",
+          "part_3": "really matters"
+        },
+        "3": {
+          "part_1": "Tailor-made, ",
+          "part_2": "secure protection ",
+          "part_3": "for ",
+          "part_4": "",
+          "part_5": "business ",
+          "part_6": "and ",
+          "part_7": "individuals"
+        }
+      }
+    },
+
     "FormNewsletter": {
       "firstname": "Your fistname",
       "lastname": "Your name",
