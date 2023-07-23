@@ -48,7 +48,7 @@
       "cards": {
         "1": {
           "title": {
-            "part_1": "Une sinistralité",
+            "part_1": "Une sinistralité ",
             "part_2": "de plus en plus ",
             "part_3": "importante"
           },
@@ -206,6 +206,46 @@
         "part_2": "avec notre ",
         "part_3": "newsletter"
       }
+    },
+
+    "MainSimplifier": {
+      "title": {
+        "part_1": "En quoi ",
+        "part_2": "allons nous ",
+        "part_3": "vous ",
+        "part_4": "simplifier la vie "
+      },
+      "cards": {
+        "1": {
+          "title": {
+            "part_1": "Des ",
+            "part_2": "provisions ",
+            "part_3": "et non ",
+            "part_4": "des cotisations"
+          },
+          "text": "Changeons votre perception et reprenez confiance. Ici, l'argent versé reste la propriété de l'utilisateur."
+        },
+        "2": {
+          "title": {
+            "part_1": "Une ",
+            "part_2": "transparance ",
+            "part_3": "totale ",
+            "part_4": "envers ",
+            "part_5": "l'utilisateur"
+          },
+          "text": "Ici, vous comprenez exactement ce que vous payez et ce que vous pouvez attendre en retour. Vous pouvez à tout moment consulter les liquidités disponibles."
+        },
+        "3": {
+          "title": {
+            "part_1": "Jusqu'à ",
+            "part_2": "-90% ",
+            "part_3": "de frais"
+          },
+          "text": "Un système automatisé réduisant drastiquement les coûts notamment par la suppression de nombreux frais d'intermédiaires."
+        }
+      },
+      "project": "Déroulement du projet",
+      "newsletter": "Rejoindre la newsletter"
     },
 
     "FormNewsletter": {

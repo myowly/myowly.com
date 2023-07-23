@@ -208,6 +208,46 @@
       }
     },
 
+    "MainSimplifier": {
+      "title": {
+        "part_1": "How ",
+        "part_2": "can we ",
+        "part_3": "make your ",
+        "part_4": "life easier"
+      },
+      "cards": {
+        "1": {
+          "title": {
+            "part_1": "",
+            "part_2": "Provisions, ",
+            "part_3": "not ",
+            "part_4": "contributions"
+          },
+          "text": "Change your perception and regain your confidence. Here, the money paid in remains the property of the user."
+        },
+        "2": {
+          "title": {
+            "part_1": "",
+            "part_2": "total ",
+            "part_3": "transparency ",
+            "part_4": "for ",
+            "part_5": "the user"
+          },
+          "text": "Here, you understand exactly what you're paying and what you can expect in return. You can check your available cash at any time."
+        },
+        "3": {
+          "title": {
+            "part_1": "Up to ",
+            "part_2": "-90% ",
+            "part_3": "lower charges"
+          },
+          "text": "An automated system that drastically cuts costs by eliminating many intermediary fees."
+        }
+      },
+      "project": "The project",
+      "newsletter": "Join the newsletter"
+    },
+
     "FormNewsletter": {
       "firstname": "Your fistname",
       "lastname": "Your name",

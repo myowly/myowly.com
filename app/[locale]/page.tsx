@@ -7,7 +7,7 @@ import MainDAO from "./_mainDao"
 import MainCaroussel from "./_mainCaroussel"
 import MainProjet from "./_mainProjet"
 import MainCommunauté from "./mainCommunauté"
-import MainSimplifier from "./mainSimplifier"
+import MainSimplifier from "./_mainSimplifier"
 import MainRejoignez from "./_mainRejoignez"
 import MainMessage from "./mainMessage"
 import MainRoadmap from "./mainRoadmap"
@@ -15,6 +15,7 @@ import MainTeam from "./mainTeam"
 import MainApp from "./mainApp"
 import Footer from './footer'
 import ButtonPageUp from "@/ui/button/button-page-up"
+
 
 export default function Home() {
   return (
