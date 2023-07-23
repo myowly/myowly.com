@@ -4,7 +4,7 @@ import Script from "next/script"
 
 import Hero from "./_hero"
 import MainDAO from "./_mainDao"
-import MainCaroussel from "./mainCaroussel"
+import MainCaroussel from "./_mainCaroussel"
 import MainProjet from "./_mainProjet"
 import MainCommunauté from "./mainCommunauté"
 import MainSimplifier from "./mainSimplifier"
@@ -22,11 +22,11 @@ export default function Home() {
       <main>
         <Hero />
         <MainDAO />
-        <MainCaroussel />
-        <MainProjet />
-        <MainCommunauté />
-        <MainSimplifier />
         <MainRejoignez />
+        <MainProjet />
+        <MainCaroussel />
+        <MainSimplifier />
+        <MainCommunauté />
         <MainMessage />
         <MainRoadmap />
         <MainTeam />

@@ -76,6 +76,126 @@
 
       "benefits": "Quels sont mes avantages ?",
       "stay_informed": "Rester informé"
+    },
+
+    "MainCaroussel": {
+      "slides": {
+        "1": {
+          "title": {
+            "part_1": "Une ",
+            "part_2": "assurance ",
+            "part_3": "paramétrique"
+          },
+          "subtitle": {
+            "part_1": "Tout est ",
+            "part_2": "prévu ",
+            "part_3": "pour ",
+            "part_4": "l'imprévu"
+          },
+          "description": "Une indemnisation plus rapide et plus efficace et sans avoir à prouver les pertes subies.",
+          "modalHeading": "L'assurance paramétrique",
+          "modalBody": {
+            "part_1": "L'assurance paramétrique est une approche ",
+            "part_2": "innovante ",
+            "part_3": "qui propose des solutions adaptées aux défis modernes. Contrairement à l'assurance traditionnelle, qui mesure les dommages ou pertes subis par les assurés, l'assurance paramétrique se concentre sur ",
+            "part_4": "des paramètres spécifiques prédéfinis. ",
+            "part_5": "Ces paramètres tels que la vitesse du vent, les précipitations et l'indice de rendement peuvent être mesurés objectivement et sont ",
+            "part_6": "indépendants de la situation individuelle de l'assuré. ",
+            "part_7": "Grâce à cette approche ",
+            "part_8": "basée sur des données quantifiables, ",
+            "part_9": "l'assurance paramétrique permet un règlement des sinistres plus rapide et une plus grande transparence. De plus, ",
+            "part_10": "il est possible de couvrir des risques difficilement assurables, ",
+            "part_11": "tels que les catastrophes naturelles et les fluctuations des prix des matières premières."
+          }
+        },
+        "2": {
+          "title": {
+            "part_1": "La ",
+            "part_2": "DAO"
+          },
+          "subtitle": {
+            "part_1": "La solution d'assurance ",
+            "part_2": "du futur"
+          },
+          "description": "Une pool de liquidités et des couvertures autogérées par la communauté.",
+          "modalHeading": "Organisation autonome décentralisée",
+          "modalBody": {
+            "part_1": "Les DAO représentent une nouvelle forme d'organisation qui émerge avec la technologie blockchain. Elles fonctionnent ",
+            "part_2": "sans l'intervention d'une autorité centrale. ",
+            "part_3": "Elles s'appuient sur des contrats intelligents, des programmes informatiques qui s'exécutent ",
+            "part_4": "automatiquement ",
+            "part_5": "et de manière ",
+            "part_6": "transparente, ",
+            "part_7": "pour assurer une prise de décision et des transactions commerciales partagées. Les DAO présentent de nombreux avantages, tels que ",
+            "part_8": "l'élimination des intermédiaires ",
+            "part_9": "et leurs coûts associés, ",
+            "part_10": "une gouvernance démocratique ",
+            "part_11": "avec des droits de vote égaux pour tous les membres et ",
+            "part_12": "une transparence totale ",
+            "part_13": "avec des enregistrements immuables de toutes les transactions sur la blockchain. Les DAO ouvrent de nouvelles opportunités ",
+            "part_14": "d'innovation, ",
+            "part_15": "de ",
+            "part_16": "collaboration ",
+            "part_17": "et de ",
+            "part_18": "création de valeurs ",
+            "part_19": "à travers les communautés en ligne."
+          }
+        },
+        "3": {
+          "title": "L'oracle ",
+          "subtitle": {
+            "part_1": "La ",
+            "part_2": "fiabilité ",
+            "part_3": "des ",
+            "part_4": "contrats intelligents"
+          },
+          "description": "Des sources de données fiables utilisées pour déclencher les smart contracts.",
+          "modalHeading": "L'oracle",
+          "modalBody": {
+            "part_1": "Les oracles de la blockchain sont ",
+            "part_2": "l'élément clé ",
+            "part_3": "qui permet aux contrats intelligents de ",
+            "part_4": "communiquer avec le monde réel. ",
+            "part_5": "Ces oracles agissent comme des ponts entre les données externes et les applications basées sur la blockchain. Les contrats intelligents d'Oracle fonctionnent de manière ",
+            "part_6": "fiable ",
+            "part_7": "et sécurisée pour fournir ",
+            "part_8": "des informations en temps réel ",
+            "part_9": "à partir de sources externes telles que les prix des devises, les conditions météorologiques et les résultats des matchs sportifs. Ces données sont ",
+            "part_10": "validées avant d'être intégrées ",
+            "part_11": "dans des contrats intelligents pour ",
+            "part_12": "garantir l'intégrité et l'authenticité ",
+            "part_13": "des informations transmises. Que ce soit pour les applications financières, les marchés de prédiction ou les systèmes d&apos;assurance décentralisés, les oracles blockchain fournissent une solution fiable et transparente pour ",
+            "part_14": "intégrer des données externes dans des applications basées sur la blockchain."
+          }
+        },
+        "4": {
+          "title": {
+            "part_1": "Une ",
+            "part_2": "IA ",
+            "part_3": "actuarielle"
+          },
+          "subtitle": {
+            "part_1": "La ",
+            "part_2": "précision, ",
+            "part_3": "pour ",
+            "part_4": "un avenir sûr"
+          },
+          "description": "L'intelligence artificielle analyse des données complexes et prévoit les risques futurs avec une précision accrue.",
+          "modalHeading": "IA actuarielle",
+          "modalBody": {
+            "part_1": "L'IA actuarielle, ou intelligence actuarielle artificielle, est un système informatique qui combine les avancées de l'intelligence artificielle et des compétences actuarielles pour ",
+            "part_2": "analyser et évaluer les risques financiers et assurantiels. ",
+            "part_3": "Ces IA utilisent des algorithmes avancés et des techniques d'apprentissage automatique pour traiter d'énormes quantités de données et ",
+            "part_4": "créer des modèles prédictifs précis. ",
+            "part_5": "L'IA actuarielle a la capacité de ",
+            "part_6": "reconnaître des modèles et des tendances complexes, ",
+            "part_7": "permettant aux professionnels de l'assurance et de la finance de prendre des décisions éclairées concernant la tarification des produits, la gestion de portefeuilles et l'estimation des sinistres. Ces systèmes innovants peuvent également ",
+            "part_8": "automatiser certaines tâches répétitives, ",
+            "part_9": "libérant ainsi les actuaires pour se concentrer sur des activités à plus forte valeur ajoutée."
+          }
+        }
+      },
+      "read_more": "En savoir plus"
     }
   }
 }
