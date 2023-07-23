@@ -289,6 +289,23 @@
       }
     },
 
+    "MainRoadmap": {
+      "months" : {
+        "january": "January",
+        "february": "February",
+        "march": "March",
+        "april": "April",
+        "may": "May",
+        "june": "June",
+        "july": "July",
+        "august": "August",
+        "september": "Sept.",
+        "october": "October",
+        "november": "November",
+        "december": "December"
+      }
+    },
+
     "FormNewsletter": {
       "firstname": "Your fistname",
       "lastname": "Your name",

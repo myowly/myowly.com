@@ -1,40 +1,45 @@
 import { Flex, Text, Heading, Image, Box, Icon, Show } from "@chakra-ui/react";
-import { RoadmapEllipseGreen, RoadmapEllipseOrange } from "@/svg/roadmap-ellipse";
-import ArrowBlack from "@/svg/arrow-black";
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from 'next-intl';
+
+import ArrowBlack from "@/svg/arrow-black";
+import { RoadmapEllipseGreen, RoadmapEllipseOrange } from "@/svg/roadmap-ellipse";
+
 
 export default function MainRoadmap() {
+	const t = useTranslations('Home.MainRoadmap');
+
 	const steps = [
 		{
-			title: <>Mai 2023</>,
+			title: <>{ t('months.may') } 2023</>,
 			description: <>Création de la marque et de son identité</>
 		},
 		{
-			title: <>Juin 2023</>,
+			title: <>{ t('months.june') } 2023</>,
 			description: <>Lancement Landing Page</>
 		},
 		{
-			title: <>Sept. 2023</>,
+			title: <>{ t('months.september') } 2023</>,
 			description: <>Seed<br />1ères embauches<br />Lancement campagne NFT</>
 		},
 		{
-			title: <>Janvier 2024</>,
+			title: <>{ t('months.january') } 2024</>,
 			description: <>Vente NFT<br />DAO Événementielle</>
 		},
 		{
-			title: <>Mars 2024</>,
+			title: <>{ t('months.march') } 2024</>,
 			description: <>IA Paramétrique</>
 		},
 		{
-			title: <>Mai 2024</>,
+			title: <>{ t('months.may') } 2024</>,
 			description: <>Phase Béta Test</>
 		},
 		{
-			title: <>Sept. 2024</>,
+			title: <>{ t('months.september') } 2024</>,
 			description: <>Lancement de produit</>
 		},
 		{
-			title: <>Mai 2025</>,
+			title: <>{ t('months.may') } 2025</>,
 			description: <>Décentralisation IA (Hub)</>
 		},
 	]

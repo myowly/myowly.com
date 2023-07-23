@@ -10,7 +10,7 @@ import MainCommunauté from "./_mainCommunauté"
 import MainSimplifier from "./_mainSimplifier"
 import MainRejoignez from "./_mainRejoignez"
 import MainMessage from "./_mainMessage"
-import MainRoadmap from "./mainRoadmap"
+import MainRoadmap from "./_mainRoadmap"
 import MainTeam from "./mainTeam"
 import MainApp from "./mainApp"
 import Footer from './footer'
