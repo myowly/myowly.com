@@ -352,7 +352,10 @@
           "part_2": "with our ",
           "part_3": "newsletter"
         }
-      }
+      },
+      "legal": "Legal notices",
+      "privacy": "Privacy",
+      "rights": "All rights reserved"
     },
 
     "FormNewsletter": {

@@ -146,7 +146,7 @@ export default function Footer() {
               my={["2", null, "0"]}
               mr={["0", null, "2"]}
             >
-              Mentions légales
+              { t('legal') }
             </Link>
             <Link
               href="/fr/privacy"
@@ -157,7 +157,7 @@ export default function Footer() {
               my={["2", null, "0"]}
               mx={["0", null, "2"]}
             >
-              Confidentialité
+              { t('privacy') }
             </Link>
           </Flex>
           <Text
@@ -166,7 +166,7 @@ export default function Footer() {
             alignSelf={["center"]}
             my="1"
           >
-            Copyright © 2023 MYOWLY. Tous droits réservés.
+            Copyright © 2023 MYOWLY. { t('rights') }.
           </Text>
         </Flex>        
       </Container>

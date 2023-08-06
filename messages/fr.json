@@ -352,7 +352,10 @@
           "part_2": "avec notre ",
           "part_3": "newsletter"
         }
-      }
+      },
+      "legal": "Mentions légales",
+      "privacy": "Confidentialité",
+      "rights": "Tous droits réservés"
     },
 
     "FormNewsletter": {
