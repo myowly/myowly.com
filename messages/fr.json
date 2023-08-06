@@ -303,6 +303,23 @@
         "october": "Octobre",
         "november": "Novembre",
         "december": "Décembre"
+      },
+      "description":{
+        "1": "Création de la marque et de son identité",
+        "2": "Lancement Landing Page",
+        "3": {
+          "a": "Seed",
+          "b": "1ères embauches",
+          "c": "Lancement campagne NFT"
+        },
+        "4": {
+          "a": "Vente NFT",
+          "b": "DAO Événementielle"
+        },
+        "5": "IA Paramétrique",
+        "6": "Phase Béta Test",
+        "7": "Lancement de produit",
+        "8": "Décentralisation IA (Hub)"
       }
     },
 

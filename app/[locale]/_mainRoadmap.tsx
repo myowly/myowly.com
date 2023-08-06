@@ -12,35 +12,44 @@ export default function MainRoadmap() {
 	const steps = [
 		{
 			title: <>{ t('months.may') } 2023</>,
-			description: <>Création de la marque et de son identité</>
+			description: <>{ t('description.1') }</>
 		},
 		{
 			title: <>{ t('months.june') } 2023</>,
-			description: <>Lancement Landing Page</>
+			description: <>{ t('description.2') }</>
 		},
 		{
 			title: <>{ t('months.september') } 2023</>,
-			description: <>Seed<br />1ères embauches<br />Lancement campagne NFT</>
+			description:
+				<>
+					{ t('description.3.a') }<br />
+					{ t('description.3.b') }<br />
+					{ t('description.3.c') }
+				</>
 		},
 		{
 			title: <>{ t('months.january') } 2024</>,
-			description: <>Vente NFT<br />DAO Événementielle</>
+			description:
+				<>
+					{ t('description.4.a') }<br />
+					{ t('description.4.b') }
+				</>
 		},
 		{
 			title: <>{ t('months.march') } 2024</>,
-			description: <>IA Paramétrique</>
+			description: <>{ t('description.5') }</>
 		},
 		{
 			title: <>{ t('months.may') } 2024</>,
-			description: <>Phase Béta Test</>
+			description: <>{ t('description.6') }</>
 		},
 		{
 			title: <>{ t('months.september') } 2024</>,
-			description: <>Lancement de produit</>
+			description: <>{ t('description.7') }</>
 		},
 		{
 			title: <>{ t('months.may') } 2025</>,
-			description: <>Décentralisation IA (Hub)</>
+			description: <>{ t('description.8') }</>
 		},
 	]
 

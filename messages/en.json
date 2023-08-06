@@ -290,7 +290,7 @@
     },
 
     "MainRoadmap": {
-      "months" : {
+      "months": {
         "january": "January",
         "february": "February",
         "march": "March",
@@ -303,6 +303,23 @@
         "october": "October",
         "november": "November",
         "december": "December"
+      },
+      "description":{
+        "1": "Branding image creation",
+        "2": "Landing page launch",
+        "3": {
+          "a": "Seed",
+          "b": "First recruitment",
+          "c": "NFT campaign launch"
+        },
+        "4": {
+          "a": "Sale of NFT",
+          "b": "DAO event"
+        },
+        "5": "Parametric AI",
+        "6": "Beta test stage",
+        "7": "Product launch",
+        "8": "AI decentralisation"
       }
     },
 
