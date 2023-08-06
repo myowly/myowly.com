@@ -86,10 +86,8 @@ export default function MainTeam() {
           <CardTeam
             alignSelf={["center", null, "auto"]}
             borderType="inner"
-            imgSrc="team/tahani.png"
           >
-            <Text color="vampire-black" fontWeight="bold">Tahani</Text>
-            <Text color="vampire-black">AI Researcher</Text>
+            {/* TODO Elisa */}
           </CardTeam>
         </Flex>
       </Flex>
