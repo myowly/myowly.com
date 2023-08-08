@@ -21,7 +21,7 @@ export default function ButtonLink({
       py="4"
       borderColor="keppel"
       borderRadius={16}
-      boxShadow="0 0 10px var(--chakra-colors-keppel)"
+      boxShadow="0 0 8px var(--chakra-colors-keppel)"
       background={background}
       justifyContent="center"
       _hover={{
@@ -40,7 +40,7 @@ export default function ButtonLink({
         {children}
       </Text>
     </Button>
-  
+
   if (href) {
     return (
       <Link href={href}>

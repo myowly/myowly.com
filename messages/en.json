@@ -21,8 +21,8 @@
     "MainDAO": {
       "title": {
         "part_1": "What if ",
-        "part_2": "we took back ",
-        "part_3": "in control"
+        "part_2": "we took ",
+        "part_3": "back control"
       },
       "subtitle": {
         "part_1": "A DAO ",
@@ -31,7 +31,7 @@
         "part_4": "an oracle"
       },
       "explanation": "Community members pay into a DAO they manage. An oracle automatically sets the prices and conditions for compensation.",
-      "how_it_works": "How it works?",
+      "how_it_works": "How does it works?",
       "stay_in_touch": "Stay informed"
     },
     "MainProjet": {
