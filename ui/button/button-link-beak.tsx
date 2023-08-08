@@ -28,7 +28,7 @@ export default function ButtonLinkBeak({
       border="1px solid"
       borderColor="keppel"
       borderRadius={16}
-      boxShadow="0 0 8px var(--chakra-colors-keppel)"
+      boxShadow="2px 2px 4px 0px rgba(152, 173, 168, 0.5) inset, -2px -2px 4px 0px rgba(255, 255, 255, 0.10) inset,0 0 8px var(--chakra-colors-keppel)"
       background={background}
       justifyContent="space-between"
       _hover={{
