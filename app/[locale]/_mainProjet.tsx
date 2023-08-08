@@ -13,31 +13,35 @@ export default function MainProjet() {
       <Flex
         flexDirection={[null, null, null, "row-reverse"]}
         justifyContent={[null, null, null, "flex-end", "center"]}
+        alignItems={[null, null, null, "center"]}
         position={[null, null, null, "relative", "inherit"]}
         right="140px"
       >
         <Heading
           as="h2"
           textTransform="uppercase"
-          fontSize={["80px", "100px", "120px", "144px"]}
+          fontSize={["70px", "80px", "100px", "110px"]}
           fontWeight="400"
           fontFamily="heading"
           color="vampire-black"
           lineHeight="1"
-          pl={["22px", null, null, "0"]}
+          pl={["1.5rem", null, null, "0"]}
+          pb={["24", null, null, "24"]}
+          ml={[null, null, null, "-100", "0"]}
+          mr={[null, null, null, null, "1.5rem"]}
           minWidth={["80vw", null, null, "inherit"]}
           maxWidth="1120px"
           letterSpacing="-2.4px"
         >
-          { t('title.part_1') }
+          {t('title.part_1')}
           <Text
             as="span"
             color="white"
             textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)"
           >
-            { t('title.part_2') }
+            {t('title.part_2')}
           </Text>
-          { t('title.part_3') }
+          {t('title.part_3')}
           <Text
             as="span"
             color="white"
@@ -48,55 +52,55 @@ export default function MainProjet() {
         </Heading>
         <Image
           alt=""
-          height={["334px", "434px"]}
-          width={["300px", "400px"]}
+          height={["335px", "350px", "500px"]}
+          width={["385px", "400px", "500px"]}
           src="/owls/MyOwly.png"
           position={["relative", null, null, "inherit"]}
-          right={["70px", "83px"]}
-          top={["35px"]}
+          right={["75px", "80px", "72px", "88px"]}
+          top={["17px", "8px", "0px", "-30px"]}
         />
       </Flex>
 
-      <Flex flexDirection={{ base: "column", lg: "row" }} p="4" justifyContent="center">
+      <Flex flexDirection={{ base: "column", lg: "row" }} mb={["14", null, null, "0"]} justifyContent="center" gap={["20", null, null, "2"]}>
         <Card align="right">
-          <Heading as="h3" textTransform="uppercase" fontSize="3xl" mb="2">
-            { t('cards.1.title.part_1') }<br />
-            <Text as="span" color="indian-yellow" fontWeight="extrabold">{ t('cards.1.title.part_2') }</Text><br />
-            <Text as="span" color="fulvous" fontWeight="extrabold">{ t('cards.1.title.part_3') }</Text>
+          <Heading as="h3" textTransform="uppercase" fontFamily="body" fontSize="3xl" fontWeight="800" lineHeight="1" mb="4">
+            {t('cards.1.title.part_1')}<br />
+            <Text as="span" color="indian-yellow" fontWeight="extrabold">{t('cards.1.title.part_2')}</Text><br />
+            <Text as="span" color="fulvous" fontWeight="extrabold">{t('cards.1.title.part_3')}</Text>
           </Heading>
-          <Text color="vampire-black">{ t('cards.1.text') }</Text>
+          <Text color="vampire-black">{t('cards.1.text')}</Text>
         </Card>
 
         <Card align="left">
-          <Heading as="h3" textTransform="uppercase" fontSize="3xl" mb="2">
-            { t('cards.2.title.part_1') }<br />
-            <Text as="span" color="indian-yellow" fontWeight="extrabold">{ t('cards.2.title.part_2') }</Text>
-            <Text as="span" color="fulvous" fontWeight="extrabold">{ t('cards.2.title.part_3') }</Text>
+          <Heading as="h3" textTransform="uppercase" fontFamily="body" fontSize="3xl" fontWeight="800" lineHeight="1" mb="4">
+            {t('cards.2.title.part_1')}<br />
+            <Text as="span" color="indian-yellow" fontWeight="extrabold">{t('cards.2.title.part_2')}</Text>
+            <Text as="span" color="fulvous" fontWeight="extrabold">{t('cards.2.title.part_3')}</Text>
           </Heading>
-          <Text color="vampire-black">{ t('cards.2.text') }</Text>
+          <Text color="vampire-black">{t('cards.2.text')}</Text>
         </Card>
 
         <Card align="right">
-          <Heading as="h3" textTransform="uppercase" fontSize="3xl" mb="2">
-            { t('cards.3.title.part_1') }<br />
-            <Text as="span" color="indian-yellow" fontWeight="extrabold">{ t('cards.3.title.part_2') }</Text>
-            { t('cards.3.title.part_3') }<br />
-            { t('cards.3.title.part_4') }<br />
-            <Text as="span" color="fulvous" fontWeight="extrabold">{ t('cards.3.title.part_5') }</Text>
+          <Heading as="h3" textTransform="uppercase" fontFamily="body" fontSize="3xl" fontWeight="800" lineHeight="1" mb="4">
+            {t('cards.3.title.part_1')}<br />
+            <Text as="span" color="indian-yellow" fontWeight="extrabold">{t('cards.3.title.part_2')}</Text>
+            {t('cards.3.title.part_3')}<br />
+            {t('cards.3.title.part_4')}<br />
+            <Text as="span" color="fulvous" fontWeight="extrabold">{t('cards.3.title.part_5')}</Text>
           </Heading>
-          <Text color="vampire-black">{ t('cards.3.text') }</Text>
+          <Text color="vampire-black">{t('cards.3.text')}</Text>
         </Card>
       </Flex>
 
       <Flex
         flexDirection={["column", null, null, "row"]}
         justifyContent="center"
-        marginTop={[null, null, null, "100px"]}
+        marginTop={[null, null, null, "6"]}
         marginX={["20px", null, null, 0]}
-        gap={["10px", null, null, "124px"]}
+        gap={[null, null, null, "6"]}
       >
-        <ButtonLink href="#benefits" minWidth={[null, null, null, "400px", "500px"]}>{ t('benefits') }</ButtonLink>
-        <ButtonLink href="#joinUs" minWidth={[null, null, null, "400px", "500px"]}>{ t('stay_informed') }</ButtonLink>
+        <ButtonLink href="#benefits" minWidth={[null, null, null, "400px", "500px"]}>{t('benefits')}</ButtonLink>
+        <ButtonLink href="#joinUs" minWidth={[null, null, null, "400px", "500px"]}>{t('stay_informed')}</ButtonLink>
       </Flex>
     </Box >
   )
