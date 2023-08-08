@@ -12,7 +12,7 @@ export default function MainCommunauté() {
   return (
     <Flex
       id="community"
-      py="14"
+      pt="14"
       w="100%"
       bgGradient="linear(to-b, sherwood-green, black-bean, sherwood-green)"
       borderRadius="xl"
@@ -50,9 +50,10 @@ export default function MainCommunauté() {
         </Box>
 
         <Box
-          py="60px"
-          px="10"
-          m="8"
+          py="100px"
+          px="6"
+          m="6"
+          mt="0"
           ml={{ md: "32" }}
           maxWidth="450px"
           border="1px solid var(--chakra-colors-cultured)"
@@ -64,15 +65,16 @@ export default function MainCommunauté() {
         >
           <Icon as={Beak} width="auto" height="20" position="absolute" top="-10" right="8" />
 
+          <Text fontStyle="italic">{t('header')}</Text>
           <Heading
             as="h2"
             textTransform="uppercase"
-            fontSize={["40px", "60px"]}
+            fontSize={["48px", "60px"]}
             fontWeight="400"
-            my="2"
+            mb="12"
             lineHeight="1"
           >
-            { t('title') }
+            {t('title')}
           </Heading>
 
           <Text
@@ -80,14 +82,14 @@ export default function MainCommunauté() {
             textTransform="uppercase"
             fontSize={["19px", null, null, "30px"]}
             lineHeight="1"
-            fontWeight={["600", null, null, "800"]}
+            fontWeight="500"
           >
-            { t('subtitles.1.part_1') }
-            <Text as="span" color="indian-yellow">{ t('subtitles.1.part_2') }</Text>
+            {t('subtitles.1.part_1')}
+            <Text as="span" fontWeight="800" color="indian-yellow">{t('subtitles.1.part_2')}</Text>
           </Text>
           <Center
             my="2.5"
-            borderRadius="lg"
+            borderRadius={16}
             backgroundColor="cultured"
             boxShadow="0 0 5px var(--chakra-colors-cultured)"
             display="flex"
@@ -102,16 +104,16 @@ export default function MainCommunauté() {
           </Center>
 
           <Text
-            mt="8"
+            mt="4"
             textTransform="uppercase"
             fontSize={["19px", null, null, "30px"]}
             lineHeight="1"
-            fontWeight={["600", null, null, "800"]}
+            fontWeight="500"
           >
-            { t('subtitles.2.part_1') }
-            <Text as="span" color="fulvous">{ t('subtitles.2.part_2') }</Text>
+            {t('subtitles.2.part_1')}
+            <Text as="span" fontWeight="800" color="fulvous">{t('subtitles.2.part_2')}</Text>
           </Text>
-          <ButtonLink href="#joinUs" background="cultured">{ t('subscription') }</ButtonLink>
+          <ButtonLink href="#joinUs" background="cultured">{t('subscription')}</ButtonLink>
         </Box>
       </Flex>
     </Flex>

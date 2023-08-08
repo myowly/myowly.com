@@ -239,14 +239,15 @@
       "newsletter": "Rejoindre la newsletter"
     },
     "MainCommunauté": {
-      "title": "Rejoingez la communauté",
+      "header": "Qu'attendez-vous ? ...",
+      "title": "Rejoingnez la communauté",
       "subtitles": {
         "1": {
-          "part_1": "sur nos ",
+          "part_1": "Sur nos ",
           "part_2": "réseaux sociaux"
         },
         "2": {
-          "part_1": "avec notre ",
+          "part_1": "Avec notre ",
           "part_2": "newsletter"
         }
       },
