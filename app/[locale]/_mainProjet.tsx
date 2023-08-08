@@ -57,15 +57,15 @@ export default function MainProjet() {
           src="/owls/MyOwly.png"
           position={["relative", null, null, "inherit"]}
           right={["75px", "80px", "72px", "88px"]}
-          top={["17px", "8px", "0px", "-30px"]}
+          top={["17px", "8px", "-50px", "-40px"]}
         />
       </Flex>
 
       <Flex flexDirection={{ base: "column", lg: "row" }} mb={["14", null, null, "0"]} justifyContent="center" gap={["20", null, null, "2"]}>
         <Card align="right">
           <Heading as="h3" textTransform="uppercase" fontFamily="body" fontSize="3xl" fontWeight="800" lineHeight="1" mb="4">
-            {t('cards.1.title.part_1')}<br />
-            <Text as="span" color="indian-yellow" fontWeight="extrabold">{t('cards.1.title.part_2')}</Text><br />
+            {t('cards.1.title.part_1')}
+            <Text as="span" color="indian-yellow" fontWeight="extrabold">{t('cards.1.title.part_2')}</Text>
             <Text as="span" color="fulvous" fontWeight="extrabold">{t('cards.1.title.part_3')}</Text>
           </Heading>
           <Text color="vampire-black">{t('cards.1.text')}</Text>
@@ -73,7 +73,7 @@ export default function MainProjet() {
 
         <Card align="left">
           <Heading as="h3" textTransform="uppercase" fontFamily="body" fontSize="3xl" fontWeight="800" lineHeight="1" mb="4">
-            {t('cards.2.title.part_1')}<br />
+            {t('cards.2.title.part_1')}
             <Text as="span" color="indian-yellow" fontWeight="extrabold">{t('cards.2.title.part_2')}</Text>
             <Text as="span" color="fulvous" fontWeight="extrabold">{t('cards.2.title.part_3')}</Text>
           </Heading>
@@ -82,10 +82,10 @@ export default function MainProjet() {
 
         <Card align="right">
           <Heading as="h3" textTransform="uppercase" fontFamily="body" fontSize="3xl" fontWeight="800" lineHeight="1" mb="4">
-            {t('cards.3.title.part_1')}<br />
+            {t('cards.3.title.part_1')}
             <Text as="span" color="indian-yellow" fontWeight="extrabold">{t('cards.3.title.part_2')}</Text>
-            {t('cards.3.title.part_3')}<br />
-            {t('cards.3.title.part_4')}<br />
+            {t('cards.3.title.part_3')}
+            {t('cards.3.title.part_4')}
             <Text as="span" color="fulvous" fontWeight="extrabold">{t('cards.3.title.part_5')}</Text>
           </Heading>
           <Text color="vampire-black">{t('cards.3.text')}</Text>
