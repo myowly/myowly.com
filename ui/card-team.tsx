@@ -20,7 +20,7 @@ export default function CardTeam({
     boxShadowImage = "0px 1px 3px var(--chakra-colors-keppel), 0px -2px 5px var(--chakra-colors-cultured)"
   }
 
-  let src="/owls/MyOwly.png"
+  let src = "/owls/MyOwly.png"
   if (imgSrc)
     src = imgSrc
 
@@ -29,9 +29,9 @@ export default function CardTeam({
       <Flex
         w="180px"
         minH="200px"
-        m="8"
+        m="6"
         mt="16"
-        px="2"
+        px="3"
         flexDirection="column"
         alignSelf={alignSelf}
         bgColor="white"
@@ -60,10 +60,10 @@ export default function CardTeam({
               alt=""
               w="25px"
               h="25px"
-              m="2"
+              my="2"
             />
           </Link>
-        </Flex>          
+        </Flex>
       </Flex>
     );
   } else {
