@@ -17,41 +17,43 @@ export default function MainApp() {
         flexDirection={{ base: "column", md: "row" }}
         justifyContent={["space-between", null, null, null, "space-around"]}
         alignItems="center"
-        px={["20px", null, "50px"]}
+        px="1.5rem"
         pt="50px"
+        gap="1.5rem"
       >
-        <Box maxWidth="500px" pr={[null, null, "30px"]}>
+        <Box maxWidth="500px">
           <Image as="img" src="/Logotype-Noir.png" alt="MyOwly" />
         </Box>
 
         <Heading
           as="h2"
           minWidth={[null, null, "340px"]}
-          pt="20px"
+          pt="10px"
           color="vampire-black"
           textTransform="uppercase"
           fontSize="20px"
           fontFamily="body"
           fontWeight="black"
           lineHeight="30px"
+          textAlign="center"
         >
-          { t('title.part_1') }
+          {t('title.part_1')}
           <Text
             as="span"
             color="indian-yellow"
-            fontSize={["34px", "38px"]}
+            fontSize={["37px", "51px", "39px"]}
             fontWeight="semibold"
           >
-            { t('title.part_2') }
+            {t('title.part_2')}
           </Text><br />
           <Text
             as="span"
             color="fulvous"
-            fontSize={["41px", "45px"]}
+            fontSize={["39px", "52px", "40px"]}
             lineHeight="54px"
             fontWeight="semibold"
           >
-            { t('title.part_3') }
+            {t('title.part_3')}
           </Text> ?
         </Heading>
       </Flex>
