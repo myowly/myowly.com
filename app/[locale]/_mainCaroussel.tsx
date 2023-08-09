@@ -48,34 +48,34 @@ export default function MainCaroussel() {
 			img: "/backgrounds/field.webp",
 			title: (
 				<>
-					<Box as="span" color="vampire-black">{ t('slides.1.title.part_1') }</Box>
-					<Box as="span" color="indian-yellow">{ t('slides.1.title.part_2') }</Box>
-					{ t('slides.1.title.part_3') }
+					<Box as="span" color="vampire-black">{t('slides.1.title.part_1')}</Box>
+					<Box as="span" color="indian-yellow">{t('slides.1.title.part_2')}</Box>
+					{t('slides.1.title.part_3')}
 				</>
 			),
 			subtitle: (
 				<>
-					{ t('slides.1.subtitle.part_1') }
-					<Box as="span" color="spanish-orange" fontStyle="italic">{ t('slides.1.subtitle.part_2') }</Box><wbr />
-					{ t('slides.1.subtitle.part_3') }
-					<Box as="span" color="spanish-orange" fontStyle="italic">{ t('slides.1.subtitle.part_4') }</Box>
+					{t('slides.1.subtitle.part_1')}
+					<Box as="span" color="spanish-orange" fontStyle="italic">{t('slides.1.subtitle.part_2')}</Box><wbr />
+					{t('slides.1.subtitle.part_3')}
+					<Box as="span" color="spanish-orange" fontStyle="italic">{t('slides.1.subtitle.part_4')}</Box>
 				</>
 			),
-			description: <>{ t('slides.1.description') }</>,
-			modalHeading: <>{ t('slides.1.modalHeading') }</>,
+			description: <>{t('slides.1.description')}</>,
+			modalHeading: <>{t('slides.1.modalHeading')}</>,
 			modalBody:
 				<Text color="vampire-black">
-					{ t('slides.1.modalBody.part_1') }
-					<Box as="span" color="indian-yellow">{ t('slides.1.modalBody.part_2') }</Box> 
-					{ t('slides.1.modalBody.part_3') }
-					<Box as="span" color="fulvous">{ t('slides.1.modalBody.part_4') }</Box>
-					{ t('slides.1.modalBody.part_5') }
-					<Box as="span" color="indian-yellow">{ t('slides.1.modalBody.part_6') }</Box>
-					{ t('slides.1.modalBody.part_7') }
-					<Box as="span" color="fulvous">{ t('slides.1.modalBody.part_8') }</Box>
-					{ t('slides.1.modalBody.part_9') }
-					<Box as="span" color="indian-yellow">{ t('slides.1.modalBody.part_10') }</Box>
-					{ t('slides.1.modalBody.part_11') }
+					{t('slides.1.modalBody.part_1')}
+					<Box as="span" color="indian-yellow">{t('slides.1.modalBody.part_2')}</Box>
+					{t('slides.1.modalBody.part_3')}
+					<Box as="span" color="fulvous">{t('slides.1.modalBody.part_4')}</Box>
+					{t('slides.1.modalBody.part_5')}
+					<Box as="span" color="indian-yellow">{t('slides.1.modalBody.part_6')}</Box>
+					{t('slides.1.modalBody.part_7')}
+					<Box as="span" color="fulvous">{t('slides.1.modalBody.part_8')}</Box>
+					{t('slides.1.modalBody.part_9')}
+					<Box as="span" color="indian-yellow">{t('slides.1.modalBody.part_10')}</Box>
+					{t('slides.1.modalBody.part_11')}
 				</Text>,
 			mode: "ligth"
 		},
@@ -83,39 +83,39 @@ export default function MainCaroussel() {
 			img: "/backgrounds/cube.webp",
 			title: (
 				<>
-					<Box as="span" color="spanish-orange">{ t('slides.2.title.part_1') }</Box>
-					{ t('slides.2.title.part_2') }
+					<Box as="span" color="spanish-orange">{t('slides.2.title.part_1')}</Box>
+					{t('slides.2.title.part_2')}
 				</>
 			),
 			subtitle: (
 				<>
-					{ t('slides.2.subtitle.part_1') }
-					<Box as="span" color="fulvous">{ t('slides.2.subtitle.part_2') }</Box>
+					{t('slides.2.subtitle.part_1')}
+					<Box as="span" color="fulvous">{t('slides.2.subtitle.part_2')}</Box>
 				</>
 			),
-			description: <>{ t('slides.2.description') }</>,
-			modalHeading: <>{ t('slides.2.modalHeading') }</>,
+			description: <>{t('slides.2.description')}</>,
+			modalHeading: <>{t('slides.2.modalHeading')}</>,
 			modalBody:
 				<Text color="vampire-black">
-					{ t('slides.2.modalBody.part_1') }
-					<Box as="span" color="indian-yellow">{ t('slides.2.modalBody.part_2') }</Box>
-					{ t('slides.2.modalBody.part_3') }
-					<Box as="span" color="fulvous">{ t('slides.2.modalBody.part_4') }</Box>
-					{ t('slides.2.modalBody.part_5') }
-					<Box as="span" color="indian-yellow">{ t('slides.2.modalBody.part_6') }</Box>
-					{ t('slides.2.modalBody.part_7') }
-					<Box as="span" color="fulvous">{ t('slides.2.modalBody.part_8') }</Box>
-					{ t('slides.2.modalBody.part_9') }
-					<Box as="span" color="indian-yellow">{ t('slides.2.modalBody.part_10') }</Box>
-					{ t('slides.2.modalBody.part_11') }
-					<Box as="span" color="fulvous">{ t('slides.2.modalBody.part_12') }</Box>
-					{ t('slides.2.modalBody.part_13') }
-					<Box as="span" color="indian-yellow">{ t('slides.2.modalBody.part_14') }</Box>
-					{ t('slides.2.modalBody.part_15') }
-					<Box as="span" color="fulvous">{ t('slides.2.modalBody.part_16') }</Box>
-					{ t('slides.2.modalBody.part_17') }
-					<Box as="span" color="indian-yellow">{ t('slides.2.modalBody.part_18') }</Box>
-					{ t('slides.2.modalBody.part_19') }
+					{t('slides.2.modalBody.part_1')}
+					<Box as="span" color="indian-yellow">{t('slides.2.modalBody.part_2')}</Box>
+					{t('slides.2.modalBody.part_3')}
+					<Box as="span" color="fulvous">{t('slides.2.modalBody.part_4')}</Box>
+					{t('slides.2.modalBody.part_5')}
+					<Box as="span" color="indian-yellow">{t('slides.2.modalBody.part_6')}</Box>
+					{t('slides.2.modalBody.part_7')}
+					<Box as="span" color="fulvous">{t('slides.2.modalBody.part_8')}</Box>
+					{t('slides.2.modalBody.part_9')}
+					<Box as="span" color="indian-yellow">{t('slides.2.modalBody.part_10')}</Box>
+					{t('slides.2.modalBody.part_11')}
+					<Box as="span" color="fulvous">{t('slides.2.modalBody.part_12')}</Box>
+					{t('slides.2.modalBody.part_13')}
+					<Box as="span" color="indian-yellow">{t('slides.2.modalBody.part_14')}</Box>
+					{t('slides.2.modalBody.part_15')}
+					<Box as="span" color="fulvous">{t('slides.2.modalBody.part_16')}</Box>
+					{t('slides.2.modalBody.part_17')}
+					<Box as="span" color="indian-yellow">{t('slides.2.modalBody.part_18')}</Box>
+					{t('slides.2.modalBody.part_19')}
 				</Text>,
 			mode: "dark"
 		},
@@ -123,36 +123,36 @@ export default function MainCaroussel() {
 			img: "/backgrounds/oracle.webp",
 			title: (
 				<>
-					<Box as="span" color="indian-yellow" >{ t('slides.3.title') }</Box>
+					<Box as="span" color="indian-yellow" >{t('slides.3.title')}</Box>
 					MYOWLY
 				</>
 			),
 			subtitle: (
 				<>
-					{ t('slides.3.subtitle.part_1') }
-					<Box as="span" color="indian-yellow" >{ t('slides.3.subtitle.part_2') }</Box>
-					{ t('slides.3.subtitle.part_3') }
-					<Box as="span" color="spanish-orange">{ t('slides.3.subtitle.part_4') }</Box>
+					{t('slides.3.subtitle.part_1')}
+					<Box as="span" color="indian-yellow" >{t('slides.3.subtitle.part_2')}</Box>
+					{t('slides.3.subtitle.part_3')}
+					<Box as="span" color="spanish-orange">{t('slides.3.subtitle.part_4')}</Box>
 				</>
 			),
-			description: <>{ t('slides.3.description') }</>,
-			modalHeading: <>{ t('slides.3.modalHeading') }</>,
+			description: <>{t('slides.3.description')}</>,
+			modalHeading: <>{t('slides.3.modalHeading')}</>,
 			modalBody:
 				<Text color="vampire-black">
-					{ t('slides.3.modalBody.part_1') }
-					<Box as="span" color="indian-yellow">{ t('slides.3.modalBody.part_2') }</Box>
-					{ t('slides.3.modalBody.part_3') }
-					<Box as="span" color="fulvous">{ t('slides.3.modalBody.part_4') }</Box>
-					{ t('slides.3.modalBody.part_5') }
-					<Box as="span" color="indian-yellow">{ t('slides.3.modalBody.part_6') }</Box>
-					{ t('slides.3.modalBody.part_7') }
-					<Box as="span" color="indian-yellow">{ t('slides.3.modalBody.part_8') }</Box>
-					{ t('slides.3.modalBody.part_9') }
-					<Box as="span" color="fulvous">{ t('slides.3.modalBody.part_10') }</Box>
-					{ t('slides.3.modalBody.part_11') }
-					<Box as="span" color="indian-yellow">{ t('slides.3.modalBody.part_12') }</Box>
-					{ t('slides.3.modalBody.part_13') }
-					<Box as="span" color="fulvous">{ t('slides.3.modalBody.part_14') }</Box>
+					{t('slides.3.modalBody.part_1')}
+					<Box as="span" color="indian-yellow">{t('slides.3.modalBody.part_2')}</Box>
+					{t('slides.3.modalBody.part_3')}
+					<Box as="span" color="fulvous">{t('slides.3.modalBody.part_4')}</Box>
+					{t('slides.3.modalBody.part_5')}
+					<Box as="span" color="indian-yellow">{t('slides.3.modalBody.part_6')}</Box>
+					{t('slides.3.modalBody.part_7')}
+					<Box as="span" color="indian-yellow">{t('slides.3.modalBody.part_8')}</Box>
+					{t('slides.3.modalBody.part_9')}
+					<Box as="span" color="fulvous">{t('slides.3.modalBody.part_10')}</Box>
+					{t('slides.3.modalBody.part_11')}
+					<Box as="span" color="indian-yellow">{t('slides.3.modalBody.part_12')}</Box>
+					{t('slides.3.modalBody.part_13')}
+					<Box as="span" color="fulvous">{t('slides.3.modalBody.part_14')}</Box>
 				</Text>,
 			mode: "dark"
 		},
@@ -160,30 +160,30 @@ export default function MainCaroussel() {
 			img: "/backgrounds/ia.webp",
 			title: (
 				<>
-					<Box as="span" color="vampire-black">{ t('slides.4.title.part_1') }</Box>
-					<Box as="span" color="indian-yellow">{ t('slides.4.title.part_2') }</Box>
-					{ t('slides.4.title.part_3') }
+					<Box as="span" color="vampire-black">{t('slides.4.title.part_1')}</Box>
+					<Box as="span" color="indian-yellow">{t('slides.4.title.part_2')}</Box>
+					{t('slides.4.title.part_3')}
 				</>),
 			subtitle: (
 				<>
-					{ t('slides.4.subtitle.part_1') }
-					<Box as="span" color="indian-yellow">{ t('slides.4.subtitle.part_2') }</Box>
-					{ t('slides.4.subtitle.part_3') }
-					<Box as="span" color="spanish-orange">{ t('slides.4.subtitle.part_4') }</Box>
+					{t('slides.4.subtitle.part_1')}
+					<Box as="span" color="indian-yellow">{t('slides.4.subtitle.part_2')}</Box>
+					{t('slides.4.subtitle.part_3')}
+					<Box as="span" color="spanish-orange">{t('slides.4.subtitle.part_4')}</Box>
 				</>),
-			description: <>{ t('slides.4.description') }</>,
-			modalHeading: <>{ t('slides.4.modalHeading') }</>,
+			description: <>{t('slides.4.description')}</>,
+			modalHeading: <>{t('slides.4.modalHeading')}</>,
 			modalBody:
 				<Text color="vampire-black">
-					{ t('slides.4.modalBody.part_1') }
-					<Box as="span" color="indian-yellow">{ t('slides.4.modalBody.part_2') }</Box>
-					{ t('slides.4.modalBody.part_3') }
-					<Box as="span" color="fulvous">{ t('slides.4.modalBody.part_4') }</Box>
-					{ t('slides.4.modalBody.part_5') }
-					<Box as="span" color="indian-yellow">{ t('slides.4.modalBody.part_6') }</Box>
-					{ t('slides.4.modalBody.part_7') }
-					<Box as="span" color="fulvous">{ t('slides.4.modalBody.part_8') }</Box>
-					{ t('slides.4.modalBody.part_9') }
+					{t('slides.4.modalBody.part_1')}
+					<Box as="span" color="indian-yellow">{t('slides.4.modalBody.part_2')}</Box>
+					{t('slides.4.modalBody.part_3')}
+					<Box as="span" color="fulvous">{t('slides.4.modalBody.part_4')}</Box>
+					{t('slides.4.modalBody.part_5')}
+					<Box as="span" color="indian-yellow">{t('slides.4.modalBody.part_6')}</Box>
+					{t('slides.4.modalBody.part_7')}
+					<Box as="span" color="fulvous">{t('slides.4.modalBody.part_8')}</Box>
+					{t('slides.4.modalBody.part_9')}
 				</Text>,
 			mode: "ligth"
 		},
@@ -303,7 +303,7 @@ export default function MainCaroussel() {
 								transform: "scale(1.05)"
 							}}
 						>
-							{ t('read_more') }
+							{t('read_more')}
 						</Button>
 					</Flex>
 				</Flex>
@@ -377,7 +377,7 @@ export default function MainCaroussel() {
 						icon={<Icon as={slides[currentSlide].mode == 'ligth' ? ArrowBlack : ArrowWhite} />}
 						{...arrowStyles}
 					/>
-					{/* Beak slide selctors */}
+					{/* Beak slide selectors */}
 					<Flex justifyContent="center" w="full" position="absolute" bottom="30px">
 						{Array.from({ length: slidesCount }).map((_, slide) => (
 							<IconButton

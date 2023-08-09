@@ -97,7 +97,7 @@ export default function MainTeam() {
             imgSrc="team/elisa.png"
           >
             <Text color="keppel" fontWeight="bold">Elisa</Text>
-            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">Community Manager</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">Community Builder</Text>
           </CardTeam>
         </Flex>
       </Flex>
