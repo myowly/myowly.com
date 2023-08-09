@@ -31,7 +31,7 @@ export default function FormNewsletter() {
         />
       </FormControl>
 
-      <FormControl isRequired mb={12}>
+      <FormControl isRequired mb={10}>
         <Input
           type="email"
           name="email"

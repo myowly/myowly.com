@@ -16,7 +16,7 @@ export default function Footer() {
       bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%, black-bean 71%, sherwood-green 100%)"
       borderTopRadius="xl"
       position="relative"
-      p="8"
+      p="6"
     >
       <Container
         p={0}
@@ -59,117 +59,160 @@ export default function Footer() {
               <Image
                 mb="8"
                 pt={[null, "16px"]}
-                pr={["50px", "112px"]}
+                maxW="300px"
                 src="/Logo.png"
                 alt="Logo MyOwly"
               />
             </Box>
 
-            <Heading as='h4' mb="4" textTransform="uppercase" color="cultured">{ t('summary.title') }</Heading>
+            <Heading as='h4' mb="2" fontFamily="body" textTransform="uppercase" color="cultured">{t('summary.title')}</Heading>
 
-            <Flex flexDirection="column">
+            <Flex flexDirection="column" gap="2">
               <Link
                 href="#project"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
-                mb="2"
               >
-                { t('summary.links.project') }
+                <Flex flexDirection="row" alignItems="center">
+                  <Image
+                    as="img"
+                    src="/arrow.svg"
+                    w={3}
+                    h={3}
+                    mr="2"
+                    alt="Petite flèche"
+                  />
+                  {t('summary.links.project')}
+                </Flex>
               </Link>
               <Link
                 href="#community"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
-                mb="2"
               >
-                { t('summary.links.community') }
+                <Flex flexDirection="row" alignItems="center">
+                  <Image
+                    as="img"
+                    src="/arrow.svg"
+                    w={3}
+                    h={3}
+                    mr="2"
+                    alt="Petite flèche"
+                  />
+                  {t('summary.links.community')}
+                </Flex>
               </Link>
               <Link
                 href="#joinUs"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
-                mb="2"
               >
-                { t('summary.links.newsletter') }
+                <Flex flexDirection="row" alignItems="center">
+                  <Image
+                    as="img"
+                    src="/arrow.svg"
+                    w={3}
+                    h={3}
+                    mr="2"
+                    alt="Petite flèche"
+                  />
+                  {t('summary.links.newsletter')}
+                </Flex>
               </Link>
               <Link
                 href="#roadmap"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
-                mb="2"
               >
-                { t('summary.links.roadmap') }
+                <Flex flexDirection="row" alignItems="center">
+                  <Image
+                    as="img"
+                    src="/arrow.svg"
+                    w={3}
+                    h={3}
+                    mr="2"
+                    alt="Petite flèche"
+                  />
+                  {t('summary.links.roadmap')}
+                </Flex>
               </Link>
               <Link
                 href="#team"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
-                mb="2"
               >
-                { t('summary.links.team') }
+                <Flex flexDirection="row" alignItems="center">
+                  <Image
+                    as="img"
+                    src="/arrow.svg"
+                    w={3}
+                    h={3}
+                    mr="2"
+                    alt="Petite flèche"
+                  />
+                  {t('summary.links.team')}
+                </Flex>
               </Link>
             </Flex>
           </Box>
 
-          <Divider hideFrom="md" variant="solid" border="2" borderColor="indian-yellow" my="2" />
+          <Divider hideFrom="md" variant="solid" border="2" borderColor="indian-yellow" mt="8" />
 
           <Box
             flexGrow="1"
             flexBasis="0"
             maxWidth="500px"
           >
-            <Text my="8" textTransform="uppercase" fontSize="xl" fontWeight="bold" textAlign={["start", null, "end"]}>
-              <Text as="span" color="indian-yellow">{ t('form.title.part_1') }</Text><br />
-              { t('form.title.part_2') }
-              <Text as="span" color="fulvous">{ t('form.title.part_3') }</Text>
+            <Text mt="5" mb="4" textTransform="uppercase" fontSize="xl" fontWeight="bold" textAlign={["start", null, "end"]}>
+              <Text as="span" color="indian-yellow">{t('form.title.part_1')}</Text><br />
+              {t('form.title.part_2')}
+              <Text as="span" color="fulvous">{t('form.title.part_3')}</Text>
             </Text>
 
             <FormNewsletter />
           </Box>
         </Flex>
 
-        <Divider variant="solid" border="2" borderColor="indian-yellow" mt="10" mb="2" />
+        <Divider variant="solid" border="2" borderColor="indian-yellow" mt="4" mb="2" />
 
         <Flex flexDirection={["column", null, "row"]} justifyContent="space-between" alignItems="baseline">
-          <Flex flexDirection={["column", null, "row"]}>
+          <Flex flexDirection="row" justifyContent="space-between" width={["100%", null, "50%"]}>
             <Link
               href="/fr/legal"
               fontSize="xs"
               textTransform="uppercase"
+              textDecoration="underline"
               cursor="pointer"
               color="cultured"
-              my={["2", null, "0"]}
-              mr={["0", null, "2"]}
             >
-              { t('legal') }
+              {t('legal')}
             </Link>
             <Link
               href="/fr/privacy"
               fontSize="xs"
               textTransform="uppercase"
+              textDecoration="underline"
               cursor="pointer"
               color="cultured"
-              my={["2", null, "0"]}
-              mx={["0", null, "2"]}
             >
-              { t('privacy') }
+              {t('privacy')}
             </Link>
           </Flex>
           <Text
             color="cultured"
             fontSize="xs"
-            alignSelf={["center"]}
-            my="1"
+            alignSelf={["left", null, "right"]}
+            mt={["2", null, "0"]}
           >
-            Copyright © 2023 MYOWLY. { t('rights') }.
+            Copyright © 2023 MYOWLY. {t('rights')}.
           </Text>
-        </Flex>        
-      </Container>
-    </Flex>
+        </Flex>
+      </Container >
+    </Flex >
   )
 }
