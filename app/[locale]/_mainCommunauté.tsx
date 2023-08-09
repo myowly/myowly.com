@@ -80,7 +80,7 @@ export default function MainCommunauté() {
           <Text
             mt="8"
             textTransform="uppercase"
-            fontSize={["19px", null, null, "30px"]}
+            fontSize={["19px", null, null, "26px"]}
             lineHeight="1"
             fontWeight="500"
           >
@@ -106,7 +106,7 @@ export default function MainCommunauté() {
           <Text
             mt="4"
             textTransform="uppercase"
-            fontSize={["19px", null, null, "30px"]}
+            fontSize={["19px", null, null, "26px"]}
             lineHeight="1"
             fontWeight="500"
           >

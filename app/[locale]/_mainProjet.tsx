@@ -56,7 +56,7 @@ export default function MainProjet() {
           width={["385px", "400px", "500px"]}
           src="/owls/MyOwly.png"
           position={["relative", null, null, "inherit"]}
-          right={["75px", "80px", "72px", "88px"]}
+          right={["75px", "80px", "72px", "113px"]}
           top={["17px", "8px", "-50px", "-40px"]}
         />
       </Flex>
