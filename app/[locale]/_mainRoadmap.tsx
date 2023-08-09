@@ -11,45 +11,45 @@ export default function MainRoadmap() {
 
 	const steps = [
 		{
-			title: <>{ t('months.may') } 2023</>,
-			description: <>{ t('description.1') }</>
+			title: <>{t('months.may')} 2023</>,
+			description: <>{t('description.1')}</>
 		},
 		{
-			title: <>{ t('months.june') } 2023</>,
-			description: <>{ t('description.2') }</>
+			title: <>{t('months.june')} 2023</>,
+			description: <>{t('description.2')}</>
 		},
 		{
-			title: <>{ t('months.september') } 2023</>,
+			title: <>{t('months.september')} 2023</>,
 			description:
 				<>
-					{ t('description.3.a') }<br />
-					{ t('description.3.b') }<br />
-					{ t('description.3.c') }
+					{t('description.3.a')}<br />
+					{t('description.3.b')}<br />
+					{t('description.3.c')}
 				</>
 		},
 		{
-			title: <>{ t('months.january') } 2024</>,
+			title: <>{t('months.january')} 2024</>,
 			description:
 				<>
-					{ t('description.4.a') }<br />
-					{ t('description.4.b') }
+					{t('description.4.a')}<br />
+					{t('description.4.b')}
 				</>
 		},
 		{
-			title: <>{ t('months.march') } 2024</>,
-			description: <>{ t('description.5') }</>
+			title: <>{t('months.march')} 2024</>,
+			description: <>{t('description.5')}</>
 		},
 		{
-			title: <>{ t('months.may') } 2024</>,
-			description: <>{ t('description.6') }</>
+			title: <>{t('months.may')} 2024</>,
+			description: <>{t('description.6')}</>
 		},
 		{
-			title: <>{ t('months.september') } 2024</>,
-			description: <>{ t('description.7') }</>
+			title: <>{t('months.september')} 2024</>,
+			description: <>{t('description.7')}</>
 		},
 		{
-			title: <>{ t('months.may') } 2025</>,
-			description: <>{ t('description.8') }</>
+			title: <>{t('months.may')} 2025</>,
+			description: <>{t('description.8')}</>
 		},
 	]
 
@@ -131,7 +131,7 @@ export default function MainRoadmap() {
 			</Flex>
 			<Flex
 				marginY={["85px", "104px"]}
-				marginX={["15px", "20px"]}
+				marginX={["6", "20px"]}
 				paddingX={["22px", "33px"]}
 				paddingY={["40px", "50px"]}
 				flexDirection="column"
@@ -144,7 +144,6 @@ export default function MainRoadmap() {
 				backdropFilter="blur(10px)"
 			>
 				<Heading
-					paddingBottom={["40px", "50px"]}
 					color="cultured"
 					fontSize={["67px", "80px"]}
 					fontWeight="400"
