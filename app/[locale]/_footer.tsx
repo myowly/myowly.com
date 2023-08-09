@@ -69,7 +69,7 @@ export default function Footer() {
 
             <Flex flexDirection="column" gap="2">
               <Link
-                href="./#project"
+                href="#project"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -87,7 +87,7 @@ export default function Footer() {
                 </Flex>
               </Link>
               <Link
-                href="./#community"
+                href="#community"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -105,7 +105,7 @@ export default function Footer() {
                 </Flex>
               </Link>
               <Link
-                href="./#joinUs"
+                href="#joinUs"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -123,7 +123,7 @@ export default function Footer() {
                 </Flex>
               </Link>
               <Link
-                href="./#roadmap"
+                href="#roadmap"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -141,7 +141,7 @@ export default function Footer() {
                 </Flex>
               </Link>
               <Link
-                href="./#team"
+                href="#team"
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
