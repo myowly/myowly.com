@@ -20,6 +20,7 @@ export default function MainCommunauté() {
       alignItems="center"
       position="relative"
       minHeight="100vh"
+      boxShadow="0px 0px 20px 0px #46E0BB"
     >
       <Flex
         flexGrow="1"

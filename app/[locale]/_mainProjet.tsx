@@ -36,7 +36,7 @@ export default function MainProjet() {
           {t('title.part_1')}
           <Text
             as="span"
-            color="white"
+            color="cultured"
             textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)"
           >
             {t('title.part_2')}
@@ -44,7 +44,7 @@ export default function MainProjet() {
           {t('title.part_3')}
           <Text
             as="span"
-            color="white"
+            color="cultured"
             textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)"
           >
             ?

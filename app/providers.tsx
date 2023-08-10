@@ -58,7 +58,8 @@ export const theme = extendTheme(
         },
         body: {
           maxWidth: '100vw',
-          overflowX: 'hidden'
+          overflowX: 'hidden',
+          background: 'cultured'
         },
         p: {
           color: 'cultured',

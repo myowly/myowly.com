@@ -90,6 +90,7 @@ export default function MainRoadmap() {
 			bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%, black-bean 71%, sherwood-green 100%)"
 			borderRadius="xl"
 			position="relative"
+			boxShadow="0px 0px 20px 0px #46E0BB"
 		>
 			<Flex
 				position="absolute"

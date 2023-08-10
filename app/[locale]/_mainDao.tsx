@@ -76,7 +76,7 @@ export default function MainDAO() {
             pb="75px"
             my={{ md: "4" }}
             mx={{ sm: "auto", md: "28" }}
-            bgColor="white"
+            bgColor="cultured"
             overflow="hidden"
           >
             <Heading

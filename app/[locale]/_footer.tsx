@@ -1,5 +1,6 @@
 import { Box, Center, Container, Divider, Flex, Heading, Image, Link, Text } from "@chakra-ui/react"
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation'
 
 import ButtonSocialNetwork from "@/ui/button/button-social-network"
 
@@ -8,6 +9,7 @@ import FormNewsletter from './_formNewsletter'
 
 export default function Footer() {
   const t = useTranslations('Home.Footer');
+  const params = useParams();
 
   return (
     <Flex
@@ -15,6 +17,7 @@ export default function Footer() {
       alignItems="stretch"
       bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%, black-bean 71%, sherwood-green 100%)"
       borderTopRadius="xl"
+      boxShadow="0px 0px 20px 0px #46E0BB"
       position="relative"
       p="6"
     >
@@ -69,7 +72,7 @@ export default function Footer() {
 
             <Flex flexDirection="column" gap="2">
               <Link
-                href="#project"
+                href={`/${params.locale}/#project`}
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -105,7 +108,7 @@ export default function Footer() {
                 </Flex>
               </Link>
               <Link
-                href="#joinUs"
+                href={`/${params.locale}/#joinUs`}
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -123,7 +126,7 @@ export default function Footer() {
                 </Flex>
               </Link>
               <Link
-                href="#roadmap"
+                href={`/${params.locale}/#roadmap`}
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -141,7 +144,7 @@ export default function Footer() {
                 </Flex>
               </Link>
               <Link
-                href="#team"
+                href={`/${params.locale}/#team`}
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
