@@ -5,16 +5,24 @@ import ButtonLink from "@/ui/button/button-link";
 import ButtonPageUp from "@/ui/button/button-page-up";
 import LinkMailTo from "@/ui/link-mail-to";
 import { Box, Container, Flex, Heading, Icon, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import Footer from '../_footer';
 
 export default function Page() {
   return (
     <>
+
+      <Flex justifyContent="center" pt="8" pb="4" position="fixed" borderBottomRadius="xl" w="100%" backgroundColor="cultured" zIndex="99" boxShadow="0px 0px 20px 0px #46E0BB">
+        <ButtonLink href="/" minWidth={[null, null, null, "500px"]}>Retour à l&apos;accueil</ButtonLink>
+      </Flex>
+
       <Flex
         flexDirection="column"
         alignItems="stretch"
         bgGradient="linear(to-b, black-bean 71%, sherwood-green 100%)"
         borderBottomRadius="xl"
-        p="8"
+        pt="140px"
+        px="6"
+        pb="6"
       >
         <Container
           p={0}
@@ -23,18 +31,15 @@ export default function Page() {
           alignItems="stretch"
           position="relative"
         >
-          <Flex justifyContent="center" mb="12">
-            <ButtonLink href="/" minWidth={[null, null, null, "500px"]}>Retour à l&apos;accueil</ButtonLink>
-          </Flex>
-          
+
           <Heading
             as="h1"
             textTransform="uppercase"
             fontSize={["60px", "65px", "110px", "130px", "150px"]}
-            fontWeight="extrabold"
+            fontWeight="400"
             color="cultured"
             maxWidth={["400px", null, "700px", "900px", "1000px"]}
-            lineHeight="0.9"
+            lineHeight="1"
             mb="8"
           >
             Politique de confidentialité de MyOwly
@@ -42,12 +47,12 @@ export default function Page() {
 
           <Text
             textTransform="uppercase"
-            fontWeight="bold"
-            color="cultured"
+            fontWeight="800"
+            color="fulvous"
             maxWidth="600px"
-            mb="2"
+            mb="1"
           >
-            Date de dernière mise à jour
+            Date de dernière mise à jour :
           </Text>
           <Text
             textTransform="uppercase"
@@ -71,7 +76,7 @@ export default function Page() {
       <Flex
         flexDirection="column"
         alignItems="stretch"
-        p="8"
+        p="6"
         mb="16"
       >
         <Container
@@ -265,7 +270,7 @@ export default function Page() {
             </Heading>
             <Text color="vampire-black" mb="6" lineHeight="1.5">
               Comme la plupart des sites Web modernes, nos Services utilisent des cookies.
-              Les cookies sont de petits fichiers enregistrés sur votre ordinateur, qui permettent à nos Services de vous reconnaître lorsque vous naviguez sur notre site Web. 
+              Les cookies sont de petits fichiers enregistrés sur votre ordinateur, qui permettent à nos Services de vous reconnaître lorsque vous naviguez sur notre site Web.
             </Text>
             <Text color="vampire-black" mb="6" lineHeight="1.5">
               Ils nous permettent d&apos;exécuter des analyses pour mieux comprendre comment les utilisateurs utilisent nos services, ce qui nous permet de résoudre les problèmes techniques et d&apos;améliorer l&apos;expérience utilisateur.
@@ -328,29 +333,11 @@ export default function Page() {
               </Text>
             </Box>
           </Flex>
-        </Container> 
-      </Flex>
-
-      <Flex
-        flexDirection="column"
-        alignItems="stretch"
-        bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%)"
-        borderTopRadius="xl"
-        p="8"
-      >
-        <Container
-          p={0}
-          centerContent
-          maxWidth={[null, null, null, "1300px", "1400px"]}
-          alignItems="stretch"
-          position="relative"
-        >
-          <Flex justifyContent="center" >
-            <ButtonLink href="/" minWidth={[null, null, null, "500px"]}>Retour à l&apos;accueil</ButtonLink>
-          </Flex>
         </Container>
       </Flex>
-      
+
+      <Footer />
+
       <ButtonPageUp />
     </>
   )
