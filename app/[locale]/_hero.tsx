@@ -15,6 +15,7 @@ export default function Hero() {
       alignItems="stretch"
       bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%, black-bean 71%, sherwood-green 100%)"
       borderBottomRadius="xl"
+      boxShadow="0px 0px 20px 0px #46E0BB"
     >
       <Container
         p={0}
