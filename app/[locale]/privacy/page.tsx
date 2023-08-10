@@ -312,7 +312,7 @@ export default function Page() {
               p="8"
               maxWidth="700px"
               borderRadius="16"
-              boxShadow="0px -2px 5px var(--chakra-colors-cultured)"
+              boxShadow="2px 2px 4px 0px rgba(152, 173, 168, 0.5) inset, -2px -2px 4px 0px rgba(255, 255, 255, 0.10) inset"
             >
               <Heading
                 as="h3"
