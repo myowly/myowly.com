@@ -9,18 +9,21 @@ export default function MainTeam() {
 
   return (
     <Box
-      py="16"
-      px="8"
+      my="100px"
+      mx={["6", null, null, "auto"]}
       id="team"
+      maxWidth={[null, null, null, "1300px", "1500px"]}
     >
-      <Flex justifyContent={["center", null, "start"]} px="8" mb="4">
+      <Flex justifyContent={["center", "start", "end"]}>
         <Heading as="h2"
           textTransform="uppercase"
-          fontSize="6xl"
-          fontWeight="extrabold"
-          color="vampire-black"
+          fontSize={["55px", "65px", "73px", null, "80px"]}
+          fontWeight="400"
+          color="keppel"
+          mx={["auto", null, "6"]}
+          mb={["6", null, null, "-80px"]}
         >
-          { t('title') }
+          {t('title')}
         </Heading>
       </Flex>
 
@@ -37,15 +40,17 @@ export default function MainTeam() {
             imgSrc="team/noemie.png"
             linkedInUrl="https://fr.linkedin.com/in/no%C3%A9mie-rivi%C3%A8re"
           >
-            <Text color="vampire-black" fontWeight="bold">Noémie</Text>
-            <Text color="vampire-black">UX Researcher</Text>
+            <Text color="keppel" fontWeight="bold">Noémie</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px" >UX Researcher</Text>
           </CardTeam>
           <CardTeam
             alignSelf={["start", null, "auto"]}
             borderType="inner"
+            imgSrc="team/lilian.png"
+            linkedInUrl="https://www.linkedin.com/in/lilianchesneauciccarelli/"
           >
-            <Text color="vampire-black" fontWeight="bold">Lilian</Text>
-            <Text color="vampire-black">Graphic designer</Text>
+            <Text color="keppel" fontWeight="bold">Lilian</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">Graphic designer</Text>
           </CardTeam>
         </Flex>
         <Flex flexDirection="column" order={["1", null, "2"]}>
@@ -55,39 +60,44 @@ export default function MainTeam() {
             imgSrc="team/jean-sebastien.png"
             linkedInUrl="https://fr.linkedin.com/in/jean-s%C3%A9bastien-lefevre"
           >
-            <Text color="vampire-black" fontWeight="bold">Jean-Sébastien</Text>
-            <Text color="vampire-black">CEO</Text>
+            <Text color="keppel" fontWeight="bold">Jean-Sébastien</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">CEO</Text>
           </CardTeam>
           <CardTeam
             alignSelf={["start", null, "auto"]}
             imgSrc="team/thomas.png"
             linkedInUrl="https://fr.linkedin.com/in/thomas-castellengo"
           >
-            <Text color="vampire-black" fontWeight="bold">Thomas</Text>
-            <Text color="vampire-black">CTO</Text>
+            <Text color="keppel" fontWeight="bold">Thomas</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">CTO</Text>
           </CardTeam>
           <CardTeam
             alignSelf={["end", null, "auto"]}
             borderType="inner"
             imgSrc="team/adeline.png"
+            linkedInUrl="https://www.linkedin.com/in/adeline-pitet/"
           >
-            <Text color="vampire-black" fontWeight="bold">Adeline</Text>
-            <Text color="vampire-black">Dev Fullstack</Text>
+            <Text color="keppel" fontWeight="bold">Adeline</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">Dev Fullstack</Text>
           </CardTeam>
         </Flex>
         <Flex flexDirection="column" justifyContent="center" order="3">
           <CardTeam
             alignSelf={["end", null, "auto"]}
             imgSrc="team/nassara.png"
+            linkedInUrl="https://www.linkedin.com/in/nassara-elhadji-ph-d-6937a8b4/"
           >
-            <Text color="vampire-black" fontWeight="bold">Nassara</Text>
-            <Text color="vampire-black">Data Scientist</Text>
+            <Text color="keppel" fontWeight="bold">Nassara</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">Data Scientist</Text>
           </CardTeam>
           <CardTeam
             alignSelf={["center", null, "auto"]}
             borderType="inner"
+            linkedInUrl="https://www.linkedin.com/in/elisa-duronsoy-50a761172/"
+            imgSrc="team/elisa.png"
           >
-            {/* TODO Elisa */}
+            <Text color="keppel" fontWeight="bold">Elisa</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">Community Builder</Text>
           </CardTeam>
         </Flex>
       </Flex>

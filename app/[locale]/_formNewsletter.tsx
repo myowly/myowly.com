@@ -15,7 +15,7 @@ export default function FormNewsletter() {
           name="firstname"
           color="vampire-black"
           bgColor="cultured"
-          placeholder={ t('firstname') }
+          placeholder={t('firstname')}
           _placeholder={{ color: "vampire-black" }}
         />
       </FormControl>
@@ -26,29 +26,29 @@ export default function FormNewsletter() {
           name="lastname"
           color="vampire-black"
           bgColor="cultured"
-          placeholder={ t('lastname') }
+          placeholder={t('lastname')}
           _placeholder={{ color: "vampire-black" }}
         />
       </FormControl>
 
-      <FormControl isRequired mb={4}>
+      <FormControl isRequired mb={10}>
         <Input
           type="email"
           name="email"
           color="vampire-black"
           bgColor="cultured"
-          placeholder={ t('email') }
+          placeholder={t('email')}
           _placeholder={{ color: "vampire-black" }}
         />
       </FormControl>
 
-      <FormControl isRequired mb="4" display="flex" flexDirection="row" justifyContent="space-between">
+      <FormControl isRequired display="flex" flexDirection="row">
         <Checkbox name="LEGAL_CONSENT.subscription_type_195375400" iconColor="cultured" color="cultured" mr="4" />
-        <FormLabel color="cultured" as="label" fontSize="sm" fontStyle="italic">{ t('consent') }</FormLabel>
+        <FormLabel color="cultured" as="label" fontSize="12px" fontStyle="italic" m="0">{t('consent')}</FormLabel>
       </FormControl>
 
       <ButtonAction>
-        { t('send') }
+        {t('send')}
       </ButtonAction>
     </form>
   )

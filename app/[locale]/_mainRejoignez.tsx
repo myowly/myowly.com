@@ -1,4 +1,4 @@
-import { Box, Center, Flex,  Heading, Icon, Image, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, Icon, Image, Text } from "@chakra-ui/react";
 import { useTranslations } from 'next-intl';
 
 import Beak from "@/svg/beak"
@@ -21,6 +21,7 @@ export default function MainRejoignez() {
       alignItems="center"
       position="relative"
       minHeight="100vh"
+      boxShadow="0px 0px 20px 0px #46E0BB"
     >
       <Flex
         flexGrow="1"
@@ -51,9 +52,10 @@ export default function MainRejoignez() {
         </Box>
 
         <Box
-          py="130px"
-          px="10"
-          m="8"
+          py="80px"
+          px="6"
+          m="6"
+          mt="0"
           ml={{ md: "32" }}
           maxWidth="450px"
           border="1px solid var(--chakra-colors-cultured)"
@@ -65,33 +67,33 @@ export default function MainRejoignez() {
         >
           <Icon as={Beak} width="auto" height="20" position="absolute" top="-10" right="8" />
 
-          <Text fontStyle="italic">{ t('header') }</Text>
+          <Text fontStyle="italic">{t('header')}</Text>
           <Heading
             as="h2"
             textTransform="uppercase"
-            fontSize={["40px", "60px"]}
+            fontSize={["48px", "60px"]}
             fontWeight="400"
-            my="2"
+            mb="2"
             lineHeight="1"
           >
-            { t('title') }
+            {t('title')}
           </Heading>
 
           <Text
             mt="8"
-            mb="30px"
+            mb="20px"
             textTransform="uppercase"
-            fontSize={["20px", null, null, "30px"]}
+            fontSize={["20px", null, null, "29px"]}
             lineHeight="1"
             fontWeight="900"
           >
-            <Text as="span" color="indian-yellow">{ t('subtitle.part_1') }</Text><br />
-            { t('subtitle.part_2') }
-            <Text as="span" color="fulvous">{ t('subtitle.part_3') }</Text>
+            <Text as="span" color="indian-yellow">{t('subtitle.part_1')}</Text><br />
+            {t('subtitle.part_2')}
+            <Text as="span" color="fulvous">{t('subtitle.part_3')}</Text>
           </Text>
 
           <FormNewsletter />
-          
+
           <Center>
             <Box
               my="2"

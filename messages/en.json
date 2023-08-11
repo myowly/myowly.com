@@ -2,12 +2,11 @@
   "Home": {
     "Hero": {
       "subscribe_newsletter": "Subscribe to the newsletter",
-      "find_out_team": "Find out about the team",
-
+      "find_out_team": "The team",
       "title": {
-        "part_1": "Be ",
+        "part_1": "Become ",
         "part_2": "your ",
-        "part_3": "best ",
+        "part_3": "finest ",
         "part_4": "insurer"
       },
       "subtitle": {
@@ -16,16 +15,14 @@
         "part_3": "insurance"
       },
       "introduction": "Whether you're looking to protect yourself against natural hazards, financial loss or any other unforeseen situation, our parametric insurance is here to help.",
-
       "read_more": "Read more",
       "stay_informed": "Stay informed"
     },
-
     "MainDAO": {
       "title": {
         "part_1": "What if ",
-        "part_2": "we took back ",
-        "part_3": "in control"
+        "part_2": "we took ",
+        "part_3": "back control"
       },
       "subtitle": {
         "part_1": "A DAO ",
@@ -34,23 +31,21 @@
         "part_4": "an oracle"
       },
       "explanation": "Community members pay into a DAO they manage. An oracle automatically sets the prices and conditions for compensation.",
-      
-      "how_it_works": "How it works?",
+      "how_it_works": "How does it works?",
       "stay_in_touch": "Stay informed"
     },
-
     "MainProjet": {
       "title": {
-        "part_1": "Why ",
-        "part_2": "did we decide ",
-        "part_3": "to change things"
+        "part_1": "Why have ",
+        "part_2": "we decided to change ",
+        "part_3": "the way things are"
       },
       "cards": {
         "1": {
           "title": {
             "part_1": "A growing ",
-            "part_2": "accidente ",
-            "part_3": "rate"
+            "part_2": "number of ",
+            "part_3": "claims"
           },
           "text": "Climate change has led to an increase in extreme weather events such as storms, floods, droughts..."
         },
@@ -73,11 +68,9 @@
           "text": "We believe that the best answers come from communities. People working together are more likely to find the right answers to the problems they face."
         }
       },
-
       "benefits": "What are my benefits?",
       "stay_informed": "Keep in touch"
     },
-
     "MainCaroussel": {
       "slides": {
         "1": {
@@ -197,7 +190,6 @@
       },
       "read_more": "Read more"
     },
-
     "MainRejoignez": {
       "header": "What are you waiting for? ...",
       "title": "Join us",
@@ -207,7 +199,6 @@
         "part_3": "newsletter"
       }
     },
-
     "MainSimplifier": {
       "title": {
         "part_1": "How ",
@@ -247,8 +238,8 @@
       "project": "The project",
       "newsletter": "Join the newsletter"
     },
-
     "MainCommunauté": {
+      "header": "What are you waiting for? ...",
       "title": "Join the community",
       "subtitles": {
         "1": {
@@ -262,7 +253,6 @@
       },
       "subscription": "Subscribe"
     },
-
     "MainMessage": {
       "texts": {
         "1": {
@@ -288,7 +278,6 @@
         }
       }
     },
-
     "MainRoadmap": {
       "months": {
         "january": "January",
@@ -304,7 +293,7 @@
         "november": "November",
         "december": "December"
       },
-      "description":{
+      "description": {
         "1": "Branding image creation",
         "2": "Landing page launch",
         "3": {
@@ -322,19 +311,16 @@
         "8": "AI decentralisation"
       }
     },
-
     "MainTeam": {
       "title": "The MyOwly team"
     },
-
     "MainApp": {
       "title": {
         "part_1": "What if ",
-        "part_2": "we took back ",
-        "part_3": "in control"
+        "part_2": "we took ",
+        "part_3": "back control"
       }
     },
-
     "Footer": {
       "summary": {
         "title": "The MyOwly project",
@@ -342,7 +328,7 @@
           "project": "Discover the MyOwly project",
           "community": "Follow the community",
           "newsletter": "Join the newsletter",
-          "roadmap" : "Roadmap",
+          "roadmap": "Roadmap",
           "team": "The team"
         }
       },
@@ -357,7 +343,6 @@
       "privacy": "Privacy",
       "rights": "All rights reserved"
     },
-
     "FormNewsletter": {
       "firstname": "Your fistname",
       "lastname": "Your name",

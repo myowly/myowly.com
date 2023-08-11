@@ -2,8 +2,7 @@
   "Home": {
     "Hero": {
       "subscribe_newsletter": "Rejoindre la newsletter",
-      "find_out_team": "Découvrir l'équipe",
-
+      "find_out_team": "L'équipe",
       "title": {
         "part_1": "Soyez ",
         "part_2": "votre ",
@@ -16,11 +15,9 @@
         "part_3": "l'assurance"
       },
       "introduction": "Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.",
-
       "read_more": "En savoir plus",
       "stay_informed": "Se tenir informé"
     },
-
     "MainDAO": {
       "title": {
         "part_1": "Et si ",
@@ -34,11 +31,9 @@
         "part_4": "un oracle"
       },
       "explanation": "Les membres de la communauté versent les sommes au sein d'une DAO dont ils ont la gestion. Les prix et les conditions de réalisation des indemnisations sont réalisés automatiquement par un oracle.",
-      
       "how_it_works": "Comment ça marche ?",
       "stay_in_touch": "Rester en relation"
     },
-
     "MainProjet": {
       "title": {
         "part_1": "Pourquoi ",
@@ -73,11 +68,9 @@
           "text": "Nous pensons que les meilleures réponses viendront des communautés. Les individus travaillant ensemble sont plus susceptibles de trouver des réponses adaptées aux problèmes qu'ils rencontrent."
         }
       },
-
       "benefits": "Quels sont mes avantages ?",
       "stay_informed": "Rester informé"
     },
-
     "MainCaroussel": {
       "slides": {
         "1": {
@@ -197,7 +190,6 @@
       },
       "read_more": "En savoir plus"
     },
-
     "MainRejoignez": {
       "header": "Qu'attendez-vous ? ...",
       "title": "Rejoingez-nous",
@@ -207,7 +199,6 @@
         "part_3": "newsletter"
       }
     },
-
     "MainSimplifier": {
       "title": {
         "part_1": "En quoi ",
@@ -247,22 +238,21 @@
       "project": "Déroulement du projet",
       "newsletter": "Rejoindre la newsletter"
     },
-
     "MainCommunauté": {
-      "title": "Rejoingez la communauté",
+      "header": "Qu'attendez-vous ? ...",
+      "title": "Rejoingnez la communauté",
       "subtitles": {
         "1": {
-          "part_1": "sur nos ",
+          "part_1": "Sur nos ",
           "part_2": "réseaux sociaux"
         },
         "2": {
-          "part_1": "avec notre ",
+          "part_1": "Avec notre ",
           "part_2": "newsletter"
         }
       },
       "subscription": "Je m'inscris"
     },
-
     "MainMessage": {
       "texts": {
         "1": {
@@ -288,9 +278,8 @@
         }
       }
     },
-
     "MainRoadmap": {
-      "months" : {
+      "months": {
         "january": "Janvier",
         "february": "Février",
         "march": "Mars",
@@ -304,7 +293,7 @@
         "november": "Novembre",
         "december": "Décembre"
       },
-      "description":{
+      "description": {
         "1": "Création de la marque et de son identité",
         "2": "Lancement Landing Page",
         "3": {
@@ -322,11 +311,9 @@
         "8": "Décentralisation IA (Hub)"
       }
     },
-
     "MainTeam": {
       "title": "L'équipe MyOwly"
     },
-
     "MainApp": {
       "title": {
         "part_1": "Et si ",
@@ -334,7 +321,6 @@
         "part_3": "le contrôle "
       }
     },
-
     "Footer": {
       "summary": {
         "title": "Le projet MyOwly",
@@ -342,7 +328,7 @@
           "project": "Découvrir le projet MyOwly",
           "community": "Suivre la communauté",
           "newsletter": "Rejoindre la Newsletter",
-          "roadmap" : "Roadmap",
+          "roadmap": "Roadmap",
           "team": "L'équipe"
         }
       },
@@ -357,7 +343,6 @@
       "privacy": "Confidentialité",
       "rights": "Tous droits réservés"
     },
-
     "FormNewsletter": {
       "firstname": "Votre prénom",
       "lastname": "Votre nom",

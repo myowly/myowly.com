@@ -1,7 +1,7 @@
 'use client'
 
 import { CacheProvider } from '@chakra-ui/next-js'
-import { ChakraProvider, extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
+import { ChakraProvider, background, extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
 import { Inter, Staatliches } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -58,7 +58,8 @@ export const theme = extendTheme(
         },
         body: {
           maxWidth: '100vw',
-          overflowX: 'hidden'
+          overflowX: 'hidden',
+          background: 'cultured'
         },
         p: {
           color: 'cultured',

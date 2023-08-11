@@ -5,16 +5,24 @@ import ButtonLink from "@/ui/button/button-link";
 import Beak from "@/svg/beak";
 import ButtonPageUp from "@/ui/button/button-page-up";
 import LinkMailTo from "@/ui/link-mail-to";
+import Footer from '../_footer';
 
 export default function Page() {
   return (
     <>
+
+      <Flex justifyContent="center" pt="8" pb="4" position="fixed" borderBottomRadius="xl" w="100%" backgroundColor="cultured" zIndex="99" boxShadow="0px 0px 20px 0px #46E0BB">
+        <ButtonLink href="/" minWidth={[null, null, null, "500px"]}>Retour à l&apos;accueil</ButtonLink>
+      </Flex>
+
       <Flex
         flexDirection="column"
         alignItems="stretch"
         bgGradient="linear(to-b, black-bean 71%, sherwood-green 100%)"
         borderBottomRadius="xl"
-        p="8"
+        pt="140px"
+        px="6"
+        pb="6"
       >
         <Container
           p={0}
@@ -23,18 +31,15 @@ export default function Page() {
           alignItems="stretch"
           position="relative"
         >
-          <Flex justifyContent="center" mb="12">
-            <ButtonLink href="/" minWidth={[null, null, null, "500px"]}>Retour à l&apos;accueil</ButtonLink>
-          </Flex>
-          
+
           <Heading
             as="h1"
             textTransform="uppercase"
             fontSize={["60px", "90px", "110px", "130px", "150px"]}
-            fontWeight="extrabold"
+            fontWeight="400"
             color="cultured"
             maxWidth="600px"
-            lineHeight="0.9"
+            lineHeight="1"
             mb={["16", "24"]}
           >
             Mentions légales
@@ -53,8 +58,8 @@ export default function Page() {
       <Flex
         flexDirection="column"
         alignItems="stretch"
-        p="8"
-        mb="16"
+        p="6"
+        mb="20"
       >
         <Container
           p={0}
@@ -84,7 +89,7 @@ export default function Page() {
 
             <Text color="vampire-black" mb="2" lineHeight="1.5">Président&nbsp;: Jean-Sébastien LEFEVRE</Text>
             <Text color="vampire-black" mb="6" lineHeight="1.5">Mail&nbsp;: <LinkMailTo /></Text>
-          
+
             <Heading
               as="h2"
               mt="16"
@@ -107,7 +112,7 @@ export default function Page() {
               La marque MyOwly le logo MyOwly et toutes les autres marques MyOwly qui figurent sur le présent site internet sont des marques enregistrées, dont le titulaire est la société SelfCare.
               Toutes les autres marques qui figurent sur le présent site internet sont la propriété de leurs titulaires respectifs.
             </Text>
-            
+
             <Heading
               as="h2"
               mt="16"
@@ -127,7 +132,7 @@ export default function Page() {
               Par exemple, pour traiter une commande, établir une correspondance, fournir un abonnement ou soumettre une candidature à un poste.
               Nous pouvons compléter ces informations pour conclure une transaction ou offrir un meilleur service.
             </Text>
-          
+
             <Heading
               as="h2"
               mt="16"
@@ -148,29 +153,11 @@ export default function Page() {
           <Flex justifyContent="center" >
             <ButtonLink href="/fr/privacy" minWidth={[null, null, null, "500px"]}>Politique de confidentialité</ButtonLink>
           </Flex>
-        </Container> 
-      </Flex>
-
-      <Flex
-        flexDirection="column"
-        alignItems="stretch"
-        bgGradient="linear(to-b, sherwood-green 0%, black-bean 33%)"
-        borderTopRadius="xl"
-        p="8"
-      >
-        <Container
-          p={0}
-          centerContent
-          maxWidth={[null, null, null, "1300px", "1400px"]}
-          alignItems="stretch"
-          position="relative"
-        >
-          <Flex justifyContent="center" >
-            <ButtonLink href="/" minWidth={[null, null, null, "500px"]}>Retour à l&apos;accueil</ButtonLink>
-          </Flex>
         </Container>
       </Flex>
-      
+
+      <Footer />
+
       <ButtonPageUp />
     </>
   )
