@@ -64,13 +64,11 @@ export default function MainApp() {
         ml={[null, null, "32"]}
         maxWidth="450px"
         alignSelf={["center", null, "auto"]}
-      >
-        {/*     
+      >    
         <Text my="8" color="vampire-black">
           Pourquoi ne pas tenter l&apos;aventure. Découvrez la première version de l&apos;application.
         </Text>
         <ButtonLinkBeak mb="4" href="https://app.myowly.com/" target="_blank" color="cultured" background="keppel">Simuler ma prestation</ButtonLinkBeak>
-        */}
       </Box>
     </Flex>
   )
