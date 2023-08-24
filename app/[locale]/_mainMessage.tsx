@@ -1,5 +1,6 @@
 import { Text, Box, Image, Container } from "@chakra-ui/react";
 import { useTranslations } from 'next-intl';
+import ButtonLinkBeak from "@/ui/button/button-link-beak"
 
 
 export default function MainMessage() {
@@ -25,19 +26,20 @@ export default function MainMessage() {
       <Box alignSelf='start' my="12">
         <Image src="/Cristals_2b.png" maxH="50px" alt="" />
       </Box>
-      <Box alignSelf='center' my="50px" mx={["18"]} >
-        <Text
-          color="vampire-black"
-          textTransform="uppercase"
-          fontWeight="normal"
-          fontSize="30px"
-          lineHeight="36px"
-          textAlign="center"
-        >
-          <Box as="span" fontWeight='bold'>{t('texts.2.part_1')}</Box>
-          {t('texts.2.part_2')}
-          <Box as="span" fontWeight='extrabold' color="keppel">{t('texts.2.part_3')}</Box>.
+      <Box
+        mx={["1.5rem", null, null, "auto"]}
+        my="5"
+        px="5"
+        py="5"
+        maxWidth="450px"
+        alignSelf={["center", null, "auto"]}
+        boxShadow="2px 2px 4px 0px rgba(152, 173, 168, 0.5) inset, -2px -2px 4px 0px rgba(255, 255, 255, 0.10) inset, 0px 0px 20px 0px #3bbfa1"
+        borderRadius="20px"
+      >
+        <Text mb="5" color="vampire-black">
+          Pourquoi ne pas tenter l&apos;aventure. Découvrez la version alpha de notre application dès maintenant.
         </Text>
+        <ButtonLinkBeak href="https://app.myowly.com/" target="_blank" color="cultured" background="keppel">Simuler ma prestation</ButtonLinkBeak>
       </Box>
       <Box alignSelf='end' my="12" >
         <Image src="/Cristals_2b.png" maxH="50px" alt="" />

@@ -10,7 +10,7 @@ export default function MainApp() {
     <Flex
       flexDir="column"
       justifyContent="space-between"
-      mb="8"
+      mb="50px"
       id="app"
     >
       <Flex
@@ -57,19 +57,6 @@ export default function MainApp() {
           </Text> ?
         </Heading>
       </Flex>
-
-      <Box
-        p="10"
-        m="8"
-        ml={[null, null, "32"]}
-        maxWidth="450px"
-        alignSelf={["center", null, "auto"]}
-      >    
-        <Text my="8" color="vampire-black">
-          Pourquoi ne pas tenter l&apos;aventure. Découvrez la première version de l&apos;application.
-        </Text>
-        <ButtonLinkBeak mb="4" href="https://app.myowly.com/" target="_blank" color="cultured" background="keppel">Simuler ma prestation</ButtonLinkBeak>
-      </Box>
     </Flex>
   )
 }
