@@ -24,6 +24,7 @@ export default function ButtonLinkBeak({
     <Button
       data-group
       mb={mb}
+      py="5"
       w="100%"
       border="1px solid"
       borderColor="keppel"
@@ -40,6 +41,7 @@ export default function ButtonLinkBeak({
         color={color}
         textTransform="uppercase"
         fontWeight="bold"
+        fontSize={["18px", "20px", "22px"]}
         _groupHover={{
           color: colorHover
         }}
