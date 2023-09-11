@@ -192,7 +192,7 @@
     },
     "MainRejoignez": {
       "header": "Qu'attendez-vous ? ...",
-      "title": "Rejoingez-nous",
+      "title": "Rejoignez-nous",
       "subtitle": {
         "part_1": "Restez connecté ",
         "part_2": "avec notre ",
@@ -219,7 +219,7 @@
         "2": {
           "title": {
             "part_1": "Une ",
-            "part_2": "transparance ",
+            "part_2": "transparence ",
             "part_3": "totale ",
             "part_4": "envers ",
             "part_5": "l'utilisateur"
