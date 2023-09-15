@@ -101,7 +101,7 @@ export default function Page() {
               color="fulvous"
               lineHeight="1"
             >
-              Conditions d&apos;utiliation du site internet myowly.com
+              Conditions d&apos;utilisation du site internet myowly.com
             </Heading>
             <Text color="vampire-black" mb="6" lineHeight="1.5">
               Le site et chacun des éléments, y compris mais sans limitation les marques, les logos, icônes, infographies, photographies, qui le composent sont protégés au titre de la législation internationale de la propriété intellectuelle.
