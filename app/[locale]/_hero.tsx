@@ -247,8 +247,8 @@ export default function Hero() {
             {t('introduction')}
           </Text>
 
-          <ButtonLinkBeak mb="4" href="#project">{t('read_more')}</ButtonLinkBeak>
-          <ButtonLinkBeak mb="14" href="#community">{t('stay_informed')}</ButtonLinkBeak>
+          <ButtonLinkBeak mb="4" href="#community">{t('stay_informed')}</ButtonLinkBeak>
+          <ButtonLinkBeak mb="4" href="https://app.myowly.com/" target="_blank" color="cultured" background="keppel">{t('cta_app')}</ButtonLinkBeak>
         </Box>
       </Container>
     </Flex >
