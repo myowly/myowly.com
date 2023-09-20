@@ -43,6 +43,7 @@ export default function Footer() {
             <ButtonSocialNetwork socialNetwork="Discord" />
             <ButtonSocialNetwork socialNetwork="LinkedIn" />
             <ButtonSocialNetwork socialNetwork="Twitter" />
+            <ButtonSocialNetwork socialNetwork="Facebook" />
             {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
             <ButtonSocialNetwork socialNetwork="Github" />
           </Box>

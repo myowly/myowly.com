@@ -110,6 +110,7 @@ export default function MainRejoignez() {
               <ButtonSocialNetwork socialNetwork="Discord" />
               <ButtonSocialNetwork socialNetwork="LinkedIn" />
               <ButtonSocialNetwork socialNetwork="Twitter" />
+              <ButtonSocialNetwork socialNetwork="Facebook" />
               {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
               <ButtonSocialNetwork socialNetwork="Github" />
             </Box>
