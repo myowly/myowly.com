@@ -9,7 +9,7 @@ export default function ButtonSocialNetwork({
   width?: number | number[],
   height?: number | number[],
   margin?: string,
-  socialNetwork?: "Discord" | "Twitter" | "Reddit" | "Github" | "LinkedIn"
+  socialNetwork?: "Discord" | "Twitter" | "Reddit" | "Github" | "LinkedIn" | "Facebook"
 }) {
   let href = "https://discord.gg/5T8pCz6f"
   let src = "/reseaux/discord.svg"
@@ -26,6 +26,9 @@ export default function ButtonSocialNetwork({
   } else if (socialNetwork == "LinkedIn") {
     href = "https://www.linkedin.com/company/myowly/"
     src = "/reseaux/linkedin.svg"
+  } else if (socialNetwork == "Facebook") {
+    href = "https://www.facebook.com/people/MyOwly/100093950620391/"
+    src = "/reseaux/facebook.svg"
   }
 
   return (

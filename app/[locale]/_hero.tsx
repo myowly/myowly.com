@@ -247,8 +247,8 @@ export default function Hero() {
             {t('introduction')}
           </Text>
 
-          <ButtonLinkBeak mb="4" href="#DAO">{t('read_more')}</ButtonLinkBeak>
-          <ButtonLinkBeak mb="14" href="#joinUs">{t('stay_informed')}</ButtonLinkBeak>
+          <ButtonLinkBeak mb="4" href="#project">{t('read_more')}</ButtonLinkBeak>
+          <ButtonLinkBeak mb="14" href="#community">{t('stay_informed')}</ButtonLinkBeak>
         </Box>
       </Container>
     </Flex >
