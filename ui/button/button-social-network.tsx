@@ -11,7 +11,7 @@ export default function ButtonSocialNetwork({
   margin?: string,
   socialNetwork?: "Discord" | "Twitter" | "Reddit" | "Github" | "LinkedIn" | "Facebook"
 }) {
-  let href = "https://discord.gg/5T8pCz6f"
+  let href = "https://discord.gg/3tQDqwUf9n"
   let src = "/reseaux/discord.svg"
 
   if (socialNetwork == "Twitter") {
