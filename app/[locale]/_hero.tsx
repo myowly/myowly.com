@@ -94,7 +94,7 @@ export default function Hero() {
                   border="1px solid"
                   borderColor="keppel"
                   whiteSpace="nowrap"
-                  align="center"
+                  textAlign="center"
                   p="2"
                   boxShadow="0 0 10px var(--chakra-colors-keppel)"
                 >
