@@ -82,7 +82,7 @@ export default function Hero() {
                   {t('find_out_team')}
                 </Link>
               </Box>
-              <Box hideBelow="md" border="1px solid" borderColor="keppel" borderRadius="14" mr="6">
+              <Flex hideBelow="md" border="1px solid" borderColor="keppel" borderRadius="14" mr="6" direction="column" >
                 <Link
                   href="#joinUs"
                   textTransform="uppercase"
@@ -94,6 +94,7 @@ export default function Hero() {
                   border="1px solid"
                   borderColor="keppel"
                   whiteSpace="nowrap"
+                  align="center"
                   p="2"
                   boxShadow="0 0 10px var(--chakra-colors-keppel)"
                 >
@@ -109,10 +110,11 @@ export default function Hero() {
                   <ButtonSocialNetwork socialNetwork="Discord" />
                   <ButtonSocialNetwork socialNetwork="LinkedIn" />
                   <ButtonSocialNetwork socialNetwork="Twitter" />
+                  <ButtonSocialNetwork socialNetwork="Facebook" />
                   {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
                   <ButtonSocialNetwork socialNetwork="Github" />
                 </Center>
-              </Box>
+              </Flex>
             </Flex>
           </Flex>
           <Box hideFrom="md">

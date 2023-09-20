@@ -100,6 +100,7 @@ export default function MainCommunauté() {
             <ButtonSocialNetwork socialNetwork="Discord" width={[30, null, null, 50]} height={[30, null, null, 50]} />
             <ButtonSocialNetwork socialNetwork="LinkedIn" width={[30, null, null, 50]} height={[30, null, null, 50]} />
             <ButtonSocialNetwork socialNetwork="Twitter" width={[30, null, null, 50]} height={[30, null, null, 50]} />
+            <ButtonSocialNetwork socialNetwork="Facebook" width={[30, null, null, 50]} height={[30, null, null, 50]} />
             {/* <ButtonSocialNetwork socialNetwork="Reddit" /> */}
             <ButtonSocialNetwork socialNetwork="Github" width={[30, null, null, 50]} height={[30, null, null, 50]} />
           </Center>
