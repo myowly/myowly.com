@@ -37,9 +37,9 @@ export default function MainMessage() {
         borderRadius="20px"
       >
         <Text mb="5" color="vampire-black">
-          Pourquoi ne pas tenter l&apos;aventure. Découvrez la version alpha de notre application dès maintenant.
+          {t('texts.2.part_1')}
         </Text>
-        <ButtonLinkBeak href="https://app.myowly.com/" target="_blank" color="cultured" background="keppel">Simuler ma prestation</ButtonLinkBeak>
+        <ButtonLinkBeak href="https://app.myowly.com/" target="_blank" color="cultured" background="keppel">{t('texts.2.part_2')}</ButtonLinkBeak>
       </Box>
       <Box alignSelf='end' my="12" >
         <Image src="/Cristals_2b.png" maxH="50px" alt="" />

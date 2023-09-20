@@ -16,7 +16,8 @@
       },
       "introduction": "Whether you're looking to protect yourself against natural hazards, financial loss or any other unforeseen situation, our parametric insurance is here to help.",
       "read_more": "Read more",
-      "stay_informed": "Stay informed"
+      "stay_informed": "Stay informed",
+      "cta_app": "Estimate my benefit"
     },
     "MainDAO": {
       "title": {
@@ -263,9 +264,8 @@
           "part_5": "tailored to you needs"
         },
         "2": {
-          "part_1": "Focus ",
-          "part_2": "on what ",
-          "part_3": "really matters"
+          "part_1": "Why not embark on the adventure? Explore the alpha version of our app right now.",
+          "part_2": "Estimate my benefit"
         },
         "3": {
           "part_1": "Tailor-made, ",
