@@ -73,7 +73,7 @@ export default function Footer() {
 
             <Flex flexDirection="column" gap="2">
               <Link
-                href={`/${params.locale}/#project`}
+                href={`/${params.locale}#project`}
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -90,6 +90,7 @@ export default function Footer() {
                   {t('summary.links.project')}
                 </Flex>
               </Link>
+              {/*
               <Link
                 href="#community"
                 textTransform="uppercase"
@@ -108,8 +109,9 @@ export default function Footer() {
                   {t('summary.links.community')}
                 </Flex>
               </Link>
+              */}
               <Link
-                href={`/${params.locale}/#joinUs`}
+                href={`/${params.locale}#joinUs`}
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -127,7 +129,7 @@ export default function Footer() {
                 </Flex>
               </Link>
               <Link
-                href={`/${params.locale}/#roadmap`}
+                href={`/${params.locale}#roadmap`}
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"
@@ -145,7 +147,7 @@ export default function Footer() {
                 </Flex>
               </Link>
               <Link
-                href={`/${params.locale}/#team`}
+                href={`/${params.locale}#team`}
                 textTransform="uppercase"
                 cursor="pointer"
                 color="cultured"

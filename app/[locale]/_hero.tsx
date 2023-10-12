@@ -212,7 +212,7 @@ export default function Hero() {
           transform={[null, "translateY(-20px)", "translateY(-50px)", "translateY(-12px)"]}
 
         >
-          <Image as="img" src="/arrow-white.svg" w="auto" h="10" />
+          <Image as="img" alt="" src="/arrow-white.svg" w="auto" h="10" />
         </Box>
 
         <Box px="8" mb="100px" maxWidth={[null, "480px", null, "567px"]} alignSelf={[null, null, null, "flex-start"]}>
@@ -247,7 +247,7 @@ export default function Hero() {
             {t('introduction')}
           </Text>
 
-          <ButtonLinkBeak mb="4" href="#community">{t('stay_informed')}</ButtonLinkBeak>
+          <ButtonLinkBeak mb="4" href="#joinUs">{t('stay_informed')}</ButtonLinkBeak>
           <ButtonLinkBeak mb="4" href="https://app.myowly.com/" target="_blank" color="cultured" background="keppel">{t('cta_app')}</ButtonLinkBeak>
         </Box>
       </Container>
