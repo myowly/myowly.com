@@ -1,49 +1,49 @@
-'use client'
+"use client";
 
-import { CacheProvider } from '@chakra-ui/next-js'
-import { ChakraProvider, background, extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
-import { Inter, Staatliches } from 'next/font/google'
+import { CacheProvider } from "@chakra-ui/next-js";
+import { ChakraProvider, background, extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
+import { Inter, Staatliches } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
-const staatliches = Staatliches({ weight: '400', subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
+const staatliches = Staatliches({ weight: "400", subsets: ["latin"] });
 
 const colors = {
-  'eucalyptus': '#46e0bb',
-  'keppel': '#3bbfa1',
-  'sherwood-green': '#093f32',
-  'fulvous': '#e67a04',
-  'indian-yellow': '#ee9e4e',
-  "spanish-orange": '#E46500',
-  'saddle-brown': '#8e420c',
-  'grey': '#bdbdbd',
-  'vampire-black': '#0b0b0b',
-  'black-bean': '#081b17',
-  'black': '#000000',
-  'cultured': '#f6f6f6',
-  'transparent': 'transparent'
-}
+  eucalyptus: "#46e0bb",
+  keppel: "#3bbfa1",
+  "sherwood-green": "#093f32",
+  fulvous: "#e67a04",
+  "indian-yellow": "#ee9e4e",
+  "spanish-orange": "#E46500",
+  "saddle-brown": "#8e420c",
+  grey: "#bdbdbd",
+  "vampire-black": "#0b0b0b",
+  "black-bean": "#081b17",
+  black: "#000000",
+  cultured: "#f6f6f6",
+  transparent: "transparent",
+};
 
 const stepperTheme = {
   baseStyle: {
     indicator: {
-      height: '20px',
-      width: '20px',
-      margin: '7px',
+      height: "20px",
+      width: "20px",
+      margin: "7px",
       _active: {
-        bgColor: "fulvous"
-      }
+        bgColor: "fulvous",
+      },
     },
     separator: {
-      bgColor: "vampire-black"
-    }
-  }
-}
+      bgColor: "vampire-black",
+    },
+  },
+};
 
 // Extend the theme to include custom colors, fonts, etc
 export const theme = extendTheme(
   {
     colors,
-    initialColorMode: 'light',
+    initialColorMode: "light",
     useSystemColorMode: false,
     fonts: {
       heading: `${staatliches.style.fontFamily}, sans-serif`,
@@ -52,20 +52,20 @@ export const theme = extendTheme(
     styles: {
       global: {
         html: {
-          scrollBehavior: 'smooth',
-          maxWidth: '100vw',
-          overflowX: 'hidden'
+          scrollBehavior: "smooth",
+          maxWidth: "100vw",
+          overflowX: "hidden",
         },
         body: {
-          maxWidth: '100vw',
-          overflowX: 'hidden',
-          background: 'cultured'
+          maxWidth: "100vw",
+          overflowX: "hidden",
+          background: "cultured",
         },
         p: {
-          color: 'cultured',
+          color: "cultured",
           fontWeight: 500,
-          fontSize: '18px',
-          lineHeight: '21px',
+          fontSize: "16px",
+          lineHeight: "19px",
         },
       },
     },
@@ -73,15 +73,13 @@ export const theme = extendTheme(
       Stepper: stepperTheme,
     },
   },
-  withDefaultColorScheme({ colorScheme: 'vampire-black' })
-)
+  withDefaultColorScheme({ colorScheme: "vampire-black" })
+);
 
 export function Providers({ children }) {
   return (
     <CacheProvider>
-      <ChakraProvider theme={theme}>
-        {children}
-      </ChakraProvider>
+      <ChakraProvider theme={theme}>{children}</ChakraProvider>
     </CacheProvider>
-  )
+  );
 }

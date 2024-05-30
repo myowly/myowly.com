@@ -1,8 +1,8 @@
 {
   "Home": {
     "Hero": {
-      "subscribe_newsletter": "Subscribe to the newsletter",
-      "find_out_team": "The team",
+      "hero_btn_1": "Star testing our app",
+      "hero_btn_2": "Our newsletter",
       "title": {
         "part_1": "Become ",
         "part_2": "your ",

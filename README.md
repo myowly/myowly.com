@@ -9,6 +9,7 @@ Welcome to the public website repository for MyOwly.com!
 MyOwly.com is a project that aims to reinvent the way we protect each other by returning to the fundamentals of mutualism. Our mission is to create a platform where individuals can come together, share resources, and support one another in times of need.
 
 ## Contributing
+
 We welcome contributions to improve the MyOwly.com website. If you encounter any issues or have suggestions for enhancements, please open an issue on GitHub. We appreciate your feedback and are committed to continuously improving our website.
 
 To contribute code changes, please follow the steps outlined in our [CONTRIBUTING](CONTRIBUTING.md) guide.

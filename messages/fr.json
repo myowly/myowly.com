@@ -1,13 +1,12 @@
 {
   "Home": {
     "Hero": {
-      "subscribe_newsletter": "Rejoindre la newsletter",
-      "find_out_team": "L'équipe",
+      "hero_btn_1": "Testez notre application",
+      "hero_btn_2": "Rejoindre la newsletter",
       "title": {
-        "part_1": "Soyez ",
-        "part_2": "votre ",
-        "part_3": "meilleur ",
-        "part_4": "assureur"
+        "part_1": "Soyez votre",
+        "part_2": "meilleur ",
+        "part_3": "assureur "
       },
       "subtitle": {
         "part_1": "La Blockchain ",
@@ -17,7 +16,7 @@
       "introduction": "Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.",
       "read_more": "En savoir plus",
       "stay_informed": "Se tenir informé",
-      "cta_app": "Simuler ma prestation"
+      "cta_app": "Testez notre application"
     },
     "MainDAO": {
       "title": {
