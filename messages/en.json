@@ -368,5 +368,24 @@
       "consent": "I agree to my information being stored and used to register and subscribe to the MyOwly newsletter.",
       "send": "Send"
     }
+  },
+  "MainParadigme": {
+    "hover": "What's different with MyOwly?",
+    "title": "A paradigm shift",
+    "subtitle": "Our mission is to give you back control",
+    "card": {
+      "1": {
+        "hover": "Before MyOwly ",
+        "1": "Nobody knows when they pay their insurance, or whether their premium is in line with the service provided.",
+        "2": "No one knows whether they will really be compensated if the risk occurs.",
+        "3": "Premiums paid are lost."
+      },
+      "2": {
+        "hover": "After MyOwly ",
+        "1": "The customer knows the probability of the risk and the amount of the premium is completely transparent.",
+        "2": "Compensation is automatic and unrelated to the level of claims incurred",
+        "3": "The customer pays provisions, not contributions."
+      }
+    }
   }
 }

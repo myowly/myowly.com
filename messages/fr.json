@@ -332,6 +332,25 @@
       "email": "Votre email",
       "consent": "J'accepte que mes informations soient stockées et utilisées pour m'enregistrer et participer à la newsletter MyOwly.",
       "send": "Envoyer"
+    },
+    "MainParadigme": {
+      "hover": "Qu'est ce qui change avec MyOwly ?",
+      "title": "Un changement de paradigme",
+      "subtitle": "Notre mission est de vous redonner le contrôle",
+      "card": {
+        "1": {
+          "hover": "Avant MyOwly ",
+          "1": "Personne ne sait quand il paie son assurance, si sa prime est en adéquation avec le service rendu.",
+          "2": "Personne ne sait s'il sera vraiment indemnisé si le risque survient.",
+          "3": "Les primes payées sont perdues."
+        },
+        "2": {
+          "hover": "Après MyOwly ",
+          "1": "Le client connaît la probabilité du risque et le montant de la prime est totalement transparent.",
+          "2": "L'indemnisation est automatique et sans lien avec le niveau de sinistralité",
+          "3": "Le client verse des provisions et non des cotisations."
+        }
+      }
     }
   }
 }

@@ -15,6 +15,7 @@ import MainMessage from "./_mainMessage";
 import MainRoadmap from "./_mainRoadmap";
 import MainTeam from "./_mainTeam";
 import MainApp from "./_mainApp";
+import MainParadigme from "./_mainParadigme";
 import Footer from "./_footer";
 
 export default function Home() {
@@ -32,10 +33,11 @@ export default function Home() {
         {/*
         <MainCommunauté />
         */}
+        <MainParadigme />
         <MainRejoignez />
-        <MainMessage />
-        <MainRoadmap />
         <MainTeam />
+        {/* <MainMessage /> */}
+        <MainRoadmap />
         <MainApp />
       </main>
 
