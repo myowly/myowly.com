@@ -26,7 +26,7 @@ export default function Home() {
         {/*
         <MainDAO />
         */}
-        <MainProjet />
+        {/* <MainProjet /> */}
         <MainCaroussel />
         <MainSimplifier />
         {/*

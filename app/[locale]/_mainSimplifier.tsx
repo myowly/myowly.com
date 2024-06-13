@@ -1,100 +1,102 @@
-import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
-import { useTranslations } from 'next-intl';
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Image,
+  Icon,
+  SimpleGrid,
+  GridItem,
+  Stack,
+} from "@chakra-ui/react";
+import { useTranslations } from "next-intl";
 
 import ButtonLink from "@/ui/button/button-link";
 import Card from "@/ui/card";
 
-
 export default function MainSimplifier() {
-  const t = useTranslations('Home.MainSimplifier');
+  const t = useTranslations("Home.MainSimplifier");
+  const u = useTranslations("Home.MainProjet");
+
+  const Feature = (props) => {
+    return (
+      <Flex>
+        <Flex shrink={0}>
+          <Icon
+            boxSize={5}
+            mt={1}
+            mr={2}
+            color="brand.500"
+            _dark={{ color: "brand.300" }}
+            viewBox="0 0 20 20"
+            fill="currentColor">
+            <path
+              fillRule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clipRule="evenodd"></path>
+          </Icon>
+        </Flex>
+        <Box ml={4}>
+          <Text fontSize="lg" fontWeight="bold" lineHeight="6" _light={{ color: "gray.900" }}>
+            {props.title}
+          </Text>
+          <Text mt={2} color="gray.500" _dark={{ color: "gray.400" }}>
+            {props.children}
+          </Text>
+        </Box>
+      </Flex>
+    );
+  };
 
   return (
     <Box py="100px" id="benefits">
       <Flex
-        flexDirection={[null, null, null, "row-reverse"]}
-        justifyContent={["flex-end", null, null, "flex-start", "center"]}
-        alignItems={[null, null, null, "center"]}
-        position={[null, null, null, "relative", "inherit"]}
-        left="140px"
-      >
-        <Image
-          alt=""
-          height={["335px", "350px", "500px"]}
-          width={["385px", "400px", "500px"]}
-          src="/owls/MyOwly.png"
-          position={["relative", null, null, "inherit"]}
-          left={["84px", "80px", "86px", "109px"]}
-          top={["8px", "8px", "-50px", "-40px"]}
-        />
-        <Heading
-          as="h2"
-          textTransform="uppercase"
-          fontSize={["70px", "80px", "100px", "110px"]}
-          fontWeight="400"
-          fontFamily="heading"
-          color="vampire-black"
-          lineHeight="1"
-          pr={["1.5rem", null, null, "0"]}
-          pb={["24", null, null, "24"]}
-          ml={[null, null, null, null, "1.5"]}
-          mr={[null, null, null, "-100", "0"]}
-          minWidth={["80vw", null, null, "inherit"]}
-          maxWidth="1120px"
-          letterSpacing="-2.4px"
-          textAlign="right"
-        >
-          <Text as="span" color="cultured" textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)">{t('title.part_1')}</Text>
-          {t('title.part_2')}
-          <Text as="span" color="cultured" textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)">{t('title.part_3')}</Text>
-          {t('title.part_4')}
-          <Text as="span" color="cultured" textShadow="-1px 0 var(--chakra-colors-vampire-black), 0 1px var(--chakra-colors-vampire-black), 1px 0 var(--chakra-colors-vampire-black), 0 -1px var(--chakra-colors-vampire-black)">?</Text>
-        </Heading>
-      </Flex>
-
-      <Flex flexDirection={{ base: "column", lg: "row" }} mb={["14", null, null, "0"]} justifyContent="center" gap={["20", null, null, "2"]}>
-        <Card align="left">
-          <Heading as="h3" textTransform="uppercase" fontFamily="body" fontSize="3xl" fontWeight="800" lineHeight="1" mb="4">
-            {t('cards.1.title.part_1')}
-            <Text as="span" color="indian-yellow" fontWeight="extrabold">{t('cards.1.title.part_2')}</Text>
-            {t('cards.1.title.part_3')}
-            <Text as="span" color="fulvous" fontWeight="extrabold">{t('cards.1.title.part_4')}</Text>
-          </Heading>
-          <Text color="vampire-black">{t('cards.1.text')}</Text>
-        </Card>
-
-        <Card align="right">
-          <Heading as="h3" textTransform="uppercase" fontFamily="body" fontSize="3xl" fontWeight="800" lineHeight="1" mb="4">
-            {t('cards.2.title.part_1')}
-            <Text as="span" color="indian-yellow" fontWeight="extrabold">
-              {t('cards.2.title.part_2')}
-              {t('cards.2.title.part_3')}
-            </Text>
-            {t('cards.2.title.part_4')}
-            <Text as="span" color="fulvous" fontWeight="extrabold">{t('cards.2.title.part_5')}</Text>
-          </Heading>
-          <Text color="vampire-black">{t('cards.2.text')}</Text>
-        </Card>
-
-        <Card align="left">
-          <Heading as="h3" textTransform="uppercase" fontFamily="body" fontSize="3xl" fontWeight="800" lineHeight="1" mb="4">
-            {t('cards.3.title.part_1')}
-            <Text as="span" color="indian-yellow" fontWeight="extrabold">{t('cards.3.title.part_2')}</Text>
-            <Text as="span" color="fulvous" fontWeight="extrabold">{t('cards.3.title.part_3')}</Text>
-          </Heading>
-          <Text color="vampire-black">{t('cards.3.text')}</Text>
-        </Card>
-      </Flex>
-
-      <Flex
-        flexDirection={["column", null, null, "row"]}
+        bg="#edf3f8"
+        _dark={{ bg: "#3e3e3e" }}
+        p={20}
+        w="auto"
         justifyContent="center"
-        marginTop={[null, null, null, "6"]}
-        marginX={["20px", null, null, 0]}
-        gap={[null, null, null, "6"]}
-      >
-        <ButtonLink href="#roadmap" minWidth={[null, null, null, "400px", "500px"]}>{t('project')}</ButtonLink>
-        <ButtonLink href="#joinUs" minWidth={[null, null, null, "400px", "500px"]}>{t('newsletter')}</ButtonLink>
+        alignItems="center">
+        <Box shadow="xl" bg="white" _dark={{ bg: "gray.800" }} px={8} py={20} mx="auto">
+          <SimpleGrid
+            alignItems="center"
+            columns={{ base: 1, lg: 3 }}
+            spacingY={{ base: 10, lg: 32 }}
+            spacingX={{ base: 10, lg: 24 }}>
+            <Box alignSelf="start">
+              <Heading
+                _light={{ color: "brand.500" }}
+                fontWeight="semibold"
+                textTransform="uppercase">
+                {t("title.part_1")} {t("title.part_2")} ?
+              </Heading>
+              <Text
+                mb={6}
+                fontSize={{ base: "lg", md: "xl" }}
+                textAlign={{ base: "center", sm: "left" }}
+                color="gray.600"
+                _dark={{ color: "gray.500" }}>
+                {u("title")}
+              </Text>
+            </Box>
+            <GridItem colSpan={2}>
+              <Stack
+                spacing={{ base: 10, md: 0 }}
+                display={{ md: "grid" }}
+                gridTemplateColumns={{ md: "repeat(2,1fr)" }}
+                gridColumnGap={{ md: 8 }}
+                gridRowGap={{ md: 10 }}>
+                <Feature title={u("cards.1.title")}>{u("cards.1.text")}</Feature>
+                <Feature title={u("cards.2.title")}>{u("cards.2.text")}</Feature>
+                <Feature title={u("cards.3.title")}>{u("cards.3.text")}</Feature>
+                <Feature title={t("cards.1.title")}>{t("cards.1.text")}</Feature>
+                <Feature title={t("cards.2.title")}>{t("cards.2.text")}</Feature>
+                <Feature title={t("cards.3.title")}>{t("cards.3.text")}</Feature>
+              </Stack>
+            </GridItem>
+          </SimpleGrid>
+        </Box>
       </Flex>
-    </Box >
-  )
+    </Box>
+  );
 }
