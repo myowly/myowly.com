@@ -28,12 +28,12 @@ export default function Home() {
         <MainDAO />
         */}
         {/* <MainProjet /> */}
+        <MainParadigme />
         <MainCaroussel />
         <MainSimplifier />
         {/*
         <MainCommunauté />
         */}
-        <MainParadigme />
         <MainRejoignez />
         <MainTeam />
         {/* <MainMessage /> */}

@@ -265,21 +265,26 @@
         "december": "Décembre"
       },
       "description": {
-        "1": "Création de la marque et de son identité",
-        "2": "Lancement Landing Page",
+        "1": {
+          "a": "Création de l'entreprise",
+          "b": "Lancement du projet",
+          "c": "Premiers partenariats"
+        },
+        "2": {
+          "a": "Création de la communauté",
+          "b": "Lancement du site web",
+          "c": "Proof of Concept"
+        },
         "3": {
-          "a": "Seed",
-          "b": "1ères embauches",
-          "c": "Lancement campagne NFT"
+          "a": "IA V1.0, aléa ''Gel''",
+          "b": "Framwork Back",
+          "c": "Open Source"
         },
         "4": {
-          "a": "Vente NFT",
-          "b": "DAO Événementielle"
+          "a": "Lancement de MonHibou (Alpha)"
         },
-        "5": "IA Paramétrique",
-        "6": "Phase Béta Test",
-        "7": "Lancement de produit",
-        "8": "Décentralisation IA (Hub)"
+        "5": "Lancement de MonHibou (Béta)",
+        "6": "Lancement MyOwly (Alpha)"
       }
     },
     "MainTeam": {

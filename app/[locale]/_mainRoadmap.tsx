@@ -10,12 +10,28 @@ export default function MainRoadmap() {
 
   const steps = [
     {
-      title: <>{t("months.may")} 2023</>,
-      description: <>{t("description.1")}</>,
+      title: <>{t("months.march")} 2023</>,
+      description: (
+        <>
+          {t("description.1.a")}
+          <br />
+          {t("description.1.b")}
+          <br />
+          {t("description.1.c")}
+        </>
+      ),
     },
     {
       title: <>{t("months.june")} 2023</>,
-      description: <>{t("description.2")}</>,
+      description: (
+        <>
+          {t("description.2.a")}
+          <br />
+          {t("description.2.b")}
+          <br />
+          {t("description.2.c")}
+        </>
+      ),
     },
     {
       title: <>{t("months.september")} 2023</>,
@@ -30,30 +46,16 @@ export default function MainRoadmap() {
       ),
     },
     {
-      title: <>{t("months.january")} 2024</>,
-      description: (
-        <>
-          {t("description.4.a")}
-          <br />
-          {t("description.4.b")}
-        </>
-      ),
-    },
-    {
-      title: <>{t("months.march")} 2024</>,
-      description: <>{t("description.5")}</>,
-    },
-    {
-      title: <>{t("months.may")} 2024</>,
-      description: <>{t("description.6")}</>,
+      title: <>{t("months.february")} 2024</>,
+      description: <>{t("description.4.a")}</>,
     },
     {
       title: <>{t("months.september")} 2024</>,
-      description: <>{t("description.7")}</>,
+      description: <>{t("description.5")}</>,
     },
     {
-      title: <>{t("months.may")} 2025</>,
-      description: <>{t("description.8")}</>,
+      title: <>{t("months.september")} 2025</>,
+      description: <>{t("description.6")}</>,
     },
   ];
 

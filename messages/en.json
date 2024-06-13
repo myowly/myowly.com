@@ -286,35 +286,40 @@
     },
     "MainRoadmap": {
       "months": {
-        "january": "January",
-        "february": "February",
-        "march": "March",
-        "april": "April",
-        "may": "May",
-        "june": "June",
-        "july": "July",
-        "august": "August",
+        "january": "Janvier",
+        "february": "Février",
+        "march": "Mars",
+        "april": "Avril",
+        "may": "Mai",
+        "june": "Juin",
+        "july": "Juillet",
+        "august": "Août",
         "september": "Sept.",
-        "october": "October",
-        "november": "November",
-        "december": "December"
+        "october": "Octobre",
+        "november": "Novembre",
+        "december": "Décembre"
       },
       "description": {
-        "1": "Branding image creation",
-        "2": "Landing page launch",
+        "1": {
+          "a": "Creation of the company",
+          "b": "Launch of the project",
+          "c": "First partnerships"
+        },
+        "2": {
+          "a": "Creating the community",
+          "b": "Launch of the website",
+          "c": "Proof of Concept"
+        },
         "3": {
-          "a": "Seed",
-          "b": "First recruitment",
-          "c": "NFT campaign launch"
+          "a": "IA V1.0, ''Frost'' hazard",
+          "b": "Framwork Back",
+          "c": "Open Source"
         },
         "4": {
-          "a": "Sale of NFT",
-          "b": "DAO event"
+          "a": "Launch of MonHibou (Alpha)"
         },
-        "5": "Parametric AI",
-        "6": "Beta test stage",
-        "7": "Product launch",
-        "8": "AI decentralisation"
+        "5": "Launch of MonHibou (Beta)",
+        "6": "Lauch MyOwly (Alpha)"
       }
     },
     "MainTeam": {
