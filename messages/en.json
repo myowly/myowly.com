@@ -325,6 +325,18 @@
         "part_1": "What if ",
         "part_2": "we took ",
         "part_3": "back control"
+      },
+      "subtitle": {
+        "part_1": "Blockchain ",
+        "part_2": "revolutionises ",
+        "part_3": "coverage choices"
+      },
+      "introduction": "Whether you're looking to protect yourself against natural hazards, financial loss or any other unforeseen situation, our parametric insurance is here to help.",
+      "appTitle": "Test our simulation",
+      "appTxt": "As our product continues to evolve, we invite you to discover our exciting proof of concept.",
+      "feedback": {
+        "title": "Your feedback is important to us",
+        "text": "Join our community and take part in the future of our project."
       }
     },
     "Footer": {

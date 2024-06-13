@@ -326,13 +326,12 @@
         "part_2": "on reprenait ",
         "part_3": "le contrôle "
       },
-      "golden": {
-        "highlight": "Révolutionnez votre protection contre les risques climatiques ",
-        "text": "avec notre application innovante, alliant assurance paramétrique, blockchain décentralisée et IA actuarielle pour un monde plus ",
-        "bold1": "résilient, ",
-        "bold2": "équitable ",
-        "bold3": "et transparent."
+      "subtitle": {
+        "part_1": "La Blockchain ",
+        "part_2": "révolutionne ",
+        "part_3": "l'assurance"
       },
+      "introduction": "Que vous cherchiez à vous protéger contre les risques naturels, les pertes financières ou toute autre situation imprévue, notre assurance paramétrique est là pour vous aider.",
       "appTitle": "Testez notre simulation",
       "appTxt": "Alors que notre produit continue à évoluer, nous vous invitons dès à présent à découvrir notre passionante preuve de concept.",
       "feedback": {
