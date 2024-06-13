@@ -364,7 +364,8 @@
       },
       "legal": "Legal notices",
       "privacy": "Privacy",
-      "rights": "All rights reserved"
+      "rights": "All rights reserved",
+      "download": "Download the whitepaper"
     },
     "FormNewsletter": {
       "firstname": "Your fistname",

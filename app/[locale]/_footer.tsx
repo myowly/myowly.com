@@ -141,7 +141,7 @@ export default function Footer() {
                 background: "fulvous",
               }}>
               <Box color="cultured" fontWeight="bold" fontSize="16px">
-                Télécharger
+                {t("download")}
               </Box>
             </Button>
           </Box>
