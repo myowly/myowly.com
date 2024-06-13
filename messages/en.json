@@ -1,13 +1,12 @@
 {
   "Home": {
     "Hero": {
-      "hero_btn_1": "Star testing our app",
-      "hero_btn_2": "Our newsletter",
+      "hero_btn_1": "Application",
+      "hero_btn_2": "Newsletter",
       "title": {
         "part_1": "Become ",
-        "part_2": "your ",
-        "part_3": "finest ",
-        "part_4": "insurer"
+        "part_2": "your finest ",
+        "part_3": "insurer "
       },
       "subtitle": {
         "part_1": "Blockchain ",
@@ -17,7 +16,14 @@
       "introduction": "Whether you're looking to protect yourself against natural hazards, financial loss or any other unforeseen situation, our parametric insurance is here to help.",
       "read_more": "Read more",
       "stay_informed": "Stay informed",
-      "cta_app": "Estimate my benefit"
+      "cta_app": "Try out our application",
+      "golden": {
+        "highlight": "Revolutionise your protection against climate risks ",
+        "text": "with our innovative application, combining parametric insurance, decentralised blockchain and actuarial AI for a world more ",
+        "bold1": "resilient, ",
+        "bold2": "fair ",
+        "bold3": "and transparent."
+      }
     },
     "MainDAO": {
       "title": {

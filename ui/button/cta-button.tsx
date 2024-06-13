@@ -26,7 +26,7 @@ export default function CTABtn({
       _active={{
         background: "fulvous",
       }}>
-      <Box color="cultured" fontWeight="bold" fontSize={["16px", "20px", "22px"]}>
+      <Box color="cultured" fontWeight="bold" fontSize="16px">
         {children}
       </Box>
     </Button>
