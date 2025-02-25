@@ -69,7 +69,7 @@ export default function MainTeam() {
             linkedInUrl="https://fr.linkedin.com/in/thomas-castellengo"
           >
             <Text color="keppel" fontWeight="bold">Thomas</Text>
-            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">CTO</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">DevOps</Text>
           </CardTeam>
           <CardTeam
             alignSelf={["end", null, "auto"]}
@@ -78,7 +78,7 @@ export default function MainTeam() {
             linkedInUrl="https://www.linkedin.com/in/adeline-pitet/"
           >
             <Text color="keppel" fontWeight="bold">Adeline</Text>
-            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">Dev Fullstack</Text>
+            <Text color="vampire-black" fontStyle="italic" fontSize="14px" mt="-5px" ml="-1px">CTO</Text>
           </CardTeam>
         </Flex>
         <Flex flexDirection="column" justifyContent="center" order="3">
